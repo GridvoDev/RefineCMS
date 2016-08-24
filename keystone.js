@@ -23,8 +23,22 @@ keystone.init({
 
 	'auto update': true,
 	'session': true,
+	'session store': 'mongo',
 	'auth': true,
 	'user model': 'User',
+	'cookie secret': process.env.COOKIE_SECRET || 'gridvocms',
+	
+	'logger': 'combined',
+	
+	'back url': '/',
+	'signin url': '/keystone/signin',
+	'signin redirect': '/keystone',
+	'signout url': '/keystone/signout',
+	'signout redirect': '/keystone',
+	
+	'wysiwyg images': true,
+	// 'wysiwyg cloudinary images': '',
+	// ... TODO Admin UIs参数设定
 });
 
 // Load your project's Models
@@ -66,10 +80,16 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
-	enquiries: 'enquiries',
+	abouts: ['introductions', 'contacts', 'employments', 'partners', 'law-states', 'privacy-policies'],
+	products: 'products',
+	cases: 'cases',
+	news: ['news', 'news-categories'],
 	users: 'users',
+	settings: ['carousel-pictures', 'feedback-consultations', 'site-maps'],
+	// posts: ['posts', 'post-categories'],
+	// galleries: 'galleries',
+	// enquiries: 'enquiries',
+	// users: 'users',
 });
 
 // Start Keystone to connect to your database and initialise the web server
