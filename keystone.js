@@ -4,6 +4,7 @@ require('dotenv').config();
 
 // Require keystone
 var keystone = require('keystone');
+var pkg = require('./package.json');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -22,6 +23,8 @@ keystone.init({
 	'emails': 'templates/emails',
 
 	'auto update': true,
+	'mongo': process.env.MONGO_URI || 'mongodb://localhost/' + pkg.name,
+	
 	'session': true,
 	'session store': 'mongo',
 	'auth': true,
