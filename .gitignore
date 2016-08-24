@@ -36,6 +36,7 @@ node_modules
 
 # WebStorm project directory
 .idea
+.idea/workspace.xml
 
 # Ignore .env configuration files
 .env
