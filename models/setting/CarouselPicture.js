@@ -7,14 +7,17 @@ var Types = keystone.Field.Types;
  */
 
 var CarouselPicture = new keystone.List('CarouselPicture', {
-	autokey: { from: 'name', path: 'key', unique: true },
+	label: '首页轮播图',
+	nocreate: true,
+	nodelete: true,
+	autokey: { from: 'location', path: 'key', unique: true },
 });
 
 CarouselPicture.add({
 	name: { type: String, required: true },
-	publishedDate: { type: Date, default: Date.now },
-	heroImage: { type: Types.CloudinaryImage },
-	images: { type: Types.CloudinaryImages },
+	location: { type: Types.Select, options: ['first', 'second', 'third', 'fourth'], emptyOption: false, required: true },
+	heroImageUrl: { type: Types.Url, required: true },
+	publishedDate: { type: Date, default: Date.now, noedit: true },
 });
 
 CarouselPicture.register();

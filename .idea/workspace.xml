@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e3ee3d-cd20-42d4-ace2-6ff13b0860f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/About/Contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/About/Introduction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/About/LawState.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/About/Partner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/About/PrivacyPolicy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/news_info/NewsInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/news_info/NewsInfoCategory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/setting/CarouselPicture.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/setting/FeedbackConsultation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/setting/SiteMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/user/User.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/case/case.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/product/product.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keystone.js" afterPath="$PROJECT_DIR$/keystone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/setting/CarouselPicture.js" afterPath="$PROJECT_DIR$/models/setting/CarouselPicture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/setting/FeedbackConsultation.js" afterPath="$PROJECT_DIR$/models/setting/FeedbackConsultation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/setting/SiteMap.js" afterPath="$PROJECT_DIR$/models/setting/SiteMap.js" />
     </list>
     <ignored path="GridvoCMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="keystone.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="keystone.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keystone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="588">
               <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -49,41 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarouselPicture.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/setting/CarouselPicture.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteMap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/setting/SiteMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedbackConsultation.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/setting/FeedbackConsultation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Product.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/product/Product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LawState.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/about/LawState.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -141,6 +112,8 @@
         <option value="$PROJECT_DIR$/models/news_info/NewsInfoCategory.js" />
         <option value="$PROJECT_DIR$/models/user/User.js" />
         <option value="$PROJECT_DIR$/models/setting/CarouselPicture.js" />
+        <option value="$PROJECT_DIR$/models/setting/SiteMap.js" />
+        <option value="$PROJECT_DIR$/models/setting/FeedbackConsultation.js" />
       </list>
     </option>
   </component>
@@ -546,7 +519,7 @@
       <option name="presentableId" value="Default" />
       <updated>1472009090274</updated>
       <workItem from="1472009093090" duration="700000" />
-      <workItem from="1472009820330" duration="38465000" />
+      <workItem from="1472009820330" duration="41486000" />
     </task>
     <task id="LOCAL-00001" summary="配置keystone参数、env变量">
       <created>1472048711190</created>
@@ -562,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472054887742</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model文件创建ing">
+      <created>1472105749359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1472105749359</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39165000" />
+    <option name="totallyTimeSpent" value="42186000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,7 +565,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16227607" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.504329" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -615,7 +595,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="配置keystone参数、env变量" />
     <MESSAGE value="项目文件结构改动ing" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目文件结构改动ing" />
+    <MESSAGE value="Model文件创建ing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model文件创建ing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -882,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/about/LawState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/about/PrivacyPolicy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -914,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/about/Introduction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/news_info/NewsInfoCategory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -938,45 +903,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/product/Product.js">
+    <entry file="file://$PROJECT_DIR$/models/setting/CarouselPicture.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="9" selection-end-column="18" />
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keystone.js">
+    <entry file="file://$PROJECT_DIR$/models/about/LawState.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/setting/SiteMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/setting/CarouselPicture.js">
+    <entry file="file://$PROJECT_DIR$/models/about/Introduction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/product/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/setting/FeedbackConsultation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="724">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keystone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

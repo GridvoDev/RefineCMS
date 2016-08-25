@@ -2,40 +2,40 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Enquiry Model
+ * FeedbackConsultation Model
  * =============
  */
 
-var Enquiry = new keystone.List('Enquiry', {
+var FeedbackConsultation = new keystone.List('FeedbackConsultation', {
+	label: '反馈咨询',
 	nocreate: true,
 	noedit: true,
 });
 
-Enquiry.add({
-	name: { type: Types.Name, required: true },
+FeedbackConsultation.add({
+	nickName: { type: String, required: true },
 	email: { type: Types.Email, required: true },
-	phone: { type: String },
 	enquiryType: { type: Types.Select, options: [
-		{ value: 'message', label: 'Just leaving a message' },
-		{ value: 'question', label: 'I\'ve got a question' },
-		{ value: 'other', label: 'Something else...' },
-	] },
+		{ value: 'message', label: '发消息' },
+		{ value: 'question', label: '提问题' },
+		{ value: 'other', label: '其它...' },
+	], emptyOption: false, required: true },
 	message: { type: Types.Markdown, required: true },
-	createdAt: { type: Date, default: Date.now },
+	createdAt: { type: Date, default: Date.now, noedit: true },
 });
 
-Enquiry.schema.pre('save', function (next) {
+FeedbackConsultation.schema.pre('save', function (next) {
 	this.wasNew = this.isNew;
 	next();
 });
 
-Enquiry.schema.post('save', function () {
+FeedbackConsultation.schema.post('save', function () {
 	if (this.wasNew) {
-		this.sendNotificationEmail();
+		// this.sendNotificationEmail();TODO 发邮件提醒网站管理员
 	}
 });
 
-Enquiry.schema.methods.sendNotificationEmail = function (callback) {
+FeedbackConsultation.schema.methods.sendNotificationEmail = function (callback) {
 	if (typeof callback !== 'function') {
 		callback = function () {};
 	}
@@ -50,12 +50,12 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 				name: 'GridvoCMS',
 				email: 'contact@gridvocms.com',
 			},
-			subject: 'New Enquiry for GridvoCMS',
+			subject: 'New FeedbackConsultation for GridvoCMS',
 			enquiry: enquiry,
 		}, callback);
 	});
 };
 
-Enquiry.defaultSort = '-createdAt';
-Enquiry.defaultColumns = 'name, email, enquiryType, createdAt';
-Enquiry.register();
+FeedbackConsultation.defaultSort = '-createdAt';
+FeedbackConsultation.defaultColumns = 'nickName, email, enquiryType, createdAt';
+FeedbackConsultation.register();
