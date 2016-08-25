@@ -47,7 +47,7 @@ var routes = {
 };
 
 // Setup Route Bindings
-exports = module.exports = function (app) {
+exports = module.exports = function (app) {//TODO 待routes完成后改
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);

@@ -12,11 +12,11 @@ var pkg = require('./package.json');
 
 keystone.init({
 	'name': 'GridvoCMS',
-	'brand': 'GridvoCMS',
+	'brand': '格物内容管理系统',
 
 	'less': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/favicon.png',//TODO .ico
 	'views': 'templates/views',
 	'view engine': 'jade',
 
@@ -83,13 +83,13 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	abouts: ['introductions', 'contacts', 'employments', 'partners', 'law-states', 'privacy-policies'],
+	abouts: ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies'],
 	products: 'products',
 	cases: 'cases',
-	news: ['news', 'news-categories'],
+	'news-infos': ['news-infos', 'news-info-categories'],
 	users: 'users',
 	settings: ['carousel-pictures', 'feedback-consultations', 'site-maps'],
-	// posts: ['posts', 'post-categories'],
+	// posts: ['posts', 'post-categories'],TODO 删除已注释和对应model、route文件
 	// galleries: 'galleries',
 	// enquiries: 'enquiries',
 	// users: 'users',
