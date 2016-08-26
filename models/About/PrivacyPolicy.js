@@ -23,5 +23,5 @@ PrivacyPolicy.add({
 
 PrivacyPolicy.defaultSort = '-updatedAt';
 PrivacyPolicy.searchFields = 'title, content, updatedAt';
-PrivacyPolicy.defaultColumns = 'title, content|75%, updatedAt';
+PrivacyPolicy.defaultColumns = 'title, content|60%, updatedAt';
 PrivacyPolicy.register();

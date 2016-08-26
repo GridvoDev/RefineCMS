@@ -29,5 +29,5 @@ Introduction.schema.virtual('content.full').get(function () {
 
 Introduction.defaultSort = '-updatedAt';
 Introduction.searchFields = 'title, updatedAt';
-Introduction.defaultColumns = 'title, content.brief|75%, updatedAt';
+Introduction.defaultColumns = 'title|10%, content.brief|70%, updatedAt|20%';
 Introduction.register();
