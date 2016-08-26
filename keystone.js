@@ -12,7 +12,7 @@ var pkg = require('./package.json');
 
 keystone.init({
 	'name': 'GridvoCMS',
-	'brand': '格物内容管理系统',
+	'brand': '格物管理后台',
 
 	'less': 'public',
 	'static': 'public',

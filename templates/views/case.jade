@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+mixin case0(case0)
+	.case0(data-ks-editable=editable(user, { list: 'Case', id: case0.id }))
+		h2: a(href='/case0/' + case0.slug)= case0.title
+		p.lead.text-muted Posted 
+			if case0.finishedDate
+				| on #{case0._.finishedDate.format('YYYY-MM-DD')}
+		if case0.imageUrl
+			img(src=case0.imageUrl,style={height:'100px'}).img.pull-right
+		p!= case0.content.brief
+		if case0.content.extended
+			p.read-more: a(href='/case/' + case0.slug) Read more...
+
+block intro
+	.container
+		h1= 'Case'
+
+block content
+	.container: .row
+		.col-sm-8.col-md-9
+			if data.cases.length
+				h4.text-weight-normal Showing #{utils.plural(data.cases.length, '* case')}.
+				.blog
+					each case0 in data.cases
+						+case0(case0)

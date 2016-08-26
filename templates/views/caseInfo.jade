@@ -1,0 +1,19 @@
+extends ../layouts/default
+
+block content
+	.container: .row: .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+		article
+			p: a(href='/case') &larr; back to the case
+			hr
+			if !data.case
+				h2 Invalid Product.
+			else
+				header
+					h1= data.case.title
+					h5 Posted 
+						if data.case.finishedDate
+							| on #{data.case._.finishedDate.format('YYYY-MM-DD')}
+				.post
+					if data.case.imageUrl
+						.image-wrap: img(src=data.case.imageUrl,style={height:'100px'}).img-responsive
+					!= data.case.content.full

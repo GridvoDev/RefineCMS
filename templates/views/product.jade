@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+mixin product(product)
+	.product(data-ks-editable=editable(user, { list: 'Product', id: product.id }))
+		h2: a(href='/product/' + product.slug)= product.title
+		p.lead.text-muted Posted 
+			if product.publishedDate
+				| on #{product._.publishedDate.format('YYYY-MM-DD')}
+		if product.imageUrl
+			img(src=product.imageUrl,style={height:'100px'}).img.pull-right
+		p!= product.content.brief
+		if product.content.extended
+			p.read-more: a(href='/product/' + product.slug) Read more...
+
+block intro
+	.container
+		h1= 'Product'
+
+block content
+	.container: .row
+		.col-sm-8.col-md-9
+			if data.products.length
+				h4.text-weight-normal Showing #{utils.plural(data.products.length, '* product')}.
+				.blog
+					each product in data.products
+						+product(product)

@@ -50,10 +50,14 @@ var routes = {
 exports = module.exports = function (app) {//TODO 待routes完成后改
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/blog/:category?', routes.views.blog);
-	app.get('/blog/post/:post', routes.views.post);
-	app.get('/gallery', routes.views.gallery);
-	app.all('/contact', routes.views.contact);
+	app.get('/about', routes.views.about);
+	app.get('/product', routes.views.product);
+	app.get('/product/:product', routes.views.productInfo);
+	app.get('/case', routes.views.case);
+	app.get('/case/:case', routes.views.caseInfo);
+	app.get('/news/:category?', routes.views.news);
+	app.get('/news/information/:news', routes.views.newsInfo);
+	app.all('/feedback', routes.views.feedbackAndConsultation);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
