@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e3ee3d-cd20-42d4-ace2-6ff13b0860f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/caseInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/feedbackAndConsultation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/news.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/newsInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/views/productInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/about.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/case.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/caseInfo.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/feedbackAndConsultation.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/news.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/newsInfo.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/product.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/productInfo.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.png" afterPath="$PROJECT_DIR$/public/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keystone.js" afterPath="$PROJECT_DIR$/keystone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/middleware.js" afterPath="$PROJECT_DIR$/routes/middleware.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/default.jade" afterPath="$PROJECT_DIR$/templates/layouts/default.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/index.jade" afterPath="$PROJECT_DIR$/templates/views/index.jade" />
     </list>
     <ignored path="GridvoCMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -584,7 +561,7 @@
       <option name="presentableId" value="Default" />
       <updated>1472009090274</updated>
       <workItem from="1472009093090" duration="700000" />
-      <workItem from="1472009820330" duration="60944000" />
+      <workItem from="1472009820330" duration="61603000" />
     </task>
     <task id="LOCAL-00001" summary="配置keystone参数、env变量">
       <created>1472048711190</created>
@@ -614,11 +591,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472109330316</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="路由实现">
+      <created>1472181391729</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1472181391729</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61644000" />
+    <option name="totallyTimeSpent" value="62303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +615,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16227607" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
@@ -639,7 +623,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.504329" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
@@ -669,7 +653,8 @@
     <MESSAGE value="项目文件结构改动ing" />
     <MESSAGE value="Model文件创建ing" />
     <MESSAGE value="Model文件创建ed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model文件创建ed" />
+    <MESSAGE value="路由实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="路由实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
