@@ -8,14 +8,15 @@ var Types = keystone.Field.Types;
 
 var LawState = new keystone.List('LawState', {
 	label: '法律声明',
-	nocreate: true,
-	nodelete: true,
+	singular: 'Law State',
+	plural: 'Law States',
+	map: { name: 'title' },
 	autokey: { from: 'title', path: 'key', unique: true },
 });
 
 LawState.add({
 	title: { type: String, required: true },
-	content: { type: Types.Html, wysiwyg: true, required: true },
+	content: { type: Types.Html, wysiwyg: true },
 	updatedAt: { type: Date, value: Date.now, noedit: true },
 });
 

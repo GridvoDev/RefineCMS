@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var SiteMap = new keystone.List('SiteMap', {
 	label: '网站地图',
+	singular: 'SiteMap',
+	plural: 'SiteMaps',
 	nocreate: true,
 	nodelete: true,
 });

@@ -47,7 +47,7 @@ var routes = {
 };
 
 // Setup Route Bindings
-exports = module.exports = function (app) {//TODO 待routes完成后改
+exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/about', routes.views.about);
@@ -56,7 +56,7 @@ exports = module.exports = function (app) {//TODO 待routes完成后改
 	app.get('/case', routes.views.case);
 	app.get('/case/:case', routes.views.caseInfo);
 	app.get('/news/:category?', routes.views.news);
-	app.get('/news/information/:news', routes.views.newsInfo);
+	app.get('/news/information/:newsInfo', routes.views.newsInfo);
 	app.all('/feedback', routes.views.feedbackAndConsultation);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

@@ -83,16 +83,12 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	abouts: ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies'],
-	products: 'products',
-	cases: 'cases',
-	'news-infos': ['news-infos', 'news-info-categories'],
-	users: 'users',
-	settings: ['carousel-pictures', 'feedback-consultations', 'site-maps'],
-	// posts: ['posts', 'post-categories'],TODO 删除已注释和对应model、route文件
-	// galleries: 'galleries',
-	// enquiries: 'enquiries',
-	// users: 'users',
+	'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies'],
+	'产品特色': 'products',
+	'项目案例': 'cases',
+	'新闻资讯': ['news-infos', 'news-info-categories'],
+	'用户管理': 'users',
+	'系统设置': ['carousel-pictures', 'feedback-consultations', 'site-maps'],
 });
 
 // Start Keystone to connect to your database and initialise the web server

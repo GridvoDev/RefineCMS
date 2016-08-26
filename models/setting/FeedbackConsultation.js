@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var FeedbackConsultation = new keystone.List('FeedbackConsultation', {
 	label: '反馈咨询',
+	singular: 'Feedback And Consultation',
+	plural: 'Feedback And Consultations',
 	nocreate: true,
 	noedit: true,
 });

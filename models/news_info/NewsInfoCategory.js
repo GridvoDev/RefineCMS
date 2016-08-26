@@ -7,6 +7,8 @@ var keystone = require('keystone');
 
 var NewsInfoCategory = new keystone.List('NewsInfoCategory', {
 	label: '新闻资讯分类',
+	singular: 'News Information Category',
+	plural: 'News Information Categories',
 	map: { name: 'name' },
 	autokey: { from: 'name', path: 'key', unique: true },
 });

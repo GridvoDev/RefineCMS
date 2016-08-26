@@ -2,7 +2,7 @@ extends ../layouts/default
 
 mixin case0(case0)
 	.case0(data-ks-editable=editable(user, { list: 'Case', id: case0.id }))
-		h2: a(href='/case0/' + case0.slug)= case0.title
+		h2: a(href='/case/' + case0.slug)= case0.title
 		p.lead.text-muted Posted 
 			if case0.finishedDate
 				| on #{case0._.finishedDate.format('YYYY-MM-DD')}

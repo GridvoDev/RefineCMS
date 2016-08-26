@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var CarouselPicture = new keystone.List('CarouselPicture', {
 	label: '首页轮播图',
+	singular: 'CarouselPicture',
+	plural: 'CarouselPictures',
 	nocreate: true,
 	nodelete: true,
 	autokey: { from: 'location', path: 'key', unique: true },

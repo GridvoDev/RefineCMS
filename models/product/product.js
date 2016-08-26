@@ -8,18 +8,20 @@ var Types = keystone.Field.Types;
 
 var Product = new keystone.List('Product', {
 	label: '产品特色',
+	singular: 'Product',
+	plural: 'Products',
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
 
 Product.add({
 	title: { type: String, required: true },
-	imageUrl: { type: Types.Url, required: true},
+	imageUrl: { type: Types.Url, initial: true, required: true },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
-	publishedDate: { type: Types.Date, required: true, index: true },
+	publishedDate: { type: Types.Date, index: true, initial: true, required: true },
 });
 
 Product.schema.virtual('content.full').get(function () {

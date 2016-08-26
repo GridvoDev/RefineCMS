@@ -1,10 +1,10 @@
 extends ../layouts/default
 
 block content
-	.container: .row: .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2	
+	.container: .row: .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
 		article
 			header
-				h1= data.introduction.title
+				h1= data.introduction ? data.introduction.title : 'Oops! There is something wrong with the company introduction ...'
 		ul
 			each pa, pa_i in data.partners
 				li= pa.name

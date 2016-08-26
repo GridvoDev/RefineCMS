@@ -8,18 +8,20 @@ var Types = keystone.Field.Types;
 
 var Case = new keystone.List('Case', {
 	label: '项目案例',
+	singular: 'Case',
+	plural: 'Cases',
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
 
 Case.add({
 	title: { type: String, required: true },
-	imageUrl: { type: Types.Url, required: true},
+	imageUrl: { type: Types.Url, initial: true, required: true },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
-	finishedDate: { type: Types.Date, required: true, index: true },
+	finishedDate: { type: Types.Date, index: true, initial: true, required: true },
 });
 
 Case.schema.virtual('content.full').get(function () {

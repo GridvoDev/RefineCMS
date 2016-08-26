@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var PrivacyPolicy = new keystone.List('PrivacyPolicy', {
 	label: '隐私保护',
+	singular: 'Privacy Policy',
+	plural: 'Privacy Policies',
 	nocreate: true,
 	nodelete: true,
 	autokey: { from: 'title', path: 'key', unique: true },

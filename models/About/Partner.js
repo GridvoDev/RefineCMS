@@ -2,23 +2,25 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Partners Model
+ * Partner Model
  * =============
  */
 
-var Partners = new keystone.List('Partners', {
+var Partner = new keystone.List('Partner', {
 	label: '合作伙伴',
+	singular: 'Partner',
+	plural: 'Partners',
 	autokey: { from: 'name', path: 'key', unique: true },
 });
 
-Partners.add({
+Partner.add({
 	name: { type: String, required: true },
-	logoUrl: { type: Types.Url, required: true},
+	logoUrl: { type: Types.Url },//initial: true, required: true
 	profile: { type: Types.Textarea, height: 300 },
 	updatedAt: { type: Date, value: Date.now, noedit: true },
 });
 
-Partners.defaultSort = '-updatedAt';
-Partners.searchFields = 'name, profile, updatedAt';
-Partners.defaultColumns = 'name, logoUrl, profile, updatedAt';
-Partners.register();
+Partner.defaultSort = '-updatedAt';
+Partner.searchFields = 'name, profile, updatedAt';
+Partner.defaultColumns = 'name, logoUrl, profile, updatedAt';
+Partner.register();

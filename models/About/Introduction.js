@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var Introduction = new keystone.List('Introduction', {
 	label: '公司简介',
+	singular: 'Introduction',
+	plural: 'Introductions',
 	nocreate: true,
 	nodelete: true,
 });

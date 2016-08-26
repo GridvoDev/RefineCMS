@@ -8,6 +8,8 @@ var Types = keystone.Field.Types;
 
 var Contact = new keystone.List('Contact', {
 	label: '联系我们',
+	singular: 'Contact',
+	plural: 'Contacts',
 	nocreate: true,
 	nodelete: true,
 });
