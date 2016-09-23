@@ -1,191 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e3ee3d-cd20-42d4-ace2-6ff13b0860f9" name="Default" comment="页面拷入">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦圆演示版常规体.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦圆演示版常规体.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦黑演示版特细体.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦黑演示版特细体.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦黑演示版细体.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/page/造字工房悦黑演示版细体.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/case/案例图片1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/cases/案例图1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/cases/案例图2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/features/产品特色图1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/features/产品特色图2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/features/产品特色图3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/features/产品特色图4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/功能特点图标1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/功能特点图标2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/右滑动图标白色.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/右滑动图标白色透明.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/圆弧.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/圆弧底.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/圆弧顶.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/大标题下标.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/大标题下标green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/左滑动图标白色.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/左滑动图标白色透明.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/微信图标.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/微信图标green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例分块白色底边.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例分块白色底边1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例缩略图（右）.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例缩略图（左）.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例缩略图（次右）.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/案例缩略图（次左）.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景(600x422)1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景(600x422)2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景(600x422)3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景(600x422)4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景1 (2).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/index/轮播背景1 (3).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/logo附文字.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/logo附文字蓝.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/news-info/新闻图片1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/news/新闻资讯概图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/wechat-code-picture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/底部图片背景.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/底部图片背景蒙板.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/着陆器背景.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/着陆器背景gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/page/着陆器背景green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/abouts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/cases.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/common/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/features.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/feedback.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/news.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/page/page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/abouts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/case.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/cases.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/features.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/feedback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/news-info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/views/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="c1e3ee3d-cd20-42d4-ace2-6ff13b0860f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.less" afterPath="$PROJECT_DIR$/public/styles/site.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.min.css" afterPath="$PROJECT_DIR$/public/styles/site.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/variables.less" afterPath="$PROJECT_DIR$/public/styles/site/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/about.js" afterPath="$PROJECT_DIR$/routes/views/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/case.js" afterPath="$PROJECT_DIR$/routes/views/case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/caseInfo.js" afterPath="$PROJECT_DIR$/routes/views/caseInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/feedbackAndConsultation.js" afterPath="$PROJECT_DIR$/routes/views/feedbackAndConsultation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/index.js" afterPath="$PROJECT_DIR$/routes/views/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/news.js" afterPath="$PROJECT_DIR$/routes/views/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/newsInfo.js" afterPath="$PROJECT_DIR$/routes/views/newsInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/product.js" afterPath="$PROJECT_DIR$/routes/views/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/views/productInfo.js" afterPath="$PROJECT_DIR$/routes/views/productInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/default.jade" afterPath="$PROJECT_DIR$/templates/layouts/default.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/affix.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/affix.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/alert.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/alert.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/bootstrap-3.3.5.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/bootstrap-3.3.5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/bootstrap-3.3.5.min.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/bootstrap-3.3.5.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/button.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/button.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/carousel.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/carousel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/collapse.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/collapse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/dropdown.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/dropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/modal.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/modal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/npm.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/popover.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/popover.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/scrollspy.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/scrollspy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/tab.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/tab.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/tooltip.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/tooltip.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/bootstrap/transition.js" afterPath="$PROJECT_DIR$/public/js/lib/bootstrap/transition.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery/jquery-1.11.3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.3.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery/jquery-1.11.3.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery/jquery-2.1.4.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery/jquery-2.1.4.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/alerts.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/alerts.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/badges.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/badges.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/breadcrumbs.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/breadcrumbs.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/button-groups.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/button-groups.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/buttons.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/carousel.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/carousel.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/close.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/close.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/code.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/code.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/component-animations.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/component-animations.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/dropdowns.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/dropdowns.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/forms.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/forms.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/glyphicons.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/glyphicons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/grid.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/grid.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/input-groups.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/input-groups.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/jumbotron.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/jumbotron.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/labels.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/labels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/list-group.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/list-group.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/media.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/media.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/alerts.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/alerts.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/background-variant.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/background-variant.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/border-radius.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/border-radius.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/buttons.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/center-block.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/center-block.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/clearfix.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/clearfix.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/forms.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/forms.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/gradients.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/gradients.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/grid-framework.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/grid.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/grid.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/hide-text.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/hide-text.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/image.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/image.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/labels.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/labels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/list-group.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/list-group.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/nav-divider.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/nav-vertical-align.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/opacity.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/opacity.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/pagination.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/pagination.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/panels.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/panels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/progress-bar.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/reset-filter.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/reset-text.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/reset-text.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/resize.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/resize.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/responsive-visibility.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/size.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/size.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/tab-focus.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/table-row.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/table-row.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/text-emphasis.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/text-overflow.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/mixins/vendor-prefixes.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/modals.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/modals.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/navbar.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/navbar.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/navs.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/navs.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/normalize.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/normalize.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/pager.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/pager.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/pagination.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/pagination.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/panels.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/panels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/popovers.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/popovers.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/print.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/print.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/progress-bars.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/progress-bars.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/responsive-embed.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/responsive-embed.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/responsive-utilities.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/responsive-utilities.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/scaffolding.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/scaffolding.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/tables.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/tables.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/theme.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/theme.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/thumbnails.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/thumbnails.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/tooltip.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/tooltip.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/type.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/type.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/utilities.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/utilities.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/variables.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/variables.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/wells.less" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/wells.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/about.jade" afterPath="$PROJECT_DIR$/templates/views/about0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/case.jade" afterPath="$PROJECT_DIR$/templates/views/case0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/caseInfo.jade" afterPath="$PROJECT_DIR$/templates/views/caseInfo0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/feedbackAndConsultation.jade" afterPath="$PROJECT_DIR$/templates/views/feedbackAndConsultation0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/index.jade" afterPath="$PROJECT_DIR$/templates/views/index0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/news.jade" afterPath="$PROJECT_DIR$/templates/views/news0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/newsInfo.jade" afterPath="$PROJECT_DIR$/templates/views/newsInfo0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/product.jade" afterPath="$PROJECT_DIR$/templates/views/product0.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/productInfo.jade" afterPath="$PROJECT_DIR$/templates/views/productInfo0.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/abouts.html" afterPath="$PROJECT_DIR$/templates/views/abouts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/case.html" afterPath="$PROJECT_DIR$/templates/views/case.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/cases.html" afterPath="$PROJECT_DIR$/templates/views/cases.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/features.html" afterPath="$PROJECT_DIR$/templates/views/features.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/feedback.html" afterPath="$PROJECT_DIR$/templates/views/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/news-info.html" afterPath="$PROJECT_DIR$/templates/views/news-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/news.html" afterPath="$PROJECT_DIR$/templates/views/news.html" />
     </list>
     <ignored path="GridvoCMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -221,28 +45,94 @@
       <file leaf-file-name="glyphicons-halflings-regular.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.svg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+            <state relative-caret-position="136">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive-utilities.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/styles/lib/bootstrap/responsive-utilities.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="normalize.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/styles/lib/bootstrap/normalize.less">
+      <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/case.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="57" column="111" selection-start-line="57" selection-start-column="111" selection-end-line="57" selection-end-column="118" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/feedback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="354" column="11" selection-start-line="354" selection-start-column="11" selection-end-line="354" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-info.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/views/news-info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abouts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/abouts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cases.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/cases.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="features.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/features.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -299,14 +189,14 @@
         <option value="$PROJECT_DIR$/public/styles/site/variables.less" />
         <option value="$PROJECT_DIR$/routes/views/about.js" />
         <option value="$PROJECT_DIR$/public/styles/page/common/base.css" />
-        <option value="$PROJECT_DIR$/templates/views/abouts.html" />
+        <option value="$PROJECT_DIR$/templates/views/index.html" />
         <option value="$PROJECT_DIR$/templates/views/case.html" />
+        <option value="$PROJECT_DIR$/templates/views/feedback.html" />
+        <option value="$PROJECT_DIR$/templates/views/abouts.html" />
         <option value="$PROJECT_DIR$/templates/views/cases.html" />
         <option value="$PROJECT_DIR$/templates/views/features.html" />
-        <option value="$PROJECT_DIR$/templates/views/feedback.html" />
-        <option value="$PROJECT_DIR$/templates/views/index.html" />
-        <option value="$PROJECT_DIR$/templates/views/news-info.html" />
         <option value="$PROJECT_DIR$/templates/views/news.html" />
+        <option value="$PROJECT_DIR$/templates/views/news-info.html" />
       </list>
     </option>
   </component>
@@ -896,7 +786,7 @@
       <workItem from="1472274825500" duration="1860000" />
       <workItem from="1473827463994" duration="949000" />
       <workItem from="1474246580786" duration="1528000" />
-      <workItem from="1474592246754" duration="4659000" />
+      <workItem from="1474592246754" duration="4997000" />
     </task>
     <task id="LOCAL-00001" summary="配置keystone参数、env变量">
       <created>1472048711190</created>
@@ -961,11 +851,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472232357901</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="页面拷入">
+      <created>1474597048905</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1474597048905</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94234000" />
+    <option name="totallyTimeSpent" value="94572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -981,7 +878,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021075" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20706007" sideWeight="0.40192926" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
@@ -1013,6 +910,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="配置keystone参数、env变量" />
     <MESSAGE value="项目文件结构改动ing" />
     <MESSAGE value="Model文件创建ing" />
@@ -1332,114 +1230,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/abouts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="159" column="50" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
-          <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/cases.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="193" column="48" selection-start-line="193" selection-start-column="48" selection-end-line="193" selection-end-column="48" />
-          <caret line="196" column="48" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/features.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="172" column="48" selection-start-line="172" selection-start-column="48" selection-end-line="172" selection-end-column="48" />
-          <caret line="175" column="48" selection-start-line="175" selection-start-column="48" selection-end-line="175" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="157" column="48" selection-start-line="157" selection-start-column="48" selection-end-line="157" selection-end-column="48" />
-          <caret line="160" column="48" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="70" column="65" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
-          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
-          <caret line="88" column="65" selection-start-line="88" selection-start-column="65" selection-end-line="88" selection-end-column="65" />
-          <caret line="97" column="65" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
-          <caret line="309" column="48" selection-start-line="309" selection-start-column="48" selection-end-line="309" selection-end-column="48" />
-          <caret line="312" column="48" selection-start-line="312" selection-start-column="48" selection-end-line="312" selection-end-column="48" />
-          <caret line="347" column="79" selection-start-line="347" selection-start-column="79" selection-end-line="347" selection-end-column="79" />
-          <caret line="350" column="79" selection-start-line="350" selection-start-column="79" selection-end-line="350" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/news-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <caret line="144" column="48" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
-          <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.eot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/views/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1455,7 +1249,93 @@
     <entry file="file://$PROJECT_DIR$/public/styles/lib/bootstrap/normalize.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/views/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/lib/bootstrap/glyphicons-halflings-regular.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="111" selection-start-line="57" selection-start-column="111" selection-end-line="57" selection-end-column="118" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/abouts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/cases.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/features.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="354" column="11" selection-start-line="354" selection-start-column="11" selection-end-line="354" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/news-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="57" column="118" selection-start-line="57" selection-start-column="118" selection-end-line="57" selection-end-column="118" />
           <folding />
         </state>
       </provider>
