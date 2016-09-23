@@ -1,0 +1,264 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(charset='utf-8')
+    |   
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！
+    title &#x6848;&#x4F8B;&#x4ECB;&#x7ECD;
+    // Bootstrap
+    link(href='../public/styles/lib/bootstrap/bootstrap.min.css', rel='stylesheet')
+    // the site base style
+    link(rel='stylesheet', type='text/css', href='../public/styles/page/base.css')
+    // the news page's style
+    link(rel='stylesheet', type='text/css', href='../public/styles/page/cases.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js')
+      |     
+      script(src='//cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
+  body
+    // 页眉start
+    header.site-header
+      nav.navbar.navbar-fixed-top.floating(role='navigation')
+        .container
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse', aria-expanded='false')
+              span.sr-only Toggle navigation
+              |             
+              span.icon-bar
+              |             
+              span.icon-bar
+              |             
+              span.icon-bar
+            |           
+            a.navbar-brand(href='index.html')
+              img(alt='导航栏商标', src='../public/images/page/logo附文字蓝.png')
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='abouts.html') &#x5173;&#x4E8E;&#x6211;&#x4EEC;
+              |             
+              li
+                a(href='features.html') &#x4EA7;&#x54C1;&#x7279;&#x8272;
+              |             
+              li.active
+                a(href='cases.html') &#x6848;&#x4F8B;&#x4ECB;&#x7ECD;
+              |             
+              li
+                a(href='news.html') &#x65B0;&#x95FB;&#x8D44;&#x8BAF;
+    // 页眉end
+    .index-main
+      // 站内搜索start
+      .page-lander.text-center
+        h1
+          span(style='display: inline-block;') &#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;
+          | &nbsp;
+          span(style='display: inline-block;') &#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;
+        |       
+        p &#x51ED;&#x501F;&#x6C34;&#x9762;&#x5149;&#x4F0F;&#x9886;&#x57DF;&#x4E13;&#x4E1A;&#x6280;&#x672F;&#x7814;&#x53D1;&#xFF0C;&#x9AD8;&#x6548;&#x5229;&#x7528;&#x592A;&#x9633;&#x80FD;&#xFF0C;&#x63A8;&#x52A8;&#x5149;&#x4F0F;&#x7535;&#x7AD9;&#x5E73;&#x4EF7;&#x4E0A;&#x7F51;
+        |       
+        form(role='form')
+          input(type='text', name='searchContent')
+          button(type='sumbit', style='margin-top: -2px;') &#x641C;&#x7D22;
+      // 站内搜索end
+      // 主体内容start
+      .main-content
+        .container
+          div
+            .row
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='case.html')
+                    img(alt='', src='../public/images/page/cases/案例图1.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+              |             
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='case.html')
+                    img(alt='', src='../public/images/page/cases/案例图2.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+              |             
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='#')
+                    img(alt='', src='../public/images/page/cases/案例图1.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+              |             
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='#')
+                    img(alt='', src='../public/images/page/cases/案例图2.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+              |             
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='#')
+                    img(alt='', src='../public/images/page/cases/案例图1.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+              |             
+              .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                .thumbnail.case
+                  a(href='#')
+                    img(alt='', src='../public/images/page/cases/案例图2.png')
+                  |                 
+                  .caption
+                    h3
+                      a(href='#') &#x6848;&#x4F8B;&#x6807;&#x9898;
+                    |                   
+                    p &#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x7231;&#x6211;&#x7684;&#x54C8;&#x7EF4;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x5FEB;&#x6253;&#x6211;&#x4E0D;&#x4F1A;&#x7684;&#x963F;&#x89C9;&#xFF0C;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x770B;&#x5230;&#x5C31;&#x597D;&#x73A9;&#x5427;
+          // 分页start
+          nav.text-center
+            ul.pagination.pagination-no-border.pagination-no-separation
+              li
+                a(href='#') &laquo;
+              |             
+              li
+                a(href='#') 1
+              |             
+              li
+                a(href='#') 2
+              |             
+              li
+                a(href='#') 3
+              |             
+              li
+                a(href='#') 4
+              |             
+              li
+                a(href='#') 5
+              |             
+              li
+                a(href='#') 6
+              |             
+              li
+                a(href='#') &raquo;
+          // 分页end
+      // 主体内容end
+    // 页脚start
+    footer.site-footer
+      .footer-nav
+        // container start
+        .container
+          .row
+            .col-md-2.col-sm-4.col-xs-6
+              h3 &#x5173;&#x4E8E;&#x7EFF;&#x5316;
+              |             
+              ul.footer-list
+                li.footer-list-item
+                  a(href='#') &#x516C;&#x53F8;&#x7B80;&#x4ECB;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x4F01;&#x4E1A;&#x6587;&#x5316;
+            |           
+            .col-md-2.col-sm-4.col-xs-6
+              h3 &#x65B0;&#x95FB;&#x8D44;&#x8BAF;
+              |             
+              ul.footer-list
+                li.footer-list-item
+                  a(href='#') &#x884C;&#x4E1A;&#x80CC;&#x666F;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x70ED;&#x70B9;&#x805A;&#x7126;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x516C;&#x53F8;&#x52A8;&#x6001;
+            |           
+            .clearfix.visible-xs-block
+            |           
+            .col-md-2.col-sm-4.col-xs-6
+              h3 &#x4EA7;&#x54C1;&#x4FE1;&#x606F;
+              |             
+              ul.footer-list
+                li.footer-list-item
+                  a(href='#') &#x4EA7;&#x54C1;&#x7CFB;&#x5217;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x6848;&#x4F8B;&#x5C55;&#x793A;
+            |           
+            .clearfix.visible-sm-block
+            |           
+            .col-md-2.col-sm-4.col-xs-6
+              h3 &#x5FEB;&#x901F;&#x94FE;&#x63A5;
+              |             
+              ul.footer-list
+                li.footer-list-item
+                  a(href='feedback.html') &#x5728;&#x7EBF;&#x53CD;&#x9988;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x62DB;&#x8D24;&#x7EB3;&#x58EB;
+                |               
+                li.footer-list-item
+                  a(href='#') &#x5408;&#x4F5C;&#x4F19;&#x4F34;
+            |           
+            #wechat-code-pictures.col-md-3.col-md-offset-1.col-sm-8.col-xs-12.wechat-code-pictures
+              ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
+                li.active(role='presentation')
+                  a#home-tab(href='#home', role='tab', data-toggle='tab', aria-controls='home', aria-expanded='true') &#x5B98;&#x65B9;&#x5FAE;&#x4FE1;
+                |               
+                li(role='presentation')
+                  a#profile-tab(href='#profile', role='tab', data-toggle='tab', aria-controls='profile', aria-expanded='false') &#x683C;&#x7269;&#x79D1;&#x6280;
+              |             
+              #myWechatTabContent.tab-content
+                #home.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
+                  img(src='../public/images/page/wechat-code-picture.jpg', alt='')
+                |               
+                #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                  img(src='../public/images/page/wechat-code-picture.jpg', alt='')
+        // container end
+      |     
+      .copyright
+        // container start
+        .container
+          p.pull-left Copyright &copy; 2014-2016 &#x7EFF;&#x5316;&#x80FD;&#x6E90;&#x6709;&#x9650;&#x516C;&#x53F8;&#xFF0C;&#x4FDD;&#x7559;&#x6240;&#x6709;&#x6743;&#x5229; | &#x6D59;ICP&#x5907;15019097&#x53F7;
+          |           
+          p.pull-right
+            span
+              a(href='#') &#x6CD5;&#x5F8B;&#x58F0;&#x660E;
+            |             
+            span
+              a(href='#') &#x9690;&#x79C1;&#x4FDD;&#x62A4;
+            |             
+            span
+              a(href='#') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+            |             
+            span
+              a(href='#') &#x7F51;&#x7AD9;&#x5730;&#x56FE;
+        // container end
+    // 页脚end
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='../public/js/lib/jquery/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='../public/js/lib/bootstrap/bootstrap.min.js')
+    // 页面相关
+    script(type='text/javascript').

@@ -1,0 +1,196 @@
+extends ../layouts/default
+
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/index.css')
+
+block index-main
+	// 首页轮播start
+	#carousel-example.carousel.slide(data-ride='carousel')
+		// Indicators start
+		ol.carousel-indicators
+			li.active(data-target='#carousel-example', data-slide-to='0')
+			li(data-target='#carousel-example', data-slide-to='1')
+			li(data-target='#carousel-example', data-slide-to='2')
+			li(data-target='#carousel-example', data-slide-to='3')
+		// Indicators end
+		// Wrapper for slides
+		.carousel-inner(role='listbox')
+			.item.active
+				img(alt='slide 1', src='/images/page/index/轮播背景(600x422)1.jpg')   
+				.carousel-caption
+					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
+					h3
+						span(style='display: inline-block;') 用最先进的技术
+						| &nbsp;
+						span(style='display: inline-block;') 让生活更加美好
+					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+						span.wechat-icon 进一步了解
+			.item
+				img(alt='slide 2', src='/images/page/index/轮播背景(600x422)2.jpg')   
+				.carousel-caption
+					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
+					h3
+						span(style='display: inline-block;') 用最先进的技术
+						| &nbsp;
+						span(style='display: inline-block;') 让生活更加美好
+					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+						span.wechat-icon 进一步了解
+			.item
+				img(alt='slide 3', src='/images/page/index/轮播背景(600x422)3.jpg')   
+				.carousel-caption
+					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')    
+					h3
+						span(style='display: inline-block;') 用最先进的技术
+						| &nbsp;
+						span(style='display: inline-block;') 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+						span.wechat-icon 进一步了解
+			.item
+				img(alt='slide 4', src='/images/page/index/轮播背景(600x422)4.jpg')   
+				.carousel-caption
+					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')    
+					h3
+						span(style='display: inline-block;') 用最先进的技术
+						| &nbsp;
+						span(style='display: inline-block;') 让生活更加美好
+					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+						span.wechat-icon 进一步了解
+		// Control for slides
+		a.left.carousel-control(href='#carousel-example', role='button', data-slide='prev')
+			// <span class="slide-left" aria-hidden="true"></span>
+			span.glyphicon.glyphicon-chevron-left
+			span.sr-only Previous
+		a.right.carousel-control(href='#carousel-example', role='button', data-slide='next')
+			// <span class="slide-right" aria-hidden="true"></span>
+			span.glyphicon.glyphicon-chevron-right
+			span.sr-only Next
+	// 首页轮播end
+	// 公司简介start
+	.introductions
+		img.absolute-img-before(src='/images/page/index/圆弧顶.png', alt='')
+		.container
+			.section-header
+				h2 公司简介
+				p 福建绿华能源投资有限公司成立于2014年，主营水面光伏电站设计制造业务，通过提供水面光伏技术实现可再生能源高效利用解决方案，致力于为全世界奉献更为清洁的能源。
+			#nav-tabs-example
+				#myTabs.row.text-center.nav(role='tablist')
+					.col-lg-3.col-md-3.col-sm-3.col-xs-3.active(role='presentation')
+						a#tab-1.introduction-label.img-circle(href='#tab-content-1', role='tab', data-toggle='tab', aria-controls='tab-content-1', aria-expanded='true') 行业背景
+					.col-lg-3.col-md-3.col-sm-3.col-xs-3(role='presentation')
+						a#tab-2.introduction-label.img-circle(href='#tab-content-2', role='tab', data-toggle='tab', aria-controls='tab-content-2', aria-expanded='true') 技术突破
+					.col-lg-3.col-md-3.col-sm-3.col-xs-3(role='presentation')
+						a#tab-3.introduction-label.img-circle(href='#tab-content-3', role='tab', data-toggle='tab', aria-controls='tab-content-3', aria-expanded='true') 发展目标
+					.col-lg-3.col-md-3.col-sm-3.col-xs-3(role='presentation')
+						a#tab-4.introduction-label.img-circle(href='#tab-content-4', role='tab', data-toggle='tab', aria-controls='tab-content-4', aria-expanded='true') 企业文化
+				#myTabContent.row.text-center.tab-content
+					#tab-content-1.col-md-12.col-xs-12.introduction-content.tab-pane.fade.in.active(role='tabpanel', aria-labelledby='tab-1')
+						p 依托丰富的项目开发经验、雄厚的资金实力和专业化的技术管理团队，为客户提供全面专业的EPC+服务以及高效的管理体验。
+					#tab-content-2.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2')
+						p 采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术。
+					#tab-content-3.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3')
+						p 以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标。
+					#tab-content-4.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4')
+						p 格物致知，诚信共赢。
+		img.relative-img-after(src='/images/page/index/圆弧底.png', alt='')
+	// 公司简介end
+	// 特色优势start
+	.features
+		.container
+			.section-header
+				h2 特色优势
+			.row
+				.col-sm-4.hidden-xs.text-left
+					img.feature-picture(src='/images/page/index/功能特点图标1.png') 
+				.col-sm-4.col-xs-12.text-center
+					.feature-description
+						p 追光型水面支架
+						p
+							strong 发电量提高15%以上
+					.feature-description
+						p 复合型水面支架
+						p
+							strong 支架成本降低50%以上
+				.col-sm-4.hidden-xs.text-right
+					img.feature-picture(src='/images/page/index/功能特点图标2.png')
+	// 特色优势end
+	// 优秀案例start
+	.projects
+		.container
+			.section-header
+				h2 优秀案例
+				p 绿化拥有行业领先的水面光伏太阳能技术和丰富的项目开发经验，提供质量最可靠的产品。为客户提供价格更低、性能更高、寿命更长的太阳能解决方案。正如太阳普照万物的无私奉献，绿化的技术领导力能够使太阳能成为人人都享受的资源。
+		.container-fluid.poject-thumbnails
+			.row
+				.col-xs-3
+					a.thumbnail(href='#')
+						img(src='/images/page/index/案例缩略图（左）.png', alt='案例缩略图（左）.png') 
+				.col-xs-3
+					a.thumbnail(href='#')
+						img(src='/images/page/index/案例缩略图（次左）.png', alt='案例缩略图（次左）.png') 
+				.col-xs-3
+					a.thumbnail(href='#')
+						img(src='/images/page/index/案例缩略图（次右）.png', alt='案例缩略图（次右）.png') 
+				.col-xs-3
+					a.thumbnail(href='#')
+						img(src='/images/page/index/案例缩略图（右）.png', alt='案例缩略图（右）.png')
+			img.absolute-img-bottom(src='/images/page/index/案例分块白色底边1.png', alt='')
+	// 优秀案例end
+	// 新闻资讯start
+	.news-info
+		.container
+			.section-header
+				h2 新闻资讯
+			.row.text-center
+				.col-sm-4
+					h3
+						a(href='') 攻坚集中执行活动
+					p 2016年9月12日&nbsp;&nbsp;&nbsp;
+						a(href='#') 行业动态
+					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
+				.col-sm-4
+					h3
+						a(href='') 执行活动
+					p 2016年9月12日&nbsp;&nbsp;&nbsp;
+						a(href='#') &#行业动态
+					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
+				.col-sm-4
+					h3
+						a(href='') 攻坚活动
+					p 2016年9月12日&nbsp;&nbsp;&nbsp;
+						a(href='#') 行业动态
+					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
+	// 新闻资讯end
+	// 合作伙伴start
+	.partners
+		.container
+			.row
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/microsoft.png', alt='')   
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/quantong.png', alt='')   
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/pingan.png', alt='')   
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/momo-01.png', alt='')   
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/pingan.png', alt='')   
+				.col-sm-3.col-xs-4
+					img(src='http://www.justalkcloud.com/cn/images/momo-01.png', alt='')
+	// 合作伙伴end
+
+block js
+	// 页面相关
+	script(type='text/javascript').
+		//滚动，导航栏变化
+		$(window).on('scroll', function() {
+			if ($(window).scrollTop() > $(".site-header > .navbar:first-child").height()) {
+				$('.site-header .navbar').addClass('floating');
+				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字蓝.png');
+			} else {
+				$('.site-header .navbar').removeClass('floating');
+				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字.png');
+			}
+		});
