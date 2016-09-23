@@ -1,0 +1,113 @@
+
+.main-content {
+	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+/*新闻资讯分类*/
+.news-info-categories {
+	background-color: #eeeeee;
+}
+.news-info-categories ul {
+	margin: 0px;
+}
+.news-info-categories ul > li {
+	padding: 0px;
+}
+.news-info-categories ul > li > a {
+	display: block;
+	color: #333;
+}
+@media (max-width: 991px) {
+	.news-info-categories ul > li > a {
+		padding: 10px 16px;
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px) {
+	.news-info-categories ul > li > a {
+		padding: 14px 20px;
+		font-size: 16px;
+	}
+}
+.news-info-categories ul > li.active a,
+.news-info-categories ul > li > a:hover,
+.news-info-categories ul > li > a:focus {
+	background-color: #4f90b0;
+	color: #fff;
+	text-decoration: none;
+}
+/*新闻资讯列表*/
+.news-infos {
+	padding: 30px 0px 15px 0px;
+}
+.news-infos .media {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.news-infos .media-left {
+	padding-left: 5px;
+	padding-right: 3%;
+}
+.news-infos .media-left {
+	width: 25%;
+}
+@media (max-width: 768px) {
+	.news-infos .media-left {
+		width: 36%;
+	}
+}
+.news-infos .media-left > img {
+	width: 100%;
+}
+.news-infos .media-body {
+	position: relative;
+}
+.news-infos .media-body .media-heading {
+	margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+	.news-infos .media-body .media-heading {
+		font-size: 20px;
+	}
+}
+@media (min-width: 768px) {
+	.news-infos .media-body .media-heading {
+		font-size: 26px;
+	}
+}
+@media (min-width: 992px) {
+	.news-infos .media-body .media-heading {
+		font-size: 32px;
+	}
+}
+.news-infos .media-body .media-heading > a:hover,
+.news-infos .media-body .media-heading > a:focus {
+	text-decoration: none;
+}
+.news-infos .media-body .media-content {
+	overflow-y: hidden;
+	margin-bottom: 20px;
+	color: #555;
+	max-height: 6em;
+}
+@media (max-width: 768px) {
+	.news-infos .media-body .media-content {
+		font-size: 14px;
+	}
+}
+@media (min-width: 768px) {
+	.news-infos .media-body .media-content {
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px) {
+	.news-infos .media-body .media-content {
+		font-size: 16px;
+	}
+}
+.news-infos .media-body .media-time {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	color: #000;
+}

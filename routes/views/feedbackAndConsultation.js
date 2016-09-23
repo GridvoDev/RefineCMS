@@ -33,5 +33,5 @@ exports = module.exports = function (req, res) {
 		});
 	});
 
-	view.render('feedbackAndConsultation');
+	view.render('feedbackAndConsultation0');
 };

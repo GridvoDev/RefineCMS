@@ -1,0 +1,29 @@
+
+.main-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.main-content .container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.main-content .tab-content {
+	min-height: 640px;
+}
+
+.main-content .nav-stacked {
+	margin-bottom: 30px;
+}
+.main-content .nav-stacked > li {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+.main-content .nav-pills > li {
+	border: 1px solid #ddd;
+}
+.main-content .nav-pills > li > a {
+	border-radius: 0px;
+}
+.main-content .tab-content > .tab-pane > .breadcrumb {
+	border-radius: 0px;
+}

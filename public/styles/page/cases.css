@@ -1,0 +1,123 @@
+
+.main-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	background: #f5f5f5;
+}
+.main-content > .container {
+	padding-top: 45px;
+	padding-bottom: 20px;
+}
+
+/*案例*/
+.case.thumbnail {
+	border-radius: 0px;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+/*案例——图*/
+.case.thumbnail > .caption > a > img {
+	width: 100%;
+}
+/*案例——概要*/
+.case.thumbnail > .caption {
+	width: 100%;
+	background: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	transition: all 0.25s ease;
+	overflow: hidden;
+}
+.case.thumbnail:hover > .caption {
+	height: 40%;
+}
+.case.thumbnail > .caption a,
+.case.thumbnail > .caption a:hover,
+.case.thumbnail > .caption a:focus {
+	color: #333;
+}
+.case.thumbnail > .caption > h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.case.thumbnail > .caption > p {
+	color: #555;
+	display: none;
+	transition: all 0.25s ease;
+}
+.case.thumbnail:hover > .caption > p {
+	display: block;
+}
+@media (max-width: 767px) {
+	.case.thumbnail > .caption > h3 {
+		font-size: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.case.thumbnail > .caption > h3 {
+		font-size: 18px;
+	}
+}
+@media (min-width: 992px) {
+	.case.thumbnail > .caption > h3 {
+		font-size: 21px;
+	}
+}
+@media (min-width: 1200px) {
+	.case.thumbnail > .caption > h3 {
+		font-size: 24px;
+	}
+}
+@media (max-width: 768px) {
+	.case.thumbnail > .caption > p {
+		font-size: 11px;
+	}
+}
+@media (min-width: 768px) {
+	.case.thumbnail > .caption > p {
+		font-size: 14px;
+	}
+}
+
+/*无边框分页*/
+@media (max-width: 767px) {
+	.main-content > .container ul.pagination > li > a {
+ 		padding: 5px 10px;
+ 		font-size: 12px;
+ 		line-height: 1.5;
+	}
+}
+@media (min-width: 768px) {
+	.main-content > .container ul.pagination > li > a {
+ 		padding: 6px 12px;
+ 		font-size: 14px;
+ 		line-height: 1.42857143;
+	}
+}
+@media (min-width: 992px) {
+	.main-content > .container ul.pagination > li > a {
+ 		padding: 10px 16px;
+ 		font-size: 18px;
+ 		line-height: 1.3333333;
+	}
+}
+.pagination-no-separation > li {
+	display: inline-block;
+	margin: 0px 3px;
+}
+.pagination-no-separation > li > a {
+	background-color: transparent;
+}
+.pagination-no-separation > li:hover > a {
+	background-color: #415464;
+	color: #fff;
+}
+.pagination-no-border > li:first-child > a,
+.pagination-no-border > li:last-child > a {
+	border-radius: 0px;
+}
+.pagination-no-border > li > a {
+	border-width: 0px;
+}

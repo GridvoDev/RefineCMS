@@ -1,0 +1,55 @@
+
+.main-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.main-content .container {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+/*路径*/
+.location {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin: 0px;
+	/*border-bottom: 1px solid #ddd;*/
+}
+.location > li.location-separator:before {
+	content: "》"
+}
+.location > li > a {
+	font-size: 16px;
+	line-height: 20px;
+	color: rgba(64, 116, 142, 0.8);
+}
+@media (max-width: 992px) {
+	.location > li > a {
+		font-size: 14px;
+	}
+}
+.location > li > a:hover,
+.location > li > a:focus {
+	color: rgb(51, 100, 127);
+	text-decoration: none;
+}
+.location > li.active > a {
+	color: #777;
+	cursor: text;
+}
+
+/*反馈表单*/
+#feedback-form {
+	margin: 30px 0px;
+}
+#feedback-form > fieldset > legend {
+	margin-bottom: 36px;
+}
+#feedback-form > fieldset > div.greetings {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#feedback-form button[type="submit"] {
+	background: #40748e;
+	border-radius: 0px;
+	margin-top: 10px;
+}

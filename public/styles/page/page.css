@@ -1,0 +1,83 @@
+
+.main-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.main-content .container {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+/*路径*/
+.location {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin: 0px;
+	border-bottom: 1px solid #ddd;
+}
+.location > li.location-separator:before {
+	content: "》"
+}
+.location > li > a {
+	font-size: 16px;
+	line-height: 20px;
+	color: rgba(64, 116, 142, 0.8);
+}
+@media (max-width: 992px) {
+	.location > li > a {
+		font-size: 14px;
+	}
+}
+.location > li > a:hover,
+.location > li > a:focus {
+	color: rgb(51, 100, 127);
+	text-decoration: none;
+}
+.location > li.active > a {
+	color: #777;
+	cursor: text;
+}
+
+/*文章*/
+.article {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+.article-header {}
+.article-note > span {
+	font-size: 14px;
+	color: #555;
+}
+.article-body {
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+.article-body > img {
+	margin-top: 20px;
+	margin-bottom: 38px;
+	max-width: 100%;
+	max-height: 540px;
+}
+@media (max-width: 767px) {
+	.article-body > img {
+		max-height: 360px;
+	}
+}
+.article-body > p {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+}
+
+/*标签*/
+.tag {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.tag-gray {
+	background: #eee;
+	color: #999;
+}

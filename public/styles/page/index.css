@@ -1,0 +1,402 @@
+/*工具*/
+.absolute-img-before {
+	position: absolute;
+	bottom: 100%;
+	margin: 0px;
+	width: 100%;
+}
+.absolute-img-top {
+	position: absolute;
+	top: 0;
+	margin: 0px;
+	width: 100%;
+}
+.absolute-img-bottom {
+	position: absolute;
+	bottom: 0;
+	margin: 0px;
+	width: 100%;
+}
+.absolute-img-after {
+	position: absolute;
+	top: 100%;
+	margin: 0px;
+	width: 100%;
+}
+.relative-img-before {
+	position: relative;
+	bottom: 100%;
+	margin: 0px;
+	width: 100%;
+}
+.relative-img-after {
+	position: relative;
+	top: 100%;
+	margin: 0px;
+	width: 100%;
+}
+
+
+/*首页轮播图片*/
+.index-main .carousel-inner > .item > img,
+.index-main .carousel-inner > .item > a > img {
+	min-width: 100%;
+	height: 60vh;
+}
+@media (min-width: 768px) {
+	.index-main .carousel-inner > .item > img,
+	.index-main .carousel-inner > .item > a > img {
+		height: auto;
+	}
+}
+/*轮播中字幕*/
+.index-main .carousel-caption {
+	bottom: 30%;
+	max-height: 72%;
+	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.index-main .carousel-caption > img {
+		width: 18%;
+}
+.index-main .carousel-caption > h3 {
+	margin-top: 1em;
+}
+.index-main .carousel-caption > p {
+	margin-top: 1em;
+	margin-bottom: 10%;
+	color: #eee;
+}
+@media (max-width: 767px) {
+	.index-main .carousel-caption > h3 {
+		font-size: 26px;
+	}
+	.index-main .carousel-caption > p {
+		font-size: 11px;
+	}
+}
+@media (min-width: 768px) {
+	.index-main .carousel-caption > h3 {
+		font-size: 32px;
+	}
+	.index-main .carousel-caption > p {
+		font-size: 13px;
+	}
+}
+@media (min-width: 992px) {
+	.index-main .carousel-caption > h3 {
+		font-size: 42px;
+	}
+	.index-main .carousel-caption > p {
+		font-size: 18px;
+	}
+}
+@media (min-width: 1200px) {
+	.index-main .carousel-caption > h3 {
+		font-size: 50px;
+	}
+	.index-main .carousel-caption > p {
+		font-size: 24px;
+	}
+}
+.index-main .carousel-caption > .btn-default {
+	border-radius: 17px;
+}
+.index-main .carousel-caption > .btn-lg {
+	border-radius: 23px;
+}
+@media (max-width: 767px) {
+	.index-main .carousel-caption > .btn-lg {
+		transform: scale(0.6,0.6);
+	}
+}
+.wechat-icon:before {
+	display: inline-block;
+	margin-right: 10px;
+	background-image: url(../../images/page/index/微信图标.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	content: "";
+}
+.index-main .carousel-caption > .btn-default > .wechat-icon:before {
+	margin-bottom: -6px;
+	width: 22.5px;
+	height: 20px;
+}
+.index-main .carousel-caption > .btn-lg > .wechat-icon:before {
+	margin-bottom: -6px;
+	width: 27px;
+	height: 24px;
+}
+/*轮播中左、右滑*/
+/*.slide-left:before {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	display: inline-block;
+	margin-top: -20px;
+	margin-left: -20px;
+	width: 45px;
+	height: 45px;
+	background-image: url(../../images/page/index/左滑动图标白色.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	content: "";
+}
+.slide-right:before {
+	position: absolute;
+	top: 40%;
+	right: 50%;
+	display: inline-block;
+	margin-top: -20px;
+	margin-right: -20px;
+	width: 45px;
+	height: 45px;
+	background-image: url(../../images/page/index/右滑动图标白色.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	content: "";
+}*/
+
+/*主体各节的标题、概要*/
+.section-header {
+	margin-bottom: 5.26%;
+	text-align: center;
+}
+.section-header h2 {
+	font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2.7%;
+    margin-bottom: 3.68%;
+}
+@media (max-width: 767px) {
+	.section-header h2 {
+		font-size: 22px;
+	}
+}
+@media (min-width: 768px) {
+	.section-header h2 {
+		font-size: 30px;
+	}
+}
+@media (min-width: 992px) {
+	.section-header h2 {
+		font-size: 36px;
+	}
+}
+.section-header h2:after {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 20%;
+	height: 48px;
+	margin-left: -10%;
+	margin-bottom: -24px;
+	background-image: url(../../images/page/index/大标题下标.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	content: "";
+}
+.section-header p {
+	font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+@media (max-width: 767px) {
+	.section-header p {
+		font-size: 14px;
+	}
+}
+@media (min-width: 768px) {
+	.section-header p {
+		font-size: 16px;
+	}
+}
+@media (min-width: 992px) {
+	.section-header p {
+		font-size: 20px;
+	}
+}
+
+/*公司简介*/
+.introductions {
+    position: relative;
+    z-index: 16;
+}
+.introductions > .container {
+	margin-top: -4.8%;
+	margin-bottom: -4.8%;
+}
+.introductions > img:first-child {
+	margin-bottom: -4.8%;
+}
+.introductions > img:last-child {
+	background: #f1f4f9;
+	margin-top: -4.8%;
+	z-index: -1;
+}
+.introductions div.row {
+	margin-top: 5.2%;
+}
+.introduction-label {
+	display: block;
+    margin: auto;
+    width: 80%;
+    height: 0;
+    padding: 40% 0%;
+    box-sizing: content-box;
+    line-height: 0;
+    color: #555;
+    font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 8px solid #ccc;
+}
+@media (max-width: 767px) {
+	.introduction-label {
+		font-size: 12px;
+		border: 6px solid #ccc;
+	}
+}
+.introduction-label:hover,
+.introduction-label:focus {
+	color: #274d67;
+	border-color: #274d67;
+	text-decoration: none;
+}
+.introduction-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 103px;
+	/*overflow-y: hidden;*/
+}
+@media (max-width: 767px) {
+	.introduction-content {
+		font-size: 12px;
+	}
+}
+@media (min-width: 768px) {
+	.introduction-content {
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px) {
+	.introduction-content {
+		font-size: 18px;
+	}
+}
+
+/*特色优势*/
+.features {
+	padding-top: 5.2%;
+	background-color: #f1f4f9;
+}
+img.feature-picture {
+	width: 80%;
+}
+.feature-description {
+	margin-bottom: 40px;
+}
+.feature-description > p {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.feature-description > p > strong {
+	font-weight: bolder;
+	color: green;
+}
+@media (max-width: 767px) {
+	.feature-description > p {
+		font-size: 14px;
+	}
+	.feature-description > p > strong {
+		font-size: 18px;
+	}
+}
+@media (min-width: 768px) {
+	.feature-description > p {
+		font-size: 20px;
+	}
+	.feature-description > p > strong {
+		font-size: 24px;
+	}
+}
+@media (min-width: 992px) {
+	.feature-description > p {
+		font-size: 24px;
+	}
+	.feature-description > p > strong {
+		font-size: 30px;
+	}
+}
+
+/*优秀案例*/
+.projects {
+	padding-top: 5.2%;
+	background-color: #f1f4f9;
+}
+.poject-thumbnails {
+	overflow-x: hidden;/*hack*/
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: white;
+	position: relative;
+}
+.projects .row {
+	margin-left: -1px;
+	margin-right: -1px;
+}
+.projects .row > .col-xs-3 {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.projects .thumbnail {
+	border: 0px;
+	border-radius: 0px;
+	padding: 0px;
+}
+.projects .thumbnail > img {
+	width: 100%;
+}
+.poject-thumbnails > img {
+	bottom: 20px
+}
+
+/*新闻简介*/
+.news-info {
+	padding-top: 5.2%;
+}
+.news-info .col-sm-4 {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.news-info .col-sm-4 > h3 > a {
+	color: #333;
+}
+@media (max-width: 767px) {
+	.news-info .col-sm-4 > h3 {
+		font-size: 18px;
+	}
+}
+.news-info .col-sm-4 > h3 > a:hover,
+.news-info .col-sm-4 > h3 > a:focus {
+	color: #000;
+	text-decoration: none;
+}
+.news-info .col-sm-4 > p {
+	color: #555;
+}
+.news-info .col-sm-4 > p > a:hover,
+.news-info .col-sm-4 > p > a:focus {
+	text-decoration: none;
+}
+
+/*合作伙伴*/
+.partners {
+	background-color: #f1f4f9;
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.partners .col-sm-3 > img {
+	width: 100%;
+}
