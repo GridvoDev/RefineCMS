@@ -38,5 +38,5 @@ exports = module.exports = function (req, res) {
 	});
 
 	// Render the view
-	view.render('newsInfo0');
+	view.render('news-info');
 };

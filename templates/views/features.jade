@@ -1,213 +1,57 @@
-doctype html
-html(lang='zh-CN')
-  head
-    meta(charset='utf-8')
-    |   
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    |   
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    // 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！
-    title &#x4EA7;&#x54C1;&#x7279;&#x8272;
-    // Bootstrap
-    link(href='../public/styles/lib/bootstrap/bootstrap.min.css', rel='stylesheet')
-    // the site base style
-    link(rel='stylesheet', type='text/css', href='../public/styles/page/base.css')
-    // the news page's style
-    link(rel='stylesheet', type='text/css', href='../public/styles/page/features.css')
-    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    // WARNING: Respond.js doesn't work if you view the page via file://
-    //if lt IE 9
-      script(src='//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js')
-      |     
-      script(src='//cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
-  body
-    // 页眉start
-    header.site-header
-      nav.navbar.navbar-fixed-top.floating(role='navigation')
-        .container
-          // Brand and toggle get grouped for better mobile display
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse', aria-expanded='false')
-              span.sr-only Toggle navigation
-              |             
-              span.icon-bar
-              |             
-              span.icon-bar
-              |             
-              span.icon-bar
-            |           
-            a.navbar-brand(href='index.html')
-              img(alt='导航栏商标', src='../public/images/page/logo附文字蓝.png')
-          // Collect the nav links, forms, and other content for toggling
-          #bs-example-navbar-collapse.collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='abouts.html') &#x5173;&#x4E8E;&#x6211;&#x4EEC;
-              |             
-              li.active
-                a(href='features.html') &#x4EA7;&#x54C1;&#x7279;&#x8272;
-              |             
-              li
-                a(href='cases.html') &#x6848;&#x4F8B;&#x4ECB;&#x7ECD;
-              |             
-              li
-                a(href='news.html') &#x65B0;&#x95FB;&#x8D44;&#x8BAF;
-    // 页眉end
-    .index-main
-      // 站内搜索start
-      .page-lander.text-center
-        h1
-          span(style='display: inline-block;') &#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;
-          | &nbsp;
-          span(style='display: inline-block;') &#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;
-        |       
-        p &#x51ED;&#x501F;&#x6C34;&#x9762;&#x5149;&#x4F0F;&#x9886;&#x57DF;&#x4E13;&#x4E1A;&#x6280;&#x672F;&#x7814;&#x53D1;&#xFF0C;&#x9AD8;&#x6548;&#x5229;&#x7528;&#x592A;&#x9633;&#x80FD;&#xFF0C;&#x63A8;&#x52A8;&#x5149;&#x4F0F;&#x7535;&#x7AD9;&#x5E73;&#x4EF7;&#x4E0A;&#x7F51;
-        //
-          <form role="form">
-          <input type="text" name="searchContent" /><button type="sumbit" style="margin-top: -2px;">搜索</button>
-          </form>
-      // 站内搜索end
-      // 主体内容start
-      .main-content
-        .content-block.content-block-gray
-          .container
-            .row
-              .col-sm-5.hidden-xs.feature-pic.feature-pic-left
-                img(src='../public/images/page/features/产品特色图1.png', alt='')
-              |             
-              .col-sm-5.col-xs-12.feature-body
-                h2 &#x4EA7;&#x54C1;&#x7279;&#x8272;&#x4E00;
-                |               
-                p
-                  | &#x5229;&#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;&#x7231;&#x6211;&#x7684;&#x4F1A;&#x628A;&#x6211;&#x7684;&#x9A84;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x50B2;&#x6211;&#x6316;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x5C31;&#x611F;&#x89C9;&#x5230;&#x963F;&#x6211;&#x89C9;&#x5F97;&#x5361;&#x6211;&#x89C9;&#x5F97;&#x963F;&#x8FBE;&#x74E6;&#x963F;&#x74E6;
-        |       
-        .content-block.content-block-white
-          .container
-            .row
-              .col-sm-5.hidden-xs.feature-pic.feature-pic-right.feature-pic-cover
-                img(src='../public/images/page/features/产品特色图2.png', alt='')
-              |             
-              .col-sm-5.col-xs-12.feature-body
-                h2 &#x4EA7;&#x54C1;&#x7279;&#x8272;&#x4E8C;
-                |               
-                p &#x5229;&#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;&#x7231;&#x6211;&#x7684;&#x4F1A;&#x628A;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x6316;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x5C31;&#x611F;&#x89C9;&#x5230;&#x963F;&#x6211;&#x89C9;&#x5F97;&#x5361;&#x6211;&#x89C9;&#x5F97;&#x963F;&#x8FBE;&#x74E6;&#x963F;&#x74E6;
-        |       
-        .content-block.content-block-gray
-          .container
-            .row
-              .col-sm-5.hidden-xs.feature-pic.feature-pic-left.feature-pic-overflow
-                img(src='../public/images/page/features/产品特色图3.png', alt='')
-              |             
-              .col-sm-5.col-xs-12.feature-body
-                h2 &#x4EA7;&#x54C1;&#x7279;&#x8272;&#x4E09;
-                |               
-                p &#x5229;&#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;&#x7231;&#x6211;&#x7684;&#x4F1A;&#x628A;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x6316;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x5C31;&#x611F;&#x89C9;&#x5230;&#x963F;&#x6211;&#x89C9;&#x5F97;&#x5361;&#x6211;&#x89C9;&#x5F97;&#x963F;&#x8FBE;&#x74E6;&#x963F;&#x74E6;
-        |       
-        .content-block.content-block-white
-          .container
-            .row
-              .col-sm-5.hidden-xs.feature-pic.feature-pic-right
-                img(src='../public/images/page/features/产品特色图4.png', alt='')
-              |             
-              .col-sm-5.col-xs-12.feature-body
-                h2 &#x4EA7;&#x54C1;&#x7279;&#x8272;&#x56DB;
-                |               
-                p &#x5229;&#x7528;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x8BA9;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7F8E;&#x597D;&#x7231;&#x6211;&#x7684;&#x4F1A;&#x628A;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;&#x6316;&#x4E01;&#x5821;&#x7231;&#x6211;&#x7684;&#x9A84;&#x50B2;&#x6211;v&#x6253;&#x5B8C;&#x5C31;&#x611F;&#x89C9;&#x5230;&#x963F;&#x6211;&#x89C9;&#x5F97;&#x5361;&#x6211;&#x89C9;&#x5F97;&#x963F;&#x8FBE;&#x74E6;&#x963F;&#x74E6;
-      // 主体内容end
-    // 页脚start
-    footer.site-footer
-      .footer-nav
-        // container start
-        .container
-          .row
-            .col-md-2.col-sm-4.col-xs-6
-              h3 &#x5173;&#x4E8E;&#x7EFF;&#x5316;
-              |             
-              ul.footer-list
-                li.footer-list-item
-                  a(href='#') &#x516C;&#x53F8;&#x7B80;&#x4ECB;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x4F01;&#x4E1A;&#x6587;&#x5316;
-            |           
-            .col-md-2.col-sm-4.col-xs-6
-              h3 &#x65B0;&#x95FB;&#x8D44;&#x8BAF;
-              |             
-              ul.footer-list
-                li.footer-list-item
-                  a(href='#') &#x884C;&#x4E1A;&#x80CC;&#x666F;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x70ED;&#x70B9;&#x805A;&#x7126;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x516C;&#x53F8;&#x52A8;&#x6001;
-            |           
-            .clearfix.visible-xs-block
-            |           
-            .col-md-2.col-sm-4.col-xs-6
-              h3 &#x4EA7;&#x54C1;&#x4FE1;&#x606F;
-              |             
-              ul.footer-list
-                li.footer-list-item
-                  a(href='#') &#x4EA7;&#x54C1;&#x7CFB;&#x5217;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x6848;&#x4F8B;&#x5C55;&#x793A;
-            |           
-            .clearfix.visible-sm-block
-            |           
-            .col-md-2.col-sm-4.col-xs-6
-              h3 &#x5FEB;&#x901F;&#x94FE;&#x63A5;
-              |             
-              ul.footer-list
-                li.footer-list-item
-                  a(href='feedback.html') &#x5728;&#x7EBF;&#x53CD;&#x9988;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x62DB;&#x8D24;&#x7EB3;&#x58EB;
-                |               
-                li.footer-list-item
-                  a(href='#') &#x5408;&#x4F5C;&#x4F19;&#x4F34;
-            |           
-            #wechat-code-pictures.col-md-3.col-md-offset-1.col-sm-8.col-xs-12.wechat-code-pictures
-              ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
-                li.active(role='presentation')
-                  a#home-tab(href='#home', role='tab', data-toggle='tab', aria-controls='home', aria-expanded='true') &#x5B98;&#x65B9;&#x5FAE;&#x4FE1;
-                |               
-                li(role='presentation')
-                  a#profile-tab(href='#profile', role='tab', data-toggle='tab', aria-controls='profile', aria-expanded='false') &#x683C;&#x7269;&#x79D1;&#x6280;
-              |             
-              #myWechatTabContent.tab-content
-                #home.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
-                  img(src='../public/images/page/wechat-code-picture.jpg', alt='')
-                |               
-                #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-                  img(src='../public/images/page/wechat-code-picture.jpg', alt='')
-        // container end
-      |     
-      .copyright
-        // container start
-        .container
-          p.pull-left Copyright &copy; 2014-2016 &#x7EFF;&#x5316;&#x80FD;&#x6E90;&#x6709;&#x9650;&#x516C;&#x53F8;&#xFF0C;&#x4FDD;&#x7559;&#x6240;&#x6709;&#x6743;&#x5229; | &#x6D59;ICP&#x5907;15019097&#x53F7;
-          |           
-          p.pull-right
-            span
-              a(href='#') &#x6CD5;&#x5F8B;&#x58F0;&#x660E;
-            |             
-            span
-              a(href='#') &#x9690;&#x79C1;&#x4FDD;&#x62A4;
-            |             
-            span
-              a(href='#') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
-            |             
-            span
-              a(href='#') &#x7F51;&#x7AD9;&#x5730;&#x56FE;
-        // container end
-    // 页脚end
-    // jQuery (necessary for Bootstrap's JavaScript plugins)
-    script(src='../public/js/lib/jquery/jquery.min.js')
-    // Include all compiled plugins (below), or include individual files as needed
-    script(src='../public/js/lib/bootstrap/bootstrap.min.js')
-    // 页面相关
-    script(type='text/javascript').
+extends ../layouts/default
+
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/features.css')
+
+block index-main
+	// 站内搜索start
+	.page-lander.text-center
+		h1
+			span(style='display: inline-block;') 用最先进的技术
+			| &nbsp;
+			span(style='display: inline-block;') 让生活更加美好
+		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+		//
+			<form role="form">
+			<input type="text" name="searchContent" /><button type="sumbit" style="margin-top: -2px;">搜索</button>
+			</form>
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		.content-block.content-block-gray
+			.container
+				.row
+					.col-sm-5.hidden-xs.feature-pic.feature-pic-left
+						img(src='/images/page/features/产品特色图1.png', alt='')
+					.col-sm-5.col-xs-12.feature-body
+						h2 产品特色一
+						p 利用最先进的技术，让生活更加美好爱我的会把我的骄丁堡爱我的骄傲我v打完丁堡爱我的骄傲我v打完丁堡爱我的骄傲我v打完傲我挖丁堡爱我的骄傲我v打完就感觉到阿我觉得卡我觉得阿达瓦阿瓦
+		.content-block.content-block-white
+			.container
+				.row
+					.col-sm-5.hidden-xs.feature-pic.feature-pic-right.feature-pic-cover
+						img(src='/images/page/features/产品特色图2.png', alt='')
+					.col-sm-5.col-xs-12.feature-body
+						h2 产品特色二
+						p 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖丁堡爱我的骄傲我v打完就感觉到阿我觉得卡我觉得阿达瓦阿瓦
+		.content-block.content-block-gray
+			.container
+				.row
+					.col-sm-5.hidden-xs.feature-pic.feature-pic-left.feature-pic-overflow
+						img(src='/images/page/features/产品特色图3.png', alt='')
+					.col-sm-5.col-xs-12.feature-body
+						h2 产品特色三
+						p 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖丁堡爱我的骄傲我v打完丁堡爱我的骄傲我v打完丁堡爱我的骄傲我v打完就感觉到阿我觉得卡我觉得阿达瓦阿瓦
+		.content-block.content-block-white
+			.container
+				.row
+					.col-sm-5.hidden-xs.feature-pic.feature-pic-right
+						img(src='/images/page/features/产品特色图4.png', alt='')
+					.col-sm-5.col-xs-12.feature-body
+						h2 产品特色四
+						p 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖丁堡爱我的骄傲我v打完就感觉到阿我觉得卡我觉得阿达瓦阿瓦
+	// 主体内容end
+
+block js
+	// 页面相关
+	script(type='text/javascript').
