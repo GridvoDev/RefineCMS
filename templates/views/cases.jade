@@ -11,8 +11,8 @@ block index-main
 			| &nbsp;
 			span(style='display: inline-block;') 让生活更加美好
 		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form(role='form' action='/cases' method='get')
-			input(type='text', name='searchContent')
+		form#searchForm(role='form' action='/cases' method='get')
+			input#searchContent(type='text', name='searchContent', value=filters.searchContent?''+filters.searchContent:'')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
 	// 主体内容start
@@ -33,30 +33,33 @@ block index-main
 			nav.text-center
 				ul.pagination.pagination-no-border.pagination-no-separation
 					li
-						a(href=data.cases.currentPage-data.cases.currentPage%6==0 ? 'javascript:;' : '/cases?page='+(data.cases.currentPage-6)) «
+						a(href=data.cases.currentPage-data.cases.currentPage%6==0 ? 'javascript:;' : 'javascript:generateUrlWithSearch('+(data.cases.currentPage-6)+')') «
 					if data.cases.currentPage-data.cases.currentPage%6+1 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==1?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+1}')= data.cases.currentPage-data.cases.currentPage%6+1
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+1})')= data.cases.currentPage-data.cases.currentPage%6+1
 					if data.cases.currentPage-data.cases.currentPage%6+2 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==2?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+2}')= data.cases.currentPage-data.cases.currentPage%6+2
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+2})')= data.cases.currentPage-data.cases.currentPage%6+2
 					if data.cases.currentPage-data.cases.currentPage%6+3 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==3?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+3}')= data.cases.currentPage-data.cases.currentPage%6+3
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+3})')= data.cases.currentPage-data.cases.currentPage%6+3
 					if data.cases.currentPage-data.cases.currentPage%6+4 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==4?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+4}')= data.cases.currentPage-data.cases.currentPage%6+4
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+4})')= data.cases.currentPage-data.cases.currentPage%6+4
 					if data.cases.currentPage-data.cases.currentPage%6+5 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==5?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+5}')= data.cases.currentPage-data.cases.currentPage%6+5
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+5})')= data.cases.currentPage-data.cases.currentPage%6+5
 					if data.cases.currentPage-data.cases.currentPage%6+6 <= data.cases.totalPages
 						li(class=data.cases.currentPage%6==6?'active':'')
-							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+6}')= data.cases.currentPage-data.cases.currentPage%6+6
+							a(href='javascript:generateUrlWithSearch(#{data.cases.currentPage-data.cases.currentPage%6+6})')= data.cases.currentPage-data.cases.currentPage%6+6
 					li
-						a(href=data.cases.currentPage+6>data.cases.totalPages ? 'javascript:;' : '/cases?page='+(data.cases.currentPage+6)) »
+						a(href=data.cases.currentPage+6>data.cases.totalPages ? 'javascript:;' : 'javascript:generateUrlWithSearch('+(data.cases.currentPage+6)+')') »
 			// 分页end
 	// 主体内容end
 
 block js
 	// 页面相关
 	script(type='text/javascript').
+		function generateUrlWithSearch(page) {
+			window.location.href = '/cases?page='+page+'&searchContent='+document.getElementById('searchContent').value;
+		}

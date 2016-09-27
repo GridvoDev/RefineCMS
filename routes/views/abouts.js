@@ -16,7 +16,6 @@ exports = module.exports = function (req, res) {
 		privacyPolicies: {},
 	};
 
-	// Load the current about TODO 注释规范下
 	view.on('init', function (next) {
 
 		async.parallel([

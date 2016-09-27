@@ -11,8 +11,8 @@ block index-main
 			| &nbsp;
 			span(style='display: inline-block;') 让生活更加美好
 		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form(role='form' action='/cases' method='get')
-			input(type='text', name='searchContent')
+		form#searchForm(role='form' action='/cases' method='get')
+			input#searchContent(type='text', name='searchContent', value=filters.searchContent?''+filters.searchContent:'')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
 	

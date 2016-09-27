@@ -49,10 +49,10 @@ FeedbackConsultation.schema.methods.sendNotificationEmail = function (callback) 
 		}).send({
 			to: admins,
 			from: {
-				name: 'GridvoCMS',
-				email: 'contact@gridvocms.com',
+				name: 'keystone test',//
+				email: 'contact@keystone-test.com',//
 			},
-			subject: 'New FeedbackConsultation for GridvoCMS',
+			subject: 'New Enquiry for keystone test',
 			enquiry: enquiry,
 		}, callback);
 	});

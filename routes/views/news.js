@@ -10,6 +10,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'news';
 	locals.filters = {
 		category: req.params.category,
+		searchContent: null,
 	};
 	locals.data = {
 		newsInfos: [],
@@ -69,6 +70,11 @@ exports = module.exports = function (req, res) {
 			.sort('-publishedDate')
 			.populate('categories');
 
+		if (req.query.searchContent && req.query.searchContent.length > 0) {
+			locals.filters.searchContent = req.query.searchContent;
+			var qs = new RegExp(req.query.searchContent);
+			q = q.where('title', qs);
+		}
 		if (locals.data.category) {
 			q.where('categories').in([locals.data.category]);
 		}

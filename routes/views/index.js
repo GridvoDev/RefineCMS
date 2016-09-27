@@ -22,7 +22,7 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
 		async.parallel([
 			function (callback) {
-				keystone.list('CarouselPicture').model.find().exec(callback);
+				keystone.list('CarouselPicture').model.find().sort('-location').exec(callback);
 			},
 			function (callback) {
 				keystone.list('Introduction').model.findOne().exec(callback);

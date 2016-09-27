@@ -11,12 +11,12 @@ var pkg = require('./package.json');
 // and documentation.
 
 keystone.init({
-	'name': 'GridvoCMS',
-	'brand': '格物管理后台',
+	'name': 'REFINECMS',
+	'brand': '绿华管理后台',
 
 	'less': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': '/public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
 
@@ -29,7 +29,7 @@ keystone.init({
 	'session store': 'mongo',
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': process.env.COOKIE_SECRET || 'gridvocms',
+	'cookie secret': process.env.COOKIE_SECRET || 'refinecms',
 	
 	'logger': 'combined',
 	

@@ -57,7 +57,7 @@ exports = module.exports = function (app) {
 	app.get('/cases/:case', routes.views.case);
 	app.get('/news/:category?', routes.views.news);
 	app.get('/news/information/:newsInfo', routes.views.newsInfo);
-	app.all('/feedback', routes.views.feedbackAndConsultation);
+	// app.all('/feedback', routes.views.feedbackAndConsultation);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

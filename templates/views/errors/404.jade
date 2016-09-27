@@ -2,9 +2,15 @@ extends ../../layouts/default
 
 block index-main
 	.container
-		h1!=errorTitle || 'Not found (404)'
-		if 'object' == typeof errorMsg
-			div(style='margin: 30px 0;').debug!= htmlStringify(errorMsg)
-		else
-			p.lead!= utils.textToHTML(errorMsg) || 'Sorry, the page you requested can\'t be found.'
-		p: a(href='/').btn.btn-primary.btn-lg 回到首页
+		h1 抱歉，您要的页面找不到了
+		p 如有问题，请
+			a(href='/abouts') 联系我们
+			| 或者
+			a(href='feedback') 反馈给我们
+			| ~
+		//h1!=errorTitle || 'Not found (404)'
+		//if 'object' == typeof errorMsg
+		//	div(style='margin: 30px 0;').debug!= htmlStringify(errorMsg)
+		//else
+		//	p.lead!= utils.textToHTML(errorMsg) || 'Sorry, the page you requested can\'t be found.'
+		//p: a(href='/').btn.btn-primary.btn-lg 回到首页

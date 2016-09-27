@@ -14,7 +14,6 @@ exports = module.exports = function (req, res) {
 		case: {},
 	};
 
-	// Load the current case
 	view.on('init', function (next) {
 
 		keystone.list('Case').model.findOne({

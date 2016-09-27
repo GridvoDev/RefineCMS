@@ -15,24 +15,23 @@ var keystone = require('keystone');
 
 module.exports = {
 
-	/** New Enquiry Notifications */
+	/** New FeedbackConsultation Notifications */
 	'enquiry-notification': function (req, res, callback) {
 		// To test enquiry notifications we create a dummy enquiry that
 		// is not saved to the database, but passed to the template.
 
-		var Enquiry = keystone.list('Enquiry');
+		var FeedbackConsultation = keystone.list('FeedbackConsultation');
 
-		var newEnquiry = new Enquiry.model({
-			name: { first: 'Test', last: 'User' },
-			email: 'contact@gridvocms.com',
-			phone: '+61 2 1234 5678',
+		var newFeedbackConsultation = new FeedbackConsultation.model({
+			title: 'Test Title',
+			email: 'contact@keystone-test.com',//
 			enquiryType: 'message',
 			message: { md: 'Nice enquiry notification.' },
 		});
 
 		callback(null, {
 			admin: 'Admin User',
-			enquiry: newEnquiry,
+			enquiry: newFeedbackConsultation,
 			enquiry_url: '/keystone/enquiries/',
 		});
 	},
