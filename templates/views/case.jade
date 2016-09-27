@@ -11,7 +11,7 @@ block index-main
 			| &nbsp;
 			span(style='display: inline-block;') 让生活更加美好
 		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form(role='form')
+		form(role='form' action='/cases' method='get')
 			input(type='text', name='searchContent')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
@@ -21,23 +21,20 @@ block index-main
 		.container
 			ul.location.list-unstyled.list-inline
 				li
-					a(href='#') 首页
+					a(href='/') 首页
 				li.location-separator
 				li
-					a(href='#') 案例介绍
+					a(href='/cases') 案例介绍
 				li.location-separator
 				li.active
-					a(href='javascript:;') 彩虹新能源:光伏玻璃生产工艺技术达国际领先水平
+					a(href='javascript:;')= data.case.title
 			article.article
-				h1.article-header 彩虹新能源:光伏玻璃生产工艺技术达国际领先水平
+				h1.article-header= data.case.title
 				p.article-note
-					span 2016-09-08 18:00
+					span= data.case._.finishedDate.format('YYYY-MM-DD')
 				.article-body
-					img(src='/images/page/case/案例图片1.png')
-					p 9月7日，彩虹集团新能源股份有限公司(00438.HK)自主研发的“750吨/日光伏玻璃全氧燃烧窑炉工艺及产业化”科技成果通过了由中国电项自主知识产权，关键技术达到国际先进水平，其中窑炉结构设计、工艺控制技术处于国际领先。
-					p 9月7日，彩虹T集团新能源股份有限公司(00438.HK)自主研发的“750吨/日光伏玻璃全氧燃烧窑炉工艺及产业化”科技成果通过了由中国电子学会组
-					p 9月7日，彩虹集团新能源股份有限公司(00438.HK)自主研发的“750吨/日光伏玻璃全氧燃烧窑炉工艺及产业化”科技成果通过了由中国电子学会组织的专家委员会鉴定。鉴定委员会专家一致认为：750吨/日光伏玻璃全氧燃烧窑炉具有低能耗、低排放、高效率等特点，形成了多项自主知识产权，关键技术达到国际先进水平，其中窑炉结构设计、工艺控制技术处于国际领先。子学会组织的专家委员会鉴定。鉴定委员会专家一致认为：750吨/日光伏玻璃全氧燃烧窑炉具有低能耗、低排放、高效率等特点，形成了多项自主知识产权，关键技术达到国际先进水平，其中窑炉结构设计、工艺控制技术处于国际领先。
-					p 9月7日，彩虹集团新能源股份有限公司(00438.HK)自主研发的“750吨/日光伏玻璃全氧燃烧窑炉工艺及产业化”科技成果通过了由中国电子学会组织的专家委员会鉴定。鉴定委员会专家一致认为：750吨/日光伏玻璃全氧燃烧窑炉具有低能耗、低排放、高效率等特点，形成了多项自主知识产权，关键技术达到国际先进水平，其中窑炉结构设计、工艺控制技术处于国际领先。
+					img(src=data.case.overviewImage.path.substring(6)+data.case.overviewImage.filename)
+					!= data.case.content.full
 	// 主体内容end
 block js
 	// 页面相关

@@ -8,11 +8,11 @@ html(lang='zh-CN')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		
 		// 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！
-		title= title || '格物科技'
+		title= title || '绿华能源'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 		
 		// Bootstrap
-		link(href='/styles/lib/bootstrap/bootstrap.min.css', rel='stylesheet')
+		link(href='/styles/lib/bootstrap/bootstrap.css', rel='stylesheet')
 		// the site base style
 		link(rel='stylesheet', type='text/css', href='/styles/page/common/base.css')
 		// the index page's style
@@ -39,19 +39,13 @@ html(lang='zh-CN')
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand(href='index.html')
-							img(alt='导航栏商标', src='/images/page/logo附文字蓝.png')
+						a.navbar-brand(href='/')
+							img(alt='导航栏商标', src='/images/page/logo附文字green.png')
 					// Collect the nav links, forms, and other content for toggling
 					#bs-example-navbar-collapse.collapse.navbar-collapse
 						ul.nav.navbar-nav.navbar-right
-							li
-								a(href='abouts.html') 关于我们
-							li
-								a(href='features.html') 产品特色
-							li
-								a(href='cases.html') 案例介绍
-							li
-								a(href='news.html') 新闻资讯
+							each link in navLinks
+								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 		// 页眉end
 		
 		.index-main
@@ -67,42 +61,40 @@ html(lang='zh-CN')
 							h3 关于绿华
 							ul.footer-list
 								li.footer-list-item
-									a(href='#') 公司简介
-								li.footer-list-item
-									a(href='#') 企业文化
+									a(href='/abouts') 公司简介
 						.col-md-2.col-sm-4.col-xs-6
 							h3 新闻资讯
 							ul.footer-list
 								li.footer-list-item
-									a(href='#') 行业背景
+									a(href='/news/57bfe964ec960ce9277c8a82') 行业背景
 								li.footer-list-item
-									a(href='#') 热点聚焦
+									a(href='/news/57bfff7b56fe87d81ef33f72') 热点聚焦
 								li.footer-list-item
-									a(href='#') 公司动态
+									a(href='/news/57bfff8656fe87d81ef33f73') 公司动态
 						.clearfix.visible-xs-block
 						.col-md-2.col-sm-4.col-xs-6
 							h3 产品信息
 							ul.footer-list
 								li.footer-list-item
-									a(href='#') 产品系列
+									a(href='/products') 产品系列
 								li.footer-list-item
-									a(href='#') 案例展示
+									a(href='/cases') 案例展示
 						.clearfix.visible-sm-block
 						.col-md-2.col-sm-4.col-xs-6
 							h3 快速链接
 							ul.footer-list
 								li.footer-list-item
-									a(href='feedback.html') 在线反馈
+									a(href='/feedback') 在线反馈
 								li.footer-list-item
-									a(href='#') 招贤纳士
+									a(href='/abouts') 招贤纳士
 								li.footer-list-item
-									a(href='#') 合作伙伴
+									a(href='/abouts') 合作伙伴
 						#wechat-code-pictures.col-md-3.col-md-offset-1.col-sm-8.col-xs-12.wechat-code-pictures
 							ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
 								li.active(role='presentation')
 									a#home-tab(href='#home', role='tab', data-toggle='tab', aria-controls='home', aria-expanded='true') 官方微信
 								li(role='presentation')
-									a#profile-tab(href='#profile', role='tab', data-toggle='tab', aria-controls='profile', aria-expanded='false') 格物科技
+									a#profile-tab(href='#profile', role='tab', data-toggle='tab', aria-controls='profile', aria-expanded='false') 绿华能源
 							#myWechatTabContent.tab-content
 								#home.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
 									img(src='/images/page/wechat-code-picture.jpg', alt='')
@@ -115,13 +107,11 @@ html(lang='zh-CN')
 					p.pull-left Copyright © 2014-2016 绿化能源有限公司，保留所有权利 | 浙ICP备15019097号
 					p.pull-right
 						span
-							a(href='#') 法律声明
+							a(href='/abouts') 法律声明
 						span
-							a(href='#') 隐私保护
+							a(href='/abouts') 隐私政策
 						span
-							a(href='#') 联系我们
-						span
-							a(href='#') 网站地图
+							a(href='/abouts') 联系我们
 				// container end
 		// 页脚end
 		

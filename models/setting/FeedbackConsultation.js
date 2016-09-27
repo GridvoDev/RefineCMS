@@ -15,13 +15,13 @@ var FeedbackConsultation = new keystone.List('FeedbackConsultation', {
 });
 
 FeedbackConsultation.add({
-	nickName: { type: String, required: true },
+	title: { type: String },
 	email: { type: Types.Email, required: true },
 	enquiryType: { type: Types.Select, options: [
 		{ value: 'message', label: '发消息' },
 		{ value: 'question', label: '提问题' },
 		{ value: 'other', label: '其它...' },
-	], emptyOption: false, required: true },
+	], default: 'message', index: true, required: true },
 	message: { type: Types.Markdown, required: true },
 	createdAt: { type: Date, default: Date.now, noedit: true },
 });

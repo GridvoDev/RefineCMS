@@ -21,35 +21,44 @@ block index-main
 		.container
 			ul.location.list-unstyled.list-inline
 				li
-					a(href='#') 首页
+					a(href='/') 首页
 				li.location-separator
 				li.active
 					a(href='javascript:;') 反馈中心
-			|         
-			form#feedback-form(role='form', action='')
+			form#feedback-form(role='form', action='/feedback', method='post')
 				fieldset
 					legend
 						h1 反馈中心
-					.greetings.col-sm-offset-2.col-xs-12
-						p.text-info 请提出您的宝贵意见
-					.form-group.col-sm-offset-2.col-xs-12
-						label(for='exampleInputTitle1') 标题
-						.col-sm-6.col-xs-8.input-group
-							// input-group-lg
-							input#exampleInputTitle1.form-control(type='text', name='exampleInputTitle1', placeholder='', required='required')
-							// input-lg
-					.form-group.col-sm-offset-2.col-xs-12
-						label(for='exampleInputEmail1') 邮箱
-						.col-sm-6.col-xs-8.input-group
-							input#exampleInputEmail1.form-control(type='email', name='exampleInputEmail1', placeholder='', required='required')
-					.form-group.col-sm-offset-2.col-xs-12
-						label(for='exampleInputContent1') 具体内容
-						.col-sm-10.col-xs-12.input-group
-							textarea#exampleInputContent1.form-control(name='exampleInputContent1', rows='5', placeholder='', required='required')
-							// <p class="help-block">Example block-level help text here.</p>
-					.form-group.col-sm-offset-2.col-xs-12
-						.col-sm-3.col-xs-3.input-group
-							button.btn.btn-info(type='submit') 提交
+					if enquirySubmitted
+						.greetings.col-sm-offset-2.col-xs-12
+							p.text-info 谢谢您的反馈
+					else
+						.greetings.col-sm-offset-2.col-xs-12
+							p.text-info 请提出您的宝贵意见
+						.form-group.col-sm-offset-2.col-xs-12(class=validationErrors.name ? 'has-error' : null)
+							label(for='title') 标题
+							.col-sm-6.col-xs-8.input-group
+								// input-group-lg
+								input#title.form-control(type='text', name='title', value=formData.title, placeholder='', required='required')
+								// input-lg
+						.form-group.col-sm-offset-2.col-xs-12(class=validationErrors.enquiryType ? 'has-error' : null)
+							label(for='enquiryType') 类型
+							.col-sm-6.col-xs-8.input-group
+								select#enquiryType.form-control(name='enquiryType', required='required')
+									each type in enquiryTypes
+										option(value=type.value, selected=formData.enquiryType == type.value)= type.label
+						.form-group.col-sm-offset-2.col-xs-12(class=validationErrors.email ? 'has-error' : null)
+							label(for='email') 邮箱
+							.col-sm-6.col-xs-8.input-group
+								input#email.form-control(type='email', name='email', value=formData.email, placeholder='', required='required')
+						.form-group.col-sm-offset-2.col-xs-12(class=validationErrors.message ? 'has-error' : null)
+							label(for='message') 具体内容
+							.col-sm-10.col-xs-12.input-group
+								textarea#message.form-control(name='message', rows='5', placeholder='', required='required')= formData.message
+								// <p class="help-block">Example block-level help text here.</p>
+						.form-group.col-sm-offset-2.col-xs-12
+							.col-sm-3.col-xs-3.input-group
+								button.btn.btn-info(type='submit') 提交
 	// 主体内容end
 
 block js

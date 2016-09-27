@@ -10,7 +10,10 @@ exports = module.exports = function (req, res) {
 	locals.section = 'abouts';
 	locals.data = {
 		introduction: {},
-		partners: []
+		contact: {},
+		partners: [],
+		lawStates: {},
+		privacyPolicies: {},
 	};
 
 	// Load the current about TODO 注释规范下
@@ -21,11 +24,23 @@ exports = module.exports = function (req, res) {
 				keystone.list('Introduction').model.findOne().exec(callback);
 			},
 			function (callback) {
+				keystone.list('Contact').model.findOne().exec(callback);
+			},
+			function (callback) {
 				keystone.list('Partner').model.find().exec(callback);
-			}
+			},
+			function (callback) {
+				keystone.list('LawState').model.findOne().exec(callback);
+			},
+			function (callback) {
+				keystone.list('PrivacyPolicy').model.findOne().exec(callback);
+			},
 		], function (err, results) {
 			locals.data.introduction = results[0];
-			locals.data.partners = results[1];
+			locals.data.contact = results[1];
+			locals.data.partners = results[2];
+			locals.data.lawStates = results[3];
+			locals.data.privacyPolicies = results[4];
 			next(err);
 		});
 

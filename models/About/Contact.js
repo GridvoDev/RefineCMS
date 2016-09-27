@@ -8,6 +8,7 @@ var Types = keystone.Field.Types;
 
 var Contact = new keystone.List('Contact', {
 	label: '联系我们',
+	map: { name: 'title' },
 	singular: 'Contact',
 	plural: 'Contacts',
 	nocreate: true,
@@ -15,14 +16,15 @@ var Contact = new keystone.List('Contact', {
 });
 
 Contact.add({
+	title: { type: String, required: true },
 	address: { type: String, required: true },
 	tel: { type: String, required: true },
 	email: { type: Types.Email, required: true },
-	wechat: { type: String, required: true },
+	wechatAccount: { type: String, required: true },
 	postcode: { type: String, required: true },
 	fax: { type: String, required: true },
 });
 
-Contact.searchFields = 'address, tel, email, wechat, postcode, fax';
+Contact.searchFields = 'address tel email wechat postcode fax';
 Contact.defaultColumns = 'address, tel, email, wechat, postcode, fax';
 Contact.register();

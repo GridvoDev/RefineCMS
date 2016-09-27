@@ -39,9 +39,19 @@ keystone.init({
 	'signout url': '/keystone/signout',
 	'signout redirect': '/keystone',
 	
-	'wysiwyg images': true,
-	// 'wysiwyg cloudinary images': '',
-	// ... TODO Admin UIs参数设定
+	// 'wysiwyg images': true,
+	// 'wysiwyg menubar': true,
+	// 'wysiwyg importcss': '',
+	'wysiwyg skin': 'lightgray',
+	'wysiwyg additional buttons': 'image, table, insertdatetime, forecolor backcolor, searchreplace visualchars visualblocks, charmap nonbreaking pagebreak hr anchor paste, ltr rtl, emoticons media, preview print ',
+	'wysiwyg additional plugins': 'advlist, anchor, autoresize, autosave, charmap, code, colorpicker, contextmenu, directionality, emoticons, fullscreen, hr, image, importcss, ' +
+		'insertdatetime, link, lists, media, nonbreaking, pagebreak, paste, preview, print, searchreplace, tabfocus, table, textcolor, visualblocks, visualchars, wordcount, ' +
+		'example', //autolink, imagetools, mentions, noneditable, powerpaste, save, spellchecker, tinymcespellchecker, template, textarea,
+	'wysiwyg override toolbar': false,
+	'wysiwyg additional options': {
+		menubar: true,
+		inline: false,
+	},
 });
 
 // Load your project's Models

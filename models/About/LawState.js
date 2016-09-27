@@ -8,19 +8,20 @@ var Types = keystone.Field.Types;
 
 var LawState = new keystone.List('LawState', {
 	label: '法律声明',
+	map: { name: 'title' },
 	singular: 'Law State',
 	plural: 'Law States',
-	map: { name: 'title' },
-	autokey: { from: 'title', path: 'key', unique: true },
+	nocreate: true,
+	nodelete: true,
 });
 
 LawState.add({
 	title: { type: String, required: true },
 	content: { type: Types.Html, wysiwyg: true },
-	updatedAt: { type: Date, value: Date.now, noedit: true },
+	updatedAt: { type: Date, watch: true, value: Date.now, noedit: true },
 });
 
 LawState.defaultSort = '-updatedAt';
-LawState.searchFields = 'title, content, updatedAt';
+LawState.searchFields = 'title content updatedAt';
 LawState.defaultColumns = 'title, content|75%, updatedAt';
 LawState.register();

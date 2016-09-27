@@ -11,7 +11,7 @@ block index-main
 			| &nbsp;
 			span(style='display: inline-block;') 让生活更加美好
 		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form(role='form')
+		form(role='form' action='/cases' method='get')
 			input(type='text', name='searchContent')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
@@ -20,73 +20,40 @@ block index-main
 		.container
 			div
 				.row
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='case.html')
-								img(alt='', src='/images/page/cases/案例图1.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='case.html')
-								img(alt='', src='/images/page/cases/案例图2.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='#')
-								img(alt='', src='/images/page/cases/案例图1.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='#')
-								img(alt='', src='/images/page/cases/案例图2.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='#')
-								img(alt='', src='/images/page/cases/案例图1.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
-					.col-lg-4.col-md-4.col-sm-6.col-xs-6
-						.thumbnail.case
-							a(href='#')
-								img(alt='', src='/images/page/cases/案例图2.png')
-							.caption
-								h3
-									a(href='#') 案例标题  
-								p 这是内容爱我的哈维的骄傲我快打我不会的阿觉，爱我的骄傲我看到就好玩吧
+					each case0 in data.cases.results
+						.col-lg-4.col-md-4.col-sm-6.col-xs-6
+							.thumbnail.case
+								a(href='/cases/#{case0.slug}')
+									img(alt='', src=case0.overviewImage.path.substring(6)+case0.overviewImage.filename)
+								.caption
+									h3
+										a(href='/cases/#{case0.slug}')= case0.title  
+									!= case0.content.brief
 			// 分页start
 			nav.text-center
 				ul.pagination.pagination-no-border.pagination-no-separation
 					li
-						a(href='#') «
+						a(href=data.cases.currentPage-data.cases.currentPage%6==0 ? 'javascript:;' : '/cases?page='+(data.cases.currentPage-6)) «
+					if data.cases.currentPage-data.cases.currentPage%6+1 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==1?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+1}')= data.cases.currentPage-data.cases.currentPage%6+1
+					if data.cases.currentPage-data.cases.currentPage%6+2 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==2?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+2}')= data.cases.currentPage-data.cases.currentPage%6+2
+					if data.cases.currentPage-data.cases.currentPage%6+3 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==3?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+3}')= data.cases.currentPage-data.cases.currentPage%6+3
+					if data.cases.currentPage-data.cases.currentPage%6+4 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==4?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+4}')= data.cases.currentPage-data.cases.currentPage%6+4
+					if data.cases.currentPage-data.cases.currentPage%6+5 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==5?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+5}')= data.cases.currentPage-data.cases.currentPage%6+5
+					if data.cases.currentPage-data.cases.currentPage%6+6 <= data.cases.totalPages
+						li(class=data.cases.currentPage%6==6?'active':'')
+							a(href='/cases?page=#{data.cases.currentPage-data.cases.currentPage%6+6}')= data.cases.currentPage-data.cases.currentPage%6+6
 					li
-						a(href='#') 1
-					li
-						a(href='#') 2
-					li
-						a(href='#') 3
-					li
-						a(href='#') 4
-					li
-						a(href='#') 5
-					li
-						a(href='#') 6
-					li
-						a(href='#') »
+						a(href=data.cases.currentPage+6>data.cases.totalPages ? 'javascript:;' : '/cases?page='+(data.cases.currentPage+6)) »
 			// 分页end
 	// 主体内容end
 

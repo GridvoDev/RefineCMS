@@ -11,7 +11,7 @@ exports = module.exports = function (req, res) {
 		product: req.params.product,
 	};
 	locals.data = {
-		product: {},
+		product: null,
 	};
 
 	// Load the current product

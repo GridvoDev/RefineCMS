@@ -25,36 +25,59 @@ block index-main
 				li(role='presentation')
 					a#four-tab(href='#four', role='tab', data-toggle='tab', aria-controls='four', aria-expanded='true') 法律声明
 				li(role='presentation')
-					a#five-tab(href='#five', role='tab', data-toggle='tab', aria-controls='five', aria-expanded='true') 隐私保护
-			|         
+					a#five-tab(href='#five', role='tab', data-toggle='tab', aria-controls='five', aria-expanded='true') 隐私政策
 			#myTabContent.col-sm-9.tab-content
 				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
 					ol.breadcrumb
 						li
-							a(href='#') 首页
+							a(href='/') 首页
 						li
-							a(href='#') 关于我们
+							a(href='/abouts') 关于我们
 						li.active 公司简介
-					h1 公司简介
-					p 福建格物科技有限公司于2012年在福建省福州市福州软件园注册成立，注册资本金5000万元。 公司主营业务为软件产品的开发与销售、计算机系统集成及技术支持与服务，主要服务于智能电网、自动化和信息化领域及其细分市场客户。 公司以“格物、致知、诚意、正心”为核心价值观。打造具有科学发展观和持续学习能力的团队，不断推进软件“行业化、产品化、服务化”经营布局。在互联网、大数据、云计算等科技不断发展的背景下，公司对新能源市场、用户、产品及其科研、企业价值链乃至整个商业生态进行研究，将大数据分析技术、物联网、云计算、智能管控等技术和传统工业融合，与行业伙伴携手拓展互联网技术在能源领域的应用，共筑基于能源互联网的未来能源生态系统。
+					h1= data.introduction.title
+					!= data.introduction.content.full
 				#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
 					ol.breadcrumb
 						li
-							a(href='#') 首页
+							a(href='/') 首页
 						li
-							a(href='#') 关于我们
+							a(href='/abouts') 关于我们
 						li.active 联系我们
-					h1 联系我们
-					p 地址：福州市福州市晋安区坂中路五四北泰和广场3号楼2223
-					p 邮政编码：350012
-					p 联系电话：0591-87922086
-					p 邮箱：hr@gridvo.com
+					h1= data.contact.title
+					p 地址：#{data.contact.address}
+					p 邮政编码：#{data.contact.postcode}
+					p 联系电话：#{data.contact.tel}
+					p 邮箱：#{data.contact.email}
 				#three.tab-pane.fade(role='tabpanel', aria-labelledby='three-tab')
-					p
+					ol.breadcrumb
+						li
+							a(href='/') 首页
+						li
+							a(href='/abouts') 关于我们
+						li.active 合作伙伴
+					h1 合作伙伴
+					.row
+						each partner in data.partners
+							.col-md-3.col-sm-4.col-xs-3
+								img(style={width: '100%', 'max-height': '90px'},src=partner.logoImage.path.substring(6)+partner.logoImage.filename)
 				#four.tab-pane.fade(role='tabpanel', aria-labelledby='four-tab')
-					p
+					ol.breadcrumb
+						li
+							a(href='/') 首页
+						li
+							a(href='/abouts') 关于我们
+						li.active 法律声明
+					h1= data.lawStates.title
+					!= data.lawStates.content
 				#five.tab-pane.fade(role='tabpanel', aria-labelledby='five-tab')
-					p
+					ol.breadcrumb
+						li
+							a(href='/') 首页
+						li
+							a(href='/abouts') 关于我们
+						li.active 隐私政策
+					h1= data.privacyPolicies.title
+					!= data.privacyPolicies.content
 	// 主体内容end
 
 block js

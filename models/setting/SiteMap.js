@@ -8,6 +8,7 @@ var Types = keystone.Field.Types;
 
 var SiteMap = new keystone.List('SiteMap', {
 	label: '网站地图',
+	map: { name: 'title' },
 	singular: 'SiteMap',
 	plural: 'SiteMaps',
 	nocreate: true,
@@ -17,7 +18,7 @@ var SiteMap = new keystone.List('SiteMap', {
 SiteMap.add({
 	title: { type: String, required: true },
 	content: { type: Types.Html, wysiwyg: true, required: true },
-	updatedAt: { type: Date, value: Date.now, noedit: true },
+	updatedAt: { type: Date, watch: true, value: Date.now, noedit: true },
 });
 
 

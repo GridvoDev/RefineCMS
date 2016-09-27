@@ -8,63 +8,28 @@ block index-main
 	#carousel-example.carousel.slide(data-ride='carousel')
 		// Indicators start
 		ol.carousel-indicators
-			li.active(data-target='#carousel-example', data-slide-to='0')
-			li(data-target='#carousel-example', data-slide-to='1')
-			li(data-target='#carousel-example', data-slide-to='2')
-			li(data-target='#carousel-example', data-slide-to='3')
+			- for (var index = 0; index < data.carouselPictures.length; index++)
+				li(class={active: index === 0}, data-target='#carousel-example', data-slide-to='' + index)
 		// Indicators end
 		// Wrapper for slides
 		.carousel-inner(role='listbox')
-			.item.active
-				img(alt='slide 1', src='/images/page/index/轮播背景(600x422)1.jpg')   
-				.carousel-caption
-					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
-					h3
-						span(style='display: inline-block;') 用最先进的技术
-						| &nbsp;
-						span(style='display: inline-block;') 让生活更加美好
-					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
-						span.wechat-icon 进一步了解
-			.item
-				img(alt='slide 2', src='/images/page/index/轮播背景(600x422)2.jpg')   
-				.carousel-caption
-					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
-					h3
-						span(style='display: inline-block;') 用最先进的技术
-						| &nbsp;
-						span(style='display: inline-block;') 让生活更加美好
-					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
-						span.wechat-icon 进一步了解
-			.item
-				img(alt='slide 3', src='/images/page/index/轮播背景(600x422)3.jpg')   
-				.carousel-caption
-					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')    
-					h3
-						span(style='display: inline-block;') 用最先进的技术
-						| &nbsp;
-						span(style='display: inline-block;') 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
-						span.wechat-icon 进一步了解
-			.item
-				img(alt='slide 4', src='/images/page/index/轮播背景(600x422)4.jpg')   
-				.carousel-caption
-					img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')    
-					h3
-						span(style='display: inline-block;') 用最先进的技术
-						| &nbsp;
-						span(style='display: inline-block;') 让生活更加美好
-					p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-					a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
-						span.wechat-icon 进一步了解
+			each carouselPicture,index in data.carouselPictures
+				.item(class={active: index === 0})
+					img(alt='slide image', src=carouselPicture.heroImage.path.substring(6) + carouselPicture.heroImage.filename)   
+					.carousel-caption
+						img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
+						h3
+							span(style='display: inline-block;') 用最先进的技术
+							| &nbsp;
+							span(style='display: inline-block;') 让生活更加美好
+						p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+						a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+							span.wechat-icon 进一步了解
 		// Control for slides
 		a.left.carousel-control(href='#carousel-example', role='button', data-slide='prev')
-			// <span class="slide-left" aria-hidden="true"></span>
 			span.glyphicon.glyphicon-chevron-left
 			span.sr-only Previous
 		a.right.carousel-control(href='#carousel-example', role='button', data-slide='next')
-			// <span class="slide-right" aria-hidden="true"></span>
 			span.glyphicon.glyphicon-chevron-right
 			span.sr-only Next
 	// 首页轮播end
@@ -74,7 +39,7 @@ block index-main
 		.container
 			.section-header
 				h2 公司简介
-				p 福建绿华能源投资有限公司成立于2014年，主营水面光伏电站设计制造业务，通过提供水面光伏技术实现可再生能源高效利用解决方案，致力于为全世界奉献更为清洁的能源。
+				!= data.introduction.content.brief
 			#nav-tabs-example
 				#myTabs.row.text-center.nav(role='tablist')
 					.col-lg-3.col-md-3.col-sm-3.col-xs-3.active(role='presentation')
@@ -105,14 +70,11 @@ block index-main
 				.col-sm-4.hidden-xs.text-left
 					img.feature-picture(src='/images/page/index/功能特点图标1.png') 
 				.col-sm-4.col-xs-12.text-center
-					.feature-description
-						p 追光型水面支架
-						p
-							strong 发电量提高15%以上
-					.feature-description
-						p 复合型水面支架
-						p
-							strong 支架成本降低50%以上
+					each product in data.products
+						.feature-description
+							p= product.title
+							p
+								strong= product.content.brief.slice(3, -4)
 				.col-sm-4.hidden-xs.text-right
 					img.feature-picture(src='/images/page/index/功能特点图标2.png')
 	// 特色优势end
@@ -124,18 +86,10 @@ block index-main
 				p 绿化拥有行业领先的水面光伏太阳能技术和丰富的项目开发经验，提供质量最可靠的产品。为客户提供价格更低、性能更高、寿命更长的太阳能解决方案。正如太阳普照万物的无私奉献，绿化的技术领导力能够使太阳能成为人人都享受的资源。
 		.container-fluid.poject-thumbnails
 			.row
-				.col-xs-3
-					a.thumbnail(href='#')
-						img(src='/images/page/index/案例缩略图（左）.png', alt='案例缩略图（左）.png') 
-				.col-xs-3
-					a.thumbnail(href='#')
-						img(src='/images/page/index/案例缩略图（次左）.png', alt='案例缩略图（次左）.png') 
-				.col-xs-3
-					a.thumbnail(href='#')
-						img(src='/images/page/index/案例缩略图（次右）.png', alt='案例缩略图（次右）.png') 
-				.col-xs-3
-					a.thumbnail(href='#')
-						img(src='/images/page/index/案例缩略图（右）.png', alt='案例缩略图（右）.png')
+				each case0 in data.cases
+					.col-xs-3
+						a.thumbnail(href='/cases/#{case0.slug}')
+							img(src=case0.overviewImage.path.substring(6)+case0.overviewImage.filename) 
 			img.absolute-img-bottom(src='/images/page/index/案例分块白色底边1.png', alt='')
 	// 优秀案例end
 	// 新闻资讯start
@@ -144,41 +98,22 @@ block index-main
 			.section-header
 				h2 新闻资讯
 			.row.text-center
-				.col-sm-4
-					h3
-						a(href='') 攻坚集中执行活动
-					p 2016年9月12日&nbsp;&nbsp;&nbsp;
-						a(href='#') 行业动态
-					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
-				.col-sm-4
-					h3
-						a(href='') 执行活动
-					p 2016年9月12日&nbsp;&nbsp;&nbsp;
-						a(href='#') &#行业动态
-					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
-				.col-sm-4
-					h3
-						a(href='') 攻坚活动
-					p 2016年9月12日&nbsp;&nbsp;&nbsp;
-						a(href='#') 行业动态
-					p 9月16日清晨5点，江苏扬州市两级法院中秋攻坚集中执行活动拉开帷幕。针对老赖欠2亿住豪宅却拒不还钱一直拖债的事件，在市区广陵、邗江、开发区三家法院在市
+				each newsInfo in data.newsInfos
+					.col-sm-4
+						h3
+							a(href='/news/information/#{newsInfo.slug}')= newsInfo.title
+						p #{newsInfo._.publishedDate.format("YYYY-MM-DD")}&nbsp;&nbsp;&nbsp;
+							each category in newsInfo.categories
+								a(href='/news/#{category.key}')= category.name
+						!= newsInfo.content.brief
 	// 新闻资讯end
 	// 合作伙伴start
 	.partners
 		.container
 			.row
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/microsoft.png', alt='')   
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/quantong.png', alt='')   
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/pingan.png', alt='')   
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/momo-01.png', alt='')   
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/pingan.png', alt='')   
-				.col-sm-3.col-xs-4
-					img(src='http://www.justalkcloud.com/cn/images/momo-01.png', alt='')
+				each partner in data.partners
+					.col-sm-3.col-xs-4
+						img(src=partner.logoImage.path.substring(6)+partner.logoImage.filename, alt='')
 	// 合作伙伴end
 
 block js
@@ -190,7 +125,7 @@ block js
 		$(window).on('scroll', function() {
 			if ($(window).scrollTop() > $(".site-header > .navbar:first-child").height()) {
 				$('.site-header .navbar').addClass('floating');
-				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字蓝.png');
+				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字green.png');
 			} else {
 				$('.site-header .navbar').removeClass('floating');
 				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字.png');

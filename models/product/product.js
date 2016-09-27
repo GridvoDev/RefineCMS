@@ -16,12 +16,28 @@ var Product = new keystone.List('Product', {
 
 Product.add({
 	title: { type: String, required: true },
-	imageUrl: { type: Types.Url, initial: true, required: true },
+	overviewImage: {
+		type: Types.LocalFile,
+		dest: 'public/uploads/',
+		// prefix: '/uploads/',
+		// datePrefix: 'YYYY-MM-DD',
+		allowedTypes: ['image/png', 'image/jpeg', 'image/bmp', 'image/gif'],
+		filename: function(item, file) {
+			return item.id + '.' + file.extension;
+		},
+		// format: function(item, file) {
+		// 	console.log(item+"weimao3");
+		// 	console.log(file+"weimao4");
+		// 	return '<img src="/uploads/'+file.filename+'" style="max-width: 60%">';
+		// },
+		required: true,
+		initial: false,
+	},
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
-	publishedDate: { type: Types.Date, index: true, initial: true, required: true },
+	publishedDate: { type: Types.Date, initial: true, required: true },
 });
 
 Product.schema.virtual('content.full').get(function () {
@@ -29,6 +45,6 @@ Product.schema.virtual('content.full').get(function () {
 });
 
 Product.defaultSort = '-publishedDate';
-Product.searchFields = 'title, content.full, publishedDate';
-Product.defaultColumns = 'title, imageUrl, content.brief|60%, publishedDate|20%';
+Product.searchFields = 'title content.full publishedDate';
+Product.defaultColumns = 'title|10%, overviewImage.originalname|25%, content.brief|50%, publishedDate|15%';
 Product.register();

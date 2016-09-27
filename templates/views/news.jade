@@ -11,7 +11,7 @@ block index-main
 			| &nbsp;
 			span(style='display: inline-block;') 让生活更加美好
 		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form(role='form')
+		form(role='form' action='/cases' method='get')
 			input(type='text', name='searchContent')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
@@ -21,80 +21,42 @@ block index-main
 		.news-info-categories
 			.container
 				ul.list-inline
-					li.active
-						a(href='#') 全部
-					li
-						a(href='#') 行业背景
-					li
-						a(href='#') 热点聚焦
-					li
-						a(href='#') 行业动态
+					li(class={active: !data.category})
+						a(href='/news') 全部
+					each category in data.categories
+						li(class={active: data.category && data.category.key == category.key})
+							a(href='/news/#{category.key}')= category.name
 		// 新闻资讯分类end
 		// 新闻资讯列表start
 		.news-infos
 			.container
 				ul.media-list
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
-					li.media
-						a.media-left(href='news-info.html')
-							img(src='/images/page/news/新闻资讯概图.png', alt='')
-						.media-body
-							h4.media-heading
-								a(href='') 新闻资讯 
-							p.media-content 利用最先进的技术，让生活更加美好爱我的会把我的骄傲我挖掘等会哇嘎大玩家爱爱我的就问哈撒打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电打我快打我的卡未接电话丁堡爱 
-							p.media-time 2016/09/10
+					each newsInfo in data.newsInfos.results
+						li.media
+							a.media-left(href='/news/information/#{newsInfo.slug}')
+								img(src=newsInfo.overviewImage.path.substring(6)+newsInfo.overviewImage.filename, alt='')
+							.media-body
+								h4.media-heading
+									a(href='')= newsInfo.title
+								p.media-content= newsInfo.content.brief 
+								p.media-time= newsInfo._.publishedDate.format('YYYY-MM-DD')
 				// 分页start
 				nav
 					ul.pagination.pagination-lg
+						- var categoryUrl = data.category?"/news?page=":"/news/"+data.category+"page=";
 						li
-							a(href='#') «
+							a(href=data.newsInfos.currentPage-data.newsInfos.currentPage%3==0 ? 'javascript:;' : categoryUrl+(data.newsInfos.currentPage-3)) «
+						if data.newsInfos.currentPage-data.newsInfos.currentPage%3+1 <= data.newsInfos.totalPages
+							li(class=data.newsInfos.currentPage%3==1?'active':'')
+								a(href=categoryUrl+(data.newsInfos.currentPage-data.newsInfos.currentPage%3+1))= data.newsInfos.currentPage-data.newsInfos.currentPage%3+1
+						if data.newsInfos.currentPage-data.newsInfos.currentPage%3+2 <= data.newsInfos.totalPages
+							li(class=data.newsInfos.currentPage%3==2?'active':'')
+								a(href=categoryUrl+(data.newsInfos.currentPage-data.newsInfos.currentPage%3+2))= data.newsInfos.currentPage-data.newsInfos.currentPage%3+2
+						if data.newsInfos.currentPage-data.newsInfos.currentPage%3+3 <= data.newsInfos.totalPages
+							li(class=data.newsInfos.currentPage%3==3?'active':'')
+								a(href=categoryUrl+(data.newsInfos.currentPage-data.newsInfos.currentPage%3+3))= data.newsInfos.currentPage-data.newsInfos.currentPage%3+3
 						li
-							a(href='#') 1
-						li
-							a(href='#') 2
-						li
-							a(href='#') 3
-						li
-							a(href='#') »
+							a(href=data.newsInfos.currentPage+3>data.newsInfos.totalPages ? 'javascript:;' : categoryUrl+(data.newsInfos.currentPage+3)) »
 				// 分页end
 		// 新闻资讯列表end
 	// 主体内容end

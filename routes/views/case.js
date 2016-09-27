@@ -5,21 +5,27 @@ exports = module.exports = function (req, res) {
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
 
-	// Init locals
-	locals.section = 'case';
+	// Set locals
+	locals.section = 'cases';
+	locals.filters = {
+		case: req.params.case,
+	};
 	locals.data = {
-		cases: [],
+		case: {},
 	};
 
-	// Load the cases
+	// Load the current case
 	view.on('init', function (next) {
 
-		var q = keystone.list('Case').model.find().sort('-finishedDate').exec(function (err, results) {
-			locals.data.cases = results;
+		keystone.list('Case').model.findOne({
+			slug: locals.filters.case,
+		}).exec(function (err, result) {
+			locals.data.case = result;
 			next(err);
 		});
+
 	});
 
 	// Render the view
-	view.render('caseS');
+	view.render('case');
 };

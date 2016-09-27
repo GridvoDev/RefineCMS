@@ -11,6 +11,7 @@ exports = module.exports = function (req, res) {
 		newsInfo: req.params.newsInfo,
 	};
 	locals.data = {
+		newsInfo: null,
 		newsInfos: [],
 	};
 

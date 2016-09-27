@@ -6,20 +6,24 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Init locals
-	locals.section = 'product';
+	locals.section = 'cases';
 	locals.data = {
-		products: [],
+		cases: [],
 	};
 
-	// Load the products
+	// Load the cases
 	view.on('init', function (next) {
 
-		var q = keystone.list('Product').model.find().sort('-publishedDate').exec(function (err, results) {
-			locals.data.products = results;
+		var q = keystone.list('Case').paginate({
+			page: req.query.page || 1,
+			perPage: 6,
+			maxPages: 6,
+		}).sort('-finishedDate').exec(function (err, results) {
+			locals.data.cases = results;
 			next(err);
 		});
 	});
 
 	// Render the view
-	view.render('features');
+	view.render('cases');
 };

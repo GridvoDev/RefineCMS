@@ -7,7 +7,7 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Set locals
-	locals.section = 'feedback';
+	locals.section = 'home';
 	locals.enquiryTypes = FeedbackConsultation.fields.enquiryType.ops;
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
@@ -21,8 +21,8 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'nickName, email, enquiryType, message',
-			errorMessage: 'There was a problem submitting your enquiry:',
+			fields: 'title, email, enquiryType, message',
+			errorMessage: '抱歉，您的提交有误：',
 		}, function (err) {
 			if (err) {
 				locals.validationErrors = err.errors;

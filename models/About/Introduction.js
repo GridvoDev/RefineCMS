@@ -8,6 +8,7 @@ var Types = keystone.Field.Types;
 
 var Introduction = new keystone.List('Introduction', {
 	label: '公司简介',
+	map: { name: 'title' },
 	singular: 'Introduction',
 	plural: 'Introductions',
 	nocreate: true,
@@ -20,7 +21,7 @@ Introduction.add({
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
-	updatedAt: { type: Date, value: Date.now, noedit: true },
+	updatedAt: { type: Date, watch: true, value: Date.now, noedit: true },
 });
 
 Introduction.schema.virtual('content.full').get(function () {
@@ -28,6 +29,6 @@ Introduction.schema.virtual('content.full').get(function () {
 });
 
 Introduction.defaultSort = '-updatedAt';
-Introduction.searchFields = 'title, updatedAt';
+Introduction.searchFields = 'title updatedAt';
 Introduction.defaultColumns = 'title|10%, content.brief|70%, updatedAt|20%';
 Introduction.register();
