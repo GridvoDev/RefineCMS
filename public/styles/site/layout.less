@@ -1,16 +1,382 @@
-#header {
-	margin-top: 30px;
+/*站点自定义字体*/
+@font-face {
+  font-family: '造字工房悦圆演示版常规体';
+
+  src: url('../../../fonts/page/造字工房悦圆演示版常规体.eot');
+  src: url('../../../fonts/page/造字工房悦圆演示版常规体.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/page/造字工房悦圆演示版常规体.ttf') format('truetype'),
+  url('../../../fonts/page/造字工房悦圆演示版常规体.otf') format('opentype'),
+  url('../../../fonts/page/造字工房悦圆演示版常规体.svg#造字工房悦圆演示版常规体') format('svg'),
+  url('../../../fonts/page/造字工房悦圆演示版常规体.woff2') format('woff2'),
+  url('../../../fonts/page/造字工房悦圆演示版常规体.woff') format('woff');
+}
+@font-face {
+  font-family: '造字工房悦黑演示版细体';
+
+  src: url('../../../fonts/page/造字工房悦黑演示版细体.eot');
+  src: url('../../../fonts/page/造字工房悦黑演示版细体.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/page/造字工房悦黑演示版细体.ttf') format('truetype'),
+  url('../../../fonts/page/造字工房悦黑演示版细体.otf') format('opentype'),
+  url('../../../fonts/page/造字工房悦黑演示版细体.svg#造字工房悦黑演示版细体') format('svg'),
+  url('../../../fonts/page/造字工房悦黑演示版细体.woff2') format('woff2'),
+  url('../../../fonts/page/造字工房悦黑演示版细体.woff') format('woff');
+}
+@font-face {
+  font-family: '造字工房悦黑演示版特细体';
+
+  src: url('../../../fonts/page/造字工房悦黑演示版特细体.eot');
+  src: url('../../../fonts/page/造字工房悦黑演示版特细体.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/page/造字工房悦黑演示版特细体.ttf') format('truetype'),
+  url('../../../fonts/page/造字工房悦黑演示版特细体.otf') format('opentype'),
+  url('../../../fonts/page/造字工房悦黑演示版特细体.svg#造字工房悦黑演示版特细体') format('svg'),
+  url('../../../fonts/page/造字工房悦黑演示版特细体.woff2') format('woff2'),
+  url('../../../fonts/page/造字工房悦黑演示版特细体.woff') format('woff');
 }
 
-#footer {
-	margin-top: 30px;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
+/**/
+@media (max-width: 767px) {
+  .index-main > .page-lander {
+	margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .index-main > .page-lander {
+	margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .index-main > .page-lander {
+	margin-top: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-main > .page-lander {
+	margin-top: 80px;
+  }
+}
+/*导航栏布局——导航栏高度*/
+.site-header .navbar {
+  /*height: 50px;*//*height: 50px;*//*height: 64px;*//*height: 80px;*/
+  border: none;
+  margin-bottom: 0;
+}
+/*导航栏布局——logo*/
+@media (max-width: 767px) {
+  .site-header .navbar-brand {
+	padding: 8px 15px;
+  }
+  .site-header .navbar-brand img {
+	height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .site-header .navbar-brand {
+	padding: 8px 15px;
+  }
+  .site-header .navbar-brand img {
+	height: 34px;
+  }
+}
+@media (min-width: 992px) {
+  .site-header .navbar-brand {
+	padding: 8px 15px;
+  }
+  .site-header .navbar-brand img {
+	height: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-header .navbar-brand {
+	padding: 10px 15px;
+  }
+  .site-header .navbar-brand img {
+	height: 60px;
+  }
+}
+/*导航栏布局——菜单按钮*/
+@media (max-width: 767px) {
+  .site-header .navbar-toggle {
+	margin: 9px 15px;
+	padding: 8px 8px;
+	border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .site-header .navbar-toggle {
+	margin: 9px 15px;
+	padding: 8px 8px;
+	border-radius: 0;
+  }
+}
+@media (min-width: 992px) {
+  .site-header .navbar-toggle {
+	margin: 12px 15px;
+	padding: 10px 10px;
+	border-radius: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .site-header .navbar-toggle {
+	margin: 16px 15px;
+	padding: 12px 12px;
+	border-radius: 0;
+  }
+}
+/*导航栏布局——菜单项*/
+@media (max-width: 767px) {
+  .site-header .navbar-nav > li > a {
+	padding: 15px 12px;
+	font-size: 16px;
+	line-height: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .site-header .navbar-nav > li > a {
+	padding: 15px 12px;
+	font-size: 16px;
+	line-height: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .site-header .navbar-nav > li > a {
+	padding: 22px 15px;
+	font-size: 18px;
+	line-height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-header .navbar-nav > li > a {
+	padding: 30px 20px;
+	font-size: 20px;
+	line-height: 20px;
+  }
 }
 
-.gallery-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+/*导航栏色调*/
+.site-header .navbar-nav {
+  font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.site-header .navbar {
+  background-color: rgba(0,0,0,0.4);
+  transition: all ease 0.25s;
+}
+.site-header .navbar-nav > li > a {
+  color: #fff;
+  transition: all ease 0.25s;
+}
+.site-header .navbar-nav > li.active > a,
+.site-header .navbar-nav > li > a:hover,
+.site-header .navbar-nav > li > a:focus {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.site-header .navbar.floating {
+  background-color: rgb(255,255,255);
+  border-bottom: 1px solid #40748e;
+}
+.site-header .navbar.floating .navbar-nav > li > a {
+  color: #40748e;
+}
+.site-header .navbar.floating .navbar-nav > li.active > a,
+.site-header .navbar.floating .navbar-nav > li > a:hover,
+.site-header .navbar.floating .navbar-nav > li > a:focus {
+  background-color: #40748e;
+  color: #fff;
+}
+.site-header .navbar-toggle {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  transition: all ease 0.25s;
+}
+.site-header .navbar-toggle:hover,
+.site-header .navbar-toggle:focus {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.site-header .navbar-toggle > .icon-bar {
+  background: #ccc;
+  transition: all ease 0.25s;
+}
+.site-header .navbar-toggle:hover > .icon-bar,
+.site-header .navbar-toggle:focus > .icon-bar {
+  background: #fff;
+}
+.site-header .floating .navbar-toggle {
+  background-color: transparent;
+  border: 1px solid #666;
+  transition: all ease 0.25s;
+}
+.site-header .floating .navbar-toggle:hover,
+.site-header .floating .navbar-toggle:focus {
+  background-color: transparent;
+  border: 1px solid #222;
+}
+.site-header .floating .navbar-toggle > .icon-bar {
+  background: #666;
+  transition: all ease 0.25s;
+}
+.site-header .floating .navbar-toggle:hover > .icon-bar,
+.site-header .floating .navbar-toggle:focus > .icon-bar {
+  background: #222;
+}
+
+/*页脚*/
+.site-footer {
+  color: #fff;
+  background-image: url(../../../images/page/底部图片背景.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.site-footer a {
+  color: inherit;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+/*页脚——导航*/
+.footer-nav {
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px 0px;
+}
+.footer-nav .col-md-2 {
+  font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+  color: #ccc;
+}
+.footer-nav .col-md-2 > h3 {
+}
+.footer-list {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-list-item {
+  display: block;
+  padding: 10px 15px 10px 0px;
+}
+/*页脚——二维码*/
+.footer-nav .wechat-code-pictures .tab-pane > img {
+  width: 100%;
+}
+.footer-nav .nav > li > a:hover,
+.footer-nav .nav > li > a:focus {
+  color: #555;
+}
+/*页脚——copyright*/
+.copyright {
+  background-color: #0d0d0d;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+  color: #a6a6a6;
+}
+.copyright p {
+  font-size: 16px;
+  padding: 15px 0px;
+  margin: 0px;
+}
+.copyright p.pull-right > span {
+  padding-right: 10px;
+}
+
+
+/*站内搜索*/
+.page-lander {
+  padding-top: 6.4%;
+  padding-bottom: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*max-height: 520px;*/
+  font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+  color: #fff;
+  background-image: url(../../../images/page/着陆器背景.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-lander > h1 {
+  margin-top: 0px;
+}
+@media (max-width: 767px) {
+  .page-lander > h1 {
+	font-size: 22px;
+	margin-bottom: 8.8px;
+  }
+  .page-lander > p {
+	font-size: 10px;
+	margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .page-lander > h1 {
+	font-size: 26px;
+	margin-bottom: 10.4px;
+  }
+  .page-lander > p {
+	font-size: 12px;
+	margin-bottom: 21px;
+  }
+}
+@media (min-width: 992px) {
+  .page-lander > h1 {
+	font-size: 34px;
+	margin-bottom: 14.4px;
+  }
+  .page-lander > p {
+	font-size: 16px;
+	margin-bottom: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-lander > h1 {
+	font-size: 40px;
+	margin-bottom: 15px;
+  }
+  .page-lander > p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+}
+/*站内搜索——表单*/
+@media (max-width: 767px) {
+  .page-lander > form {
+	height: 26px;
+	font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .page-lander > form {
+	height: 30px;
+	font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .page-lander > form {
+	height: 36px;
+	font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-lander > form {
+	height: 44px;
+	font-size: 20px;
+  }
+}
+.page-lander > form > input {
+  height: 100%;
+  width: 25%;
+  min-width: 160px;
+  max-width: 300px;
+  margin-right: -1px;
+  border-width: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #888;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.page-lander > form > button {
+  height: 100%;
+  background-color: #4f90b0;
+  border: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
 }

@@ -12,10 +12,13 @@ html(lang='zh-CN')
 		title= title || '绿华能源'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 		
-		// Bootstrap
-		link(href='/styles/lib/bootstrap/bootstrap.css', rel='stylesheet')
-		// the site base style
-		link(rel='stylesheet', type='text/css', href='/styles/page/common/base.css')
+		//- Customise the stylesheet for your site by editing /public/styles/site.less
+		//- All .less files will be automatically compiled and minified in production.
+		link(href="/styles/site.min.css", rel="stylesheet")
+		//// Bootstrap
+		//link(href='/styles/lib/bootstrap/bootstrap.min.css', rel='stylesheet')
+		//// the site base style
+		//link(rel='stylesheet', type='text/css', href='/styles/page/common/base.css')
 		// the index page's style
 		block css
 		
