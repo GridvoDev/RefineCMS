@@ -1,4 +1,5 @@
-
+include ../mixins/flash-messages
+	
 doctype html
 html(lang='zh-CN')
 	
@@ -49,6 +50,8 @@ html(lang='zh-CN')
 		// 页眉end
 		
 		.index-main
+			+flash-messages(messages)
+			
 			block index-main
 		
 		// 页脚start

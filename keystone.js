@@ -16,7 +16,7 @@ keystone.init({
 
 	'less': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.png',//TODO .ico
+	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
 
@@ -73,7 +73,7 @@ keystone.set('routes', require('./routes'));
 // Setup common locals for your emails. The following are required by Keystone's
 // default email templates, you may remove them if you're using your own.
 keystone.set('email locals', {
-	logo_src: '/images/logo-email.gif',
+	logo_src: '/images/logo-email.jpg',
 	logo_width: 194,
 	logo_height: 76,
 	theme: {
