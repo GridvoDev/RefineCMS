@@ -39,7 +39,7 @@ node_modules
 .idea/workspace.xml
 
 # Ignore .env configuration files
-.env
+#.env
 
 # Ignore .DS_Store files on OS X
 .DS_Store
