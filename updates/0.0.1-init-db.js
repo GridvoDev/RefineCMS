@@ -10,20 +10,20 @@ exports.create = {
 	Contact: [
 		{
 			'title': '联系我们',
-			'address': '',
-			'tel': '',
-			'email': '',
-			'wechatAccount': '',
-			'postcode': '',
-			'fax': ''
+			'address': '请初始化数据...',
+			'tel': '请初始化数据...',
+			'email': 'sample@gridvo.com',
+			'wechatAccount': '请初始化数据...',
+			'postcode': '请初始化数据...',
+			'fax': '请初始化数据...'
 		}
 	],
 	Introduction: [
 		{
 			'title': '公司简介',
 			'content': {
-				'brief': '',
-				'extended': ''
+				'brief': '请初始化数据...',
+				'extended': '请初始化数据...'
 			},
 			'updatedAt': Date.now
 		}
@@ -31,38 +31,38 @@ exports.create = {
 	LawState: [
 		{
 			'title': '法律声明',
-			'content': '',
+			'content': '请初始化数据...',
 			'updatedAt': Date.now
 		}
 	],
 	PrivacyPolicy: [
 		{
 			'title': '隐私政策',
-			'content': '',
+			'content': '请初始化数据...',
 			'updatedAt': Date.now
 		}
 	],
 	CarouselPicture: [
 		{
-			'name': '',
+			'name': '请初始化数据...',
 			'location': 1,
 			'heroImage': {},
 			'publishedDate': Date.now
 		},
 		{
-			'name': '',
+			'name': '请初始化数据...',
 			'location': 2,
 			'heroImage': {},
 			'publishedDate': Date.now
 		},
 		{
-			'name': '',
+			'name': '请初始化数据...',
 			'location': 3,
 			'heroImage': {},
 			'publishedDate': Date.now
 		},
 		{
-			'name': '',
+			'name': '请初始化数据...',
 			'location': 4,
 			'heroImage': {},
 			'publishedDate': Date.now
