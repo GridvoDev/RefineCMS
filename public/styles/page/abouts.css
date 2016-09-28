@@ -27,3 +27,25 @@
 .main-content .tab-content > .tab-pane > .breadcrumb {
 	border-radius: 0px;
 }
+
+.breadcrumb > li > a {
+	color: #43cd4f;
+}
+.breadcrumb > li > a:focus,
+.breadcrumb > li > a:hover {
+	color: #22bb44;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+	color: #fff;
+	background-color: #22bb44;
+}
+.nav-pills a {
+	color: #22bb44;
+}
+.nav-pills a:focus,
+.nav-pills a:hover {
+	color: #43cd4f;
+}

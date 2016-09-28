@@ -31,7 +31,7 @@
 .news-info-categories ul > li.active a,
 .news-info-categories ul > li > a:hover,
 .news-info-categories ul > li > a:focus {
-	background-color: #4f90b0;
+	background-color: #22bb44;
 	color: #fff;
 	text-decoration: none;
 }
@@ -61,53 +61,76 @@
 .news-infos .media-body {
 	position: relative;
 }
-.news-infos .media-body .media-heading {
+.news-infos .media-body > h4 {
 	margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-	.news-infos .media-body .media-heading {
+	.news-infos .media-body > h4 {
 		font-size: 20px;
 	}
 }
 @media (min-width: 768px) {
-	.news-infos .media-body .media-heading {
+	.news-infos .media-body > h4 {
 		font-size: 26px;
 	}
 }
 @media (min-width: 992px) {
-	.news-infos .media-body .media-heading {
+	.news-infos .media-body > h4 {
 		font-size: 32px;
 	}
 }
-.news-infos .media-body .media-heading > a:hover,
-.news-infos .media-body .media-heading > a:focus {
+.news-infos .media-body > h4 > a:hover,
+.news-infos .media-body > h4 > a:focus {
 	text-decoration: none;
 }
-.news-infos .media-body .media-content {
+.news-infos .media-body > p {
 	overflow-y: hidden;
 	margin-bottom: 20px;
 	color: #555;
 	max-height: 6em;
 }
 @media (max-width: 768px) {
-	.news-infos .media-body .media-content {
+	.news-infos .media-body > p {
 		font-size: 14px;
 	}
 }
 @media (min-width: 768px) {
-	.news-infos .media-body .media-content {
+	.news-infos .media-body > p {
 		font-size: 14px;
 	}
 }
 @media (min-width: 992px) {
-	.news-infos .media-body .media-content {
+	.news-infos .media-body > p {
 		font-size: 16px;
 	}
 }
-.news-infos .media-body .media-time {
+.news-infos .media-body > time {
     position: absolute;
     bottom: 0px;
     margin-bottom: 0px;
 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 	color: #000;
+}
+
+.news-infos .media-body > h4 > a,
+.news-infos .media-body > h4 > a:hover,
+.news-infos .media-body > h4 > a:focus {
+	color: #349141;
+}
+
+.pagination > li > a {
+	color: #22bb44;
+	background-color: #fff;
+}
+.pagination > li > a:hover,
+.pagination > li > a:focus {
+	color: #349141;
+	background-color: #eee;
+}
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+	color: #fff;
+	background-color: #349141;
+	border-color: #349141;
 }

@@ -36,10 +36,10 @@ block index-main
 							a.media-left(href='/news/information/#{newsInfo.slug}')
 								img(src=newsInfo.overviewImage.path.substring(6)+newsInfo.overviewImage.filename, alt='')
 							.media-body
-								h4.media-heading
+								h4
 									a(href='/news/information/#{newsInfo.slug}')= newsInfo.title
-								p.media-content= newsInfo.content.brief 
-								p.media-time= newsInfo._.publishedDate.format('YYYY-MM-DD')
+								!= newsInfo.content.brief 
+								time= newsInfo._.publishedDate.format('YYYY-MM-DD')
 				// 分页start
 				nav
 					ul.pagination.pagination-lg

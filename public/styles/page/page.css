@@ -20,7 +20,7 @@
 .location > li > a {
 	font-size: 16px;
 	line-height: 20px;
-	color: rgba(64, 116, 142, 0.8);
+	color: #096215;
 }
 @media (max-width: 992px) {
 	.location > li > a {
@@ -29,7 +29,7 @@
 }
 .location > li > a:hover,
 .location > li > a:focus {
-	color: rgb(51, 100, 127);
+	color: #349141;
 	text-decoration: none;
 }
 .location > li.active > a {

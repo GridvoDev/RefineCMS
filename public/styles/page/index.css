@@ -112,7 +112,7 @@
 .wechat-icon:before {
 	display: inline-block;
 	margin-right: 10px;
-	background-image: url(../../images/page/index/微信图标.png);
+	background-image: url(../../images/page/index/微信图标green.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	content: "";
@@ -231,7 +231,7 @@
 	margin-bottom: -4.8%;
 }
 .introductions > img:last-child {
-	background: #f1f4f9;
+	background: #f3f6f3;
 	margin-top: -4.8%;
 	z-index: -1;
 }
@@ -260,8 +260,8 @@
 }
 .introduction-label:hover,
 .introduction-label:focus {
-	color: #274d67;
-	border-color: #274d67;
+	color: #92a589;
+	border-color: #92a589;
 	text-decoration: none;
 }
 .introduction-content {
@@ -290,7 +290,7 @@
 /*特色优势*/
 .features {
 	padding-top: 5.2%;
-	background-color: #f1f4f9;
+	background-color: #f3f6f3;
 }
 img.feature-picture {
 	width: 80%;
@@ -333,7 +333,7 @@ img.feature-picture {
 /*优秀案例*/
 .projects {
 	padding-top: 5.2%;
-	background-color: #f1f4f9;
+	background-color: #f3f6f3;
 }
 .poject-thumbnails {
 	overflow-x: hidden;/*hack*/
@@ -385,14 +385,18 @@ img.feature-picture {
 .news-info .col-sm-4 > p {
 	color: #555;
 }
+.news-info .col-sm-4 > p > a {
+	color: #43cd4f;
+}
 .news-info .col-sm-4 > p > a:hover,
 .news-info .col-sm-4 > p > a:focus {
+	color: #22bb44;
 	text-decoration: none;
 }
 
 /*合作伙伴*/
 .partners {
-	background-color: #f1f4f9;
+	background-color: #f3f6f3;
 	margin-top: 80px;
 	padding-top: 20px;
 	padding-bottom: 20px;
