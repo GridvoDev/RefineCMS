@@ -53,7 +53,7 @@
 .index-main .carousel-caption {
 	bottom: 30%;
 	max-height: 72%;
-	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 }
 .index-main .carousel-caption > img {
 		width: 18%;
@@ -163,7 +163,7 @@
 	text-align: center;
 }
 .section-header h2 {
-	font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
     color: #272727;
     text-transform: uppercase;
     position: relative;
@@ -200,7 +200,7 @@
 	content: "";
 }
 .section-header p {
-	font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 }
 @media (max-width: 767px) {
 	.section-header p {
@@ -247,7 +247,7 @@
     box-sizing: content-box;
     line-height: 0;
     color: #555;
-    font-family: "造字工房悦圆演示版常规体","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
     font-size: 20px;
     font-weight: bolder;
     border: 8px solid #ccc;

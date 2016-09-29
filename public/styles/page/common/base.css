@@ -154,7 +154,7 @@
 
 /*导航栏色调*/
 .site-header .navbar-nav {
-	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 }
 .site-header .navbar {
 	background-color: rgba(0,0,0,0.4);
@@ -241,7 +241,7 @@
 	padding: 20px 0px;
 }
 .footer-nav .col-md-2 {
-	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 	color: #ccc;
 }
 .footer-nav .col-md-2 > h3 {
@@ -285,7 +285,7 @@
 	padding-left: 10%;
 	padding-right: 10%;
 	/*max-height: 520px;*/
-	font-family: "造字工房悦黑演示版细体","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 	color: #fff;
 	background-image: url(../../../images/page/着陆器背景.png);
 	background-position: center;
