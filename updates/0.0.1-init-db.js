@@ -12,7 +12,7 @@ exports.create = {
 			'title': '联系我们',
 			'address': '请初始化数据...',
 			'tel': '请初始化数据...',
-			'email': 'sample@gridvo.com',
+			'email': 'sample@refine.com',
 			'wechatAccount': '请初始化数据...',
 			'postcode': '请初始化数据...',
 			'fax': '请初始化数据...'
