@@ -19,10 +19,11 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
+		{ label: '首页', key: 'home', href: '/' },
 		{ label: '关于我们', key: 'abouts', href: '/abouts' },
 		{ label: '产品特色', key: 'products', href: '/products' },
 		{ label: '优秀案例', key: 'cases', href: '/cases' },
-		{ label: '新闻资讯', key: 'news', href: '/news' },
+		{ label: '新闻资讯', key: 'news', href: '/news' }
 	];
 	res.locals.user = req.user;
 	next();
@@ -60,7 +61,7 @@ exports.flashMessages = function (req, res, next) {
 		info: req.flash('info'),
 		success: req.flash('success'),
 		warning: req.flash('warning'),
-		error: req.flash('error'),
+		error: req.flash('error')
 	};
 	res.locals.messages = _.some(flashMessages, function (msgs) { return msgs.length; }) ? flashMessages : false;
 	next();
