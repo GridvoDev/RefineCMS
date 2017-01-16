@@ -1,23 +1,28 @@
 var keystone = require('keystone');
+var async = require('async');
 
 exports = module.exports = function (req, res) {
 
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
 
-	// Init locals
+	// Set locals
 	locals.section = 'centers';
 	locals.data = {
-		centers: [],
+		newCenters:{},
 	};
 
-	// Load the products
 	view.on('init', function (next) {
 
-		var q = keystone.list('Center').model.find().sort('-publishedDate').exec(function (err, results) {
-			locals.data.centers = results;
+		async.parallel([
+			function (callback) {
+				keystone.list('NewCenter').model.findOne().exec(callback);
+			},
+		], function (err, results) {
+			locals.data.newCenters = results[0];
 			next(err);
 		});
+
 	});
 
 	// Render the view

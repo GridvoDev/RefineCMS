@@ -11,13 +11,13 @@ exports = module.exports = function (req, res) {
 	locals.section = '';
 	locals.data = {
 		carouselPictures: [],
-		introduction: {},
-		products: [],
-		centers:[],
-		arounds:[],
-		cases: [],
-		newsInfos: [],
-		partners: [],
+		// introduction: {},
+		// products: [],
+		// centers:[],
+		// arounds:[],
+		// cases: [],
+		// newsInfos: [],
+		// partners: [],
 		// vision: {},
 	};
 
@@ -27,36 +27,36 @@ exports = module.exports = function (req, res) {
 			function (callback) {
 				keystone.list('CarouselPicture').model.find().sort('-location').exec(callback);
 			},
-			function (callback) {
-				keystone.list('Introduction').model.findOne().exec(callback);
-			},
-			function (callback) {
-				keystone.list('Product').model.find().limit(2).exec(callback);
-			},
-			function (callback) {
-				keystone.list('Center').model.find().limit(2).exec(callback);
-			},
-			function (callback) {
-				keystone.list('Case').model.find().limit(4).exec(callback);
-			},
-			function (callback) {
-				keystone.list('NewsInfo').model.find().populate('categories').limit(3).exec(callback);
-			},
-			function (callback) {
-				keystone.list('Partner').model.find().exec(callback);
-			},
+			// function (callback) {
+			// 	keystone.list('Introduction').model.findOne().exec(callback);
+			// },
+			// function (callback) {
+			// 	keystone.list('Product').model.find().limit(2).exec(callback);
+			// },
+			// function (callback) {
+			// 	keystone.list('Center').model.find().limit(2).exec(callback);
+			// },
+			// function (callback) {
+			// 	keystone.list('Case').model.find().limit(4).exec(callback);
+			// },
+			// function (callback) {
+			// 	keystone.list('NewsInfo').model.find().populate('categories').limit(3).exec(callback);
+			// },
+			// function (callback) {
+			// 	keystone.list('Partner').model.find().exec(callback);
+			// },
 			// //添加企业愿景（Pro_chen）
 			// function (callback) {
 			// 	keystone.list('Vision').model.findOne().exec(callback);
 			// },
 		], function (err, results) {
 			locals.data.carouselPictures = results[0];
-			locals.data.introduction = results[1];
-			locals.data.products = results[2];
-			locals.data.cases = results[3];
-			locals.data.newsInfos = results[4];
-			locals.data.partners = results[5];
-			locals.data.centers = results[6];
+			// locals.data.introduction = results[1];
+			// locals.data.products = results[2];
+			// locals.data.cases = results[3];
+			// locals.data.newsInfos = results[4];
+			// locals.data.partners = results[5];
+			// locals.data.centers = results[6];
 			// //添加企业愿景（Pro_chen）
 			// locals.data.vision = results[6];
 			next(err);

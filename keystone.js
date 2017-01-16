@@ -100,7 +100,7 @@ keystone.set('nav', {
 	'新闻资讯': ['news-infos', 'news-info-categories'],
 	'用户管理': 'users',
 	'系统设置': ['carousel-pictures', 'feedback-consultations', 'site-maps'],
-	'新闻中心': 'centers',
+	'新闻中心': 'new-centers',
 
 });
 
