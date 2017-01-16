@@ -17,7 +17,7 @@ var CarouselPicture = new keystone.List('CarouselPicture', {
 
 CarouselPicture.add({
 	name: { type: String, required: true },
-	location: { type: Number, default: 1, required: true },
+	location: { type: Number, default: 1, required: true,noedit: true  },
 	heroImage: {
 		type: Types.LocalFile,
 		dest: 'public/uploads/',
@@ -35,6 +35,8 @@ CarouselPicture.add({
 		required: true,
 		initial: false,
 	},
+	text:{type:String,requeired:true},
+	// content: { type: Types.Html, wysiwyg: true, required: true },
 	publishedDate: { type: Date, watch: true, value: Date.now, noedit: true },
 });
 

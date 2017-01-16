@@ -42,6 +42,20 @@ exports.create = {
 			'updatedAt': Date.now
 		}
 	],
+	Vision: [
+		{
+			'title': '企业愿景',
+			'content': '请初始化数据...',
+			'updatedAt': Date.now
+		}
+	],
+	Course: [
+		{
+			'title': '隐私政策',
+			'content': '请初始化数据...',
+			'updatedAt': Date.now
+		}
+	],
 	CarouselPicture: [
 		{
 			'name': '请初始化数据...',

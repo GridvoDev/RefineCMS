@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/centers.css')
+
+block index-main
+	// 站内搜索start
+	.page-lander.text-center
+		h1
+			span(style='display: inline-block;') 用最先进的技术
+			| &nbsp;
+			span(style='display: inline-block;') 让生活更加美好 
+		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		each center,index in data.centers
+			.content-block(class=(index%2 == 0 ? 'content-block-gray' : 'content-block-white'))
+				.container
+					.row
+						.col-sm-5.hidden-xs.feature-pic.feature-pic-cover(class=(index%2 == 0 ? 'feature-pic-left' : 'feature-pic-right'))
+							img(src=center.overviewImage.path.substring(6)+center.overviewImage.filename, alt='')
+						.col-sm-5.col-xs-12.feature-body
+							h2= center.title
+	// 主体内容end
+
+block js
+	// 页面相关
+	script(type='text/javascript').

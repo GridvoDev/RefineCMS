@@ -1,0 +1,109 @@
+
+.main-content {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+
+/*块颜色*/
+.content-block-gray {
+	background:#fff;
+	/*background: #ececec;*/
+}
+.content-block-white {
+	background: #fff;
+}
+/*块内补*/
+.content-block > .container {
+	margin-top: 80px;
+	padding: 3.125% 0;
+	position: relative;
+}
+
+/*特色图片*/
+.feature-pic {
+	position: static;
+}
+.feature-pic > img {
+	max-width: 80%;
+}
+@media (max-width: 991px) {
+	.feature-pic > img {
+		max-width: 100%;
+	}
+}
+/*特色图片——款式（左右）*/
+.feature-pic-left {
+	float: left;
+}
+@media (min-width: 768px) {
+	.feature-pic-left + div {
+		margin-left: 6.66666667%;
+	}
+}
+.feature-pic-left > img {
+	right: 58.33333333%;
+	float: right;
+}
+.feature-pic-right {
+	float: right;
+}
+@media (min-width: 768px) {
+	.feature-pic-right + div {
+		margin-right: 16.66666667%;
+	}
+}
+.feature-pic-right > img {
+	left: 58.33333333%;
+	float: left;
+}
+/*特色图片——款式（包含、占满、溢出）*/
+.feature-pic-contain {}
+.feature-pic-cover > img {
+	margin: -6.25% 0;
+}
+.feature-pic-overflow > img {
+	position: absolute;
+	bottom: 0px;
+	width: 25%;
+}
+
+/*特色正文*/
+.feature-body > h2 {
+	color: #000;
+}
+.feature-body > p {
+	color: #333;
+	line-height: 1.5714;
+}
+@media (max-width: 768px) {
+	.feature-body > h2 {
+		margin-bottom: 16px;
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 18px;
+	}
+	.feature-body > p {
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 12px;
+	}
+}
+@media (min-width: 768px) {
+	.feature-body > h2 {
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	.feature-body > p {
+		font-size: 16px;
+	}
+}
+
+/*页脚模块*/
+footer.site-footer{
+	display: none;
+}
+
+
+.index-main >img{
+	width: 100%;
+	height: 100%;
+}

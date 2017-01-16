@@ -7,7 +7,7 @@ var Types = keystone.Field.Types;
  */
 
 var Introduction = new keystone.List('Introduction', {
-	label: '公司简介',
+	label: '关于我们',
 	map: { name: 'title' },
 	singular: 'Introduction',
 	plural: 'Introductions',

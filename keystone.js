@@ -54,10 +54,10 @@ keystone.init({
 	},
 });
 
-// Load your project's Models
+// Load your project's Models 加载您的项目模型
 keystone.import('models');
 
-// Setup common locals for your templates. The following are required for the
+// Setup common locals for your templates（模板）. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
 keystone.set('locals', {
@@ -93,12 +93,15 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies'],
+	'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies','visions','courses','dynamics','recruitments'],
+	'联系设置':['lianxis','joins'],
 	'产品特色': 'products',
 	'项目案例': 'cases',
 	'新闻资讯': ['news-infos', 'news-info-categories'],
 	'用户管理': 'users',
 	'系统设置': ['carousel-pictures', 'feedback-consultations', 'site-maps'],
+	'新闻中心': 'centers',
+
 });
 
 // Start Keystone to connect to your database and initialise the web server

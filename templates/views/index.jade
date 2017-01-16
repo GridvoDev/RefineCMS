@@ -12,19 +12,17 @@ block index-main
 				li(class={active: index === 0}, data-target='#carousel-example', data-slide-to='' + index)
 		// Indicators end
 		// Wrapper for slides
-		.carousel-inner(role='listbox')
+		.carousel-inner
 			each carouselPicture,index in data.carouselPictures
 				.item(class={active: index === 0})
-					img(alt='slide image', src=carouselPicture.heroImage.path.substring(6) + carouselPicture.heroImage.filename)   
-					.carousel-caption
-						img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
-						h3
-							span(style='display: inline-block;') 用最先进的技术
-							| &nbsp;
-							span(style='display: inline-block;') 让生活更加美好
-						p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-						a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
-							span.wechat-icon 进一步了解
+					img(alt='slide image', src=carouselPicture.heroImage.path.substring(6) + carouselPicture.heroImage.filename)
+					//.carousel-caption
+					//	img.center-block(src='/images/page/logo.png', alt='轮播字幕LOGO')
+					//	h3
+					//		span= carouselPicture.name
+					//	p= carouselPicture.text
+					//	a.btn.btn-default.btn-lg(href='#wechat-code-pictures')
+					//		span.wechat-icon 进一步了解
 		// Control for slides
 		a.left.carousel-control(href='#carousel-example', role='button', data-slide='prev')
 			span.glyphicon.glyphicon-chevron-left
@@ -34,7 +32,7 @@ block index-main
 			span.sr-only Next
 	// 首页轮播end
 	// 公司简介start
-	.introductions
+	//-.introductions
 		img.absolute-img-before(src='/images/page/index/圆弧顶.png', alt='')
 		.container
 			.section-header
@@ -54,15 +52,15 @@ block index-main
 					#tab-content-1.col-md-12.col-xs-12.introduction-content.tab-pane.fade.in.active(role='tabpanel', aria-labelledby='tab-1')
 						p 依托丰富的项目开发经验、雄厚的资金实力和专业化的技术管理团队，为客户提供全面专业的EPC+服务以及高效的管理体验。
 					#tab-content-2.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2')
-						p 采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术，采用最新自主研发技术。
+						p 采用最新自主研发技术。
 					#tab-content-3.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3')
-						p 以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标，以作为水电服务企业的领导者为目标。
+						p 以作为水电服务企业的领导者为目标。
 					#tab-content-4.col-md-12.col-xs-12.introduction-content.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4')
 						p 格物致知，诚信共赢。
 		img.relative-img-after(src='/images/page/index/圆弧底.png', alt='')
 	// 公司简介end
 	// 特色优势start
-	.features
+	//-.features
 		.container
 			.section-header
 				h2 特色优势
@@ -79,11 +77,11 @@ block index-main
 					img.feature-picture(src='/images/page/index/功能特点图标2.png')
 	// 特色优势end
 	// 优秀案例start
-	.projects
+	//-.projects
 		.container
 			.section-header
 				h2 优秀案例
-				p 绿化拥有行业领先的水面光伏太阳能技术和丰富的项目开发经验，提供质量最可靠的产品。为客户提供价格更低、性能更高、寿命更长的太阳能解决方案。正如太阳普照万物的无私奉献，绿化的技术领导力能够使太阳能成为人人都享受的资源。
+				p 绿华拥有行业领先的水面光伏太阳能技术和丰富的项目开发经验，提供质量最可靠的产品。为客户提供价格更低、性能更高、寿命更长的太阳能解决方案。正如太阳普照万物的无私奉献，绿化的技术领导力能够使太阳能成为人人都享受的资源。
 		.container-fluid.poject-thumbnails
 			.row
 				each case0 in data.cases
@@ -92,29 +90,71 @@ block index-main
 							img(src=case0.overviewImage.path.substring(6)+case0.overviewImage.filename) 
 			img.absolute-img-bottom(src='/images/page/index/案例分块白色底边.png', alt='')
 	// 优秀案例end
-	// 新闻资讯start
-	.news-info
-		.container
-			.section-header
-				h2 新闻资讯
-			.row.text-center
-				each newsInfo in data.newsInfos
-					.col-sm-4
+	//-
+		// 新闻资讯start
+			.news-info
+				.container
+					.section-header
+						h2 新闻资讯
+					.row.text-center
+						each newsInfo in data.newsInfos
+							.col-sm-4
+								h3
+									a(href='/news/information/#{newsInfo.slug}')= newsInfo.title
+								p #{newsInfo._.publishedDate.format("YYYY-MM-DD")}&nbsp;&nbsp;&nbsp;
+									each category in newsInfo.categories
+										a(href='/news/#{category.key}')= category.name
+								!= newsInfo.content.brief
+		// 新闻资讯end
+	//-
+		// 合作伙伴start
+		.partners
+			.container
+				.section-header
+					h2 合作伙伴
+				.row
+					each partner in data.partners
+						.col-sm-3.col-xs-4
+							img(src=partner.logoImage.path.substring(6)+partner.logoImage.filename, alt='')
+		// 合作伙伴end
+		
+	//海报型链接start
+	#lh1-poster-list.lg-container
+		.row
+			.col-sm-6
+				.lh1-poster-img
+					.lh1-img
+						a(href='/abouts')
+							img(src='/uploads/下1111.jpg',alt="绿华图片")
+					.lh1-poster-caption
 						h3
-							a(href='/news/information/#{newsInfo.slug}')= newsInfo.title
-						p #{newsInfo._.publishedDate.format("YYYY-MM-DD")}&nbsp;&nbsp;&nbsp;
-							each category in newsInfo.categories
-								a(href='/news/#{category.key}')= category.name
-						!= newsInfo.content.brief
-	// 新闻资讯end
-	// 合作伙伴start
-	.partners
-		.container
-			.row
-				each partner in data.partners
-					.col-sm-3.col-xs-4
-						img(src=partner.logoImage.path.substring(6)+partner.logoImage.filename, alt='')
-	// 合作伙伴end
+							a(href='/abouts') 这是第一张海报卡片
+						p 为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。
+			.col-sm-6
+				.row
+					.col-sm-12
+						.lh1-poster-img.lh1-poster-img-1
+							.lh1-img
+								a(href='/abouts')
+									img(src='/uploads/下6.jpg',alt="绿华图片")
+					.col-sm-12(style={'margin-bottom':'0'})
+						.lh1-poster-img.lh1-poster-img-2
+							.lh1-img
+								a(href='/abouts')
+									img(src='/uploads/下2.jpg',alt="绿华图片")
+		.row
+			.col-lg-6.lh1-poster-copy
+				.lh1-poster-img.lh1-poster-img-3
+					.lh1-img
+						a(href='/abouts')
+							img(src='/uploads/下3.jpg',alt="绿华图片")
+			.col-lg-6.lh1-poster-copy
+				.lh1-poster-img.lh1-poster-img-4
+					.lh1-img
+						a(href='/abouts')
+							img(src='/uploads/下7.jpg',alt="绿华图片")
+	//海报型链接start
+				
 
 block js
 	// 页面相关

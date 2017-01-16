@@ -124,28 +124,28 @@
 }
 /*导航栏布局——菜单项*/
 @media (max-width: 767px) {
-	.site-header .navbar-nav > li > a {
+	.site-header .navbar-nav > li > a,.site-header .navmenu > a {
 		padding: 15px 12px;
 		font-size: 16px;
 		line-height: 20px;
 	}
 }
 @media (min-width: 768px) {
-	.site-header .navbar-nav > li > a {
+	.site-header .navbar-nav > li > a,.site-header .navmenu > a {
 		padding: 15px 12px;
 		font-size: 16px;
 		line-height: 20px;
 	}
 }
 @media (min-width: 992px) {
-	.site-header .navbar-nav > li > a {
+	.site-header .navbar-nav > li > a,.site-header .navmenu > a {
 		padding: 22px 15px;
 		font-size: 18px;
 		line-height: 20px;
 	}
 }
 @media (min-width: 1200px) {
-	.site-header .navbar-nav > li > a {
+	.site-header .navbar-nav > li > a,.site-header .navmenu > a {
 		padding: 30px 20px;
 		font-size: 20px;
 		line-height: 20px;
@@ -380,3 +380,18 @@
 	padding-right: 20px;
 	vertical-align: middle;
 }
+
+
+ul ul{
+	list-style-type: none;
+	position: absolute;
+	display: none;
+}
+ul ul li{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom:1px solid;
+	border-top: 1px solid;
+	margin-bottom: 1em;
+}
+

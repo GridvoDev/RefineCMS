@@ -1,17 +1,17 @@
 include ../mixins/flash-messages
-	
+
 doctype html
 html(lang='zh-CN')
-	
+
 	head
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		
+
 		// 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！
-		title= title || '绿华能源'
+		title= title || '绿华能源-精益绿华能源 REFINE CLEAN ENERGY'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
-		
+
 		//- Customise the stylesheet for your site by editing /public/styles/site.less
 		//- All .less files will be automatically compiled and minified in production.
 		link(href="/styles/site.min.css", rel="stylesheet")
@@ -21,16 +21,16 @@ html(lang='zh-CN')
 		//link(rel='stylesheet', type='text/css', href='/styles/page/common/base.css')
 		// the index page's style
 		block css
-		
+
 		// HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
 		// WARNING: Respond.js doesn't work if you view the page via file://
 		//if lt IE 9
 			script(src='http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js')
 			script(src='http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
-		
+
 		//- Add any other template-specific HEAD tags by extending the head block
 		block head
-	
+
 	body
 		// 页眉start
 		header.site-header
@@ -48,15 +48,48 @@ html(lang='zh-CN')
 					// Collect the nav links, forms, and other content for toggling
 					#bs-example-navbar-collapse.collapse.navbar-collapse
 						ul.nav.navbar-nav.navbar-right
-							each link in navLinks
+							//-each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+							li
+								a(href='/') 首页
+							//-li.navmenu
+								a(href='/cases') 优秀案例
+							li.navmenu
+								a(href='/abouts') 关于绿华
+								ul(style={
+									'padding':0,
+									})
+									li
+										a(href='/abouts') 关于我们
+									li
+										a(href='/abouts') 发展历程
+									li
+										a(href='/abouts') 宣传视频
+									li
+										a(href='/abouts') 媒体报道
+							li.navmenu
+								a(href='/centers') 新闻中心
+								//-ul.nav2-nav
+									li    关于我们
+									li    发展历程
+									li    宣传视频
+									li    媒体报道
+							li.navmenu
+								a(href='/arounds') 绿华在身边
+								ul(style={
+									'padding': 0,
+									})
+									li
+										a(href='/arounds') 联系我们
+									li
+										a(href='/arounds') 加入我们
 		// 页眉end
-		
+
 		.index-main
 			+flash-messages(messages)
-			
+
 			block index-main
-		
+
 		// 页脚start
 		footer.site-footer
 			.footer-nav
@@ -64,22 +97,32 @@ html(lang='zh-CN')
 				.container
 					.row
 						.col-md-2.col-sm-4.col-xs-6
-							h3 关于绿华
+							h4 关于绿华
 							ul.footer-list
 								li.footer-list-item
 									a(href='/abouts') 公司简介
+								//Pro_chen:修改底部信息（公司动态与人才招聘）
+								li.footer-list-item
+									a(href='/abouts') 公司动态
+								li.footer-list-item
+									a(href='/abouts') 人才招聘
 						.col-md-2.col-sm-4.col-xs-6
-							h3 新闻资讯
+							h4 新闻中心
+							ul.footer-list
+								li.footer-list-item
+									a(href='/centers') 二维码
+						//-.col-md-2.col-sm-4.col-xs-6
+							h4 新闻资讯
 							ul.footer-list
 								li.footer-list-item
 									a(href='/news/57bfe964ec960ce9277c8a82') 行业背景
 								li.footer-list-item
 									a(href='/news/57bfff7b56fe87d81ef33f72') 热点聚焦
-								li.footer-list-item
-									a(href='/news/57bfff8656fe87d81ef33f73') 公司动态
+								//li.footer-list-item
+								//	a(href='/news/57bfff8656fe87d81ef33f73') 公司动态
 						.clearfix.visible-xs-block
 						.col-md-2.col-sm-4.col-xs-6
-							h3 产品信息
+							h4 产品信息
 							ul.footer-list
 								li.footer-list-item
 									a(href='/products') 产品系列
@@ -87,7 +130,7 @@ html(lang='zh-CN')
 									a(href='/cases') 案例展示
 						.clearfix.visible-sm-block
 						.col-md-2.col-sm-4.col-xs-6
-							h3 快速链接
+							h4 快速链接
 							ul.footer-list
 								//li.footer-list-item
 								//	a(href='/feedback') 在线反馈
@@ -96,26 +139,48 @@ html(lang='zh-CN')
 								li.footer-list-item
 									a(href='/abouts') 合作伙伴
 						#wechat-code-pictures.col-md-3.col-md-offset-1.col-sm-8.col-xs-12.wechat-code-pictures
-							ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
-								li.active(role='presentation')
-									a#refine-official-tab(href='#refine-official', role='tab', data-toggle='tab', aria-controls='refine-official', aria-expanded='true') 官方微信
-								li(role='presentation')
-									a#gridvo-subscription-tab(href='#gridvo-subscription', role='tab', data-toggle='tab', aria-controls='gridvo-subscription', aria-expanded='false') 格物科技
-								li(role='presentation')
-									a#gridvo-service-tab(href='#gridvo-service', role='tab', data-toggle='tab', aria-controls='gridvo-service', aria-expanded='false') 智能水电站
+							h5 关注我们
+							//-ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
+								li
+								a(href='/abouts')
+									img(style={
+										'margin-bottom':'5px',
+										'text-align':'end'
+									},src='/images/page/绿华微博.png',alt='绿华微博')
+								//p
+								//	a#refine-official-tab(href='#refine-official', role='tab', data-toggle='tab', aria-controls='refine-official', aria-expanded='true') 关注我们
+								//-
+									li.active(role='presentation')
+										a#refine-official-tab(href='#refine-official', role='tab', data-toggle='tab', aria-controls='refine-official', aria-expanded='true') 官方微信
+									li(role='presentation')
+										a#gridvo-subscription-tab(href='#gridvo-subscription', role='tab', data-toggle='tab', aria-controls='gridvo-subscription', aria-expanded='false') 格物科技
+									li(role='presentation')
+										a#gridvo-service-tab(href='#gridvo-service', role='tab', data-toggle='tab', aria-controls='gridvo-service', aria-expanded='false') 智能水电站
 							#myWechatTabContent.tab-content
-								#refine-official.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='refine-official-tab')
-									img(src='/images/page/绿华能源公众号.jpg', alt='')
-								#gridvo-subscription.tab-pane.fade(role='tabpanel', aria-labelledby='gridvo-subscription-tab')
-									img(src='/images/page/格物科技订阅号.jpg', alt='')
-								#gridvo-service.tab-pane.fade(role='tabpanel', aria-labelledby='gridvo-service-tab')
-									img(src='/images/page/智能化水电站服务号.jpg', alt='')
+								//-#refine-official.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='refine-official-tab')
+								img(style={
+									width: '40%',
+									'text-align':'end',
+									'max-height': '130px'
+								},src='/images/page/绿华能源公众号.jpg', alt='绿华能源公众号')
+								h5 官方微信
+								//-
+									#gridvo-subscription.tab-pane.fade(role='tabpanel', aria-labelledby='gridvo-subscription-tab')
+										img(src='/images/page/格物科技订阅号.jpg', alt='')
+									#gridvo-service.tab-pane.fade(role='tabpanel', aria-labelledby='gridvo-service-tab')
+										img(src='/images/page/智能化水电站服务号.jpg', alt='')
 				// container end
+			hr(style={
+				'border-color': '#424141',
+				'margin-top':'0px',
+				'margin-bottom':'0px'
+			})
 			.copyright
 				// container start
 				.container
-					p.pull-left Copyright © 2014-2016 绿化能源有限公司，保留所有权利 | 浙ICP备15019097号
-					p.pull-right
+					//-p.pull-left Copyright © 2014-2016 绿华能源有限公司，保留所有权利 | 闽ICP备15027822号
+					p.pull-left Copyright © 绿华能源有限公司，保留所有权利 | 闽ICP备15027822号
+					//-p.pull-right
 						span
 							a(href='/abouts') 法律声明
 						span
@@ -124,10 +189,24 @@ html(lang='zh-CN')
 							a(href='/abouts') 联系我们
 				// container end
 		// 页脚end
-		
+
 		// jQuery (necessary for Bootstrap's JavaScript plugins)
 		script(src='/js/lib/jquery/jquery-1.11.3.min.js')
 		// Include all compiled plugins (below), or include individual files as needed
 		script(src='/js/lib/bootstrap/bootstrap-3.3.5.min.js')
 		// 页面相关
 		block js
+		//下拉菜单
+		script(type='text/javascript').
+			
+			$(function () {
+				$(".navmenu").mouseover(function () {
+					$(this).children("ul").show();
+				})
+
+				$(".navmenu").mouseout(function () {
+					$(this).children("ul").hide();
+				})
+				
+				
+			})
