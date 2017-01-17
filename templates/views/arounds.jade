@@ -26,14 +26,15 @@ block index-main
 						li
 							a(href='/') 首页
 						li
-							a(href='/arounds') 绿华在身边
+							a(href='/abouts') 关于我们
 						li.active 联系我们
 					h1= data.lianxis.title
-					.lv2-img
-						img(style={
-							width: '50%',
-							'max-height': '250px'
-						},src=data.lianxis.overviewImage.path.substring(6) + data.lianxis.overviewImage.filename)
+					p 地址：#{data.lianxis.address}
+					p 邮政编码：#{data.lianxis.postcode}
+					p 联系电话：#{data.lianxis.tel}
+					//-p 邮箱：#{data.lianxis.email}
+					p 传真：#{data.lianxis.fax}
+					p 网址：#{data.lianxis.wechatAccount}
 					//#dituContent(style={
 					//	width: '697px',
 					//	height: '550px',
@@ -50,12 +51,12 @@ block index-main
 						li
 							a(href='/arounds') 关于绿华
 						li.active 加入我们
-					h1= data.joins.title
-					.lv2-img
-						img(style={
-							width: '50%',
-							'max-height': '250px'
-						},src=data.joins.overviewImage.path.substring(6) + data.joins.overviewImage.filename)
+					//-h1= data.joins.title
+					img(style={
+						width: '100%',
+						'margin-bottom':'20px'
+					},src=data.joins.overviewImage.path.substring(6) + data.joins.overviewImage.filename)
+					!=data.joins.content
 
 
 	// 主体内容end
