@@ -21,7 +21,8 @@ exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: '首页', key: 'home', href: '/' },
 		{ label: '关于绿华', key: 'abouts', href: '/abouts' },
-		{ label: '产品与服务', key: 'products', href: '/products' },
+		{ label: '产品与服务', key: 'services', href: '/services' },
+		//{ label: '产品案例', key: 'products', href: '/products' },
 		//{ label: '优秀案例', key: 'cases', href: '/cases' },
 		// { label: '新闻资讯', key: 'news', href: '/news' },
 		{ label: '新闻中心', key: 'centers', href: '/centers' },

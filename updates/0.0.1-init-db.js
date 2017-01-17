@@ -51,7 +51,21 @@ exports.create = {
 	],
 	Course: [
 		{
-			'title': '隐私政策',
+			'title': '发展历程',
+			'content': '请初始化数据...',
+			'updatedAt': Date.now
+		}
+	],
+	Serve: [
+		{
+			'title': '服务',
+			'content': '请初始化数据...',
+			'updatedAt': Date.now
+		}
+	],
+	Product: [
+		{
+			'title': '产品',
 			'content': '请初始化数据...',
 			'updatedAt': Date.now
 		}

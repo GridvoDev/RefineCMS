@@ -51,14 +51,16 @@ exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/abouts', routes.views.abouts);
+	app.get('/services',routes.views.services);
 	app.get('/arounds', routes.views.arounds);
-	app.get('/products', routes.views.products);
 	app.get('/centers',routes.views.centers);
+	//暂时摘除产品案例、新闻资讯等一些模块
+	//app.get('/products', routes.views.products);
 	// app.get('/products/:product', routes.views.productInfo);
-	app.get('/cases', routes.views.cases);
-	app.get('/cases/:case', routes.views.case);
-	app.get('/news/:category?', routes.views.news);
-	app.get('/news/information/:newsInfo', routes.views.newsInfo);
+	// app.get('/cases', routes.views.cases);
+	// app.get('/cases/:case', routes.views.case);
+	// app.get('/news/:category?', routes.views.news);
+	// app.get('/news/information/:newsInfo', routes.views.newsInfo);
 	// app.all('/feedback', routes.views.feedbackAndConsultation);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

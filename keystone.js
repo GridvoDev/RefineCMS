@@ -95,9 +95,10 @@ keystone.set('email tests', require('./routes/emails'));
 keystone.set('nav', {
 	'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies','visions','courses','dynamics','recruitments'],
 	'联系设置':['lianxis','joins'],
-	'产品特色': 'products',
-	'项目案例': 'cases',
-	'新闻资讯': ['news-infos', 'news-info-categories'],
+	'产品与服务':['products','serves'],
+	// '产品特色': 'products',
+	// '项目案例': 'cases',
+	// '新闻资讯': ['news-infos', 'news-info-categories'],
 	'用户管理': 'users',
 	'系统设置': ['carousel-pictures', 'feedback-consultations', 'site-maps'],
 	'新闻中心': 'new-centers',
