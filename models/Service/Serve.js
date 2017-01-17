@@ -11,8 +11,8 @@ var Serve = new keystone.List('Serve', {
 	map: { name: 'title' },
 	singular: 'Serve',
 	plural: 'Serves',
-	// nocreate: true,
-	// nodelete: true,
+	 nocreate: true,
+	 nodelete: true,
 });
 
 Serve.add({

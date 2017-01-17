@@ -11,8 +11,8 @@ var Product = new keystone.List('Product', {
 	map: { name: 'title' },
 	singular: 'Product',
 	plural: 'Products',
-	// nocreate: true,
-	// nodelete: true,
+	 nocreate: true,
+	 nodelete: true,
 });
 
 Product.add({
