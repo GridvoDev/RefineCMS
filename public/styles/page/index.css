@@ -543,6 +543,13 @@ img.feature-picture {
 		position: relative;
 		min-height: 100%;
 		margin-bottom: 0;
+		padding: 0;
+	}
+	.lh1-poster-img:hover a{
+		background-color: inherit;
+	}
+	.lh1-poster-img:hover .lh1-img{
+		margin-left: inherit;
 	}
 }
 
