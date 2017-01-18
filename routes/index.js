@@ -51,8 +51,12 @@ exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/abouts', routes.views.abouts);
+	app.get('/abouts/course', routes.views.course);
+	app.get('/abouts/dynamic', routes.views.dynamic);
+	app.get('/abouts/recruitment', routes.views.recruitment);
 	app.get('/services',routes.views.services);
 	app.get('/arounds', routes.views.arounds);
+	app.get('/arounds/join', routes.views.join);
 	app.get('/centers',routes.views.centers);
 	//暂时摘除产品案例、新闻资讯等一些模块
 	//app.get('/products', routes.views.products);

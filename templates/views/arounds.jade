@@ -18,7 +18,7 @@ block index-main
 			ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
 				li.active(role='presentation')
 					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 联系我们
-				li(role='presentation')
+				//-li(role='presentation')
 					a#two-tab(href='#two', role='tab', data-toggle='tab', aria-controls='two', aria-expanded='true') 加入我们
 			#myTabContent.col-sm-9.tab-content
 				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
@@ -44,14 +44,14 @@ block index-main
 						span 电话号码
 							img(src='/uploads/利用最先进的技术.jpg',alt='绿华能源')
 						
-				#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
+				//-#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
 					ol.breadcrumb
 						li
 							a(href='/') 首页
 						li
 							a(href='/arounds') 关于绿华
 						li.active 加入我们
-					//-h1= data.joins.title
+					h1= data.joins.title
 					img(style={
 						width: '100%',
 						'margin-bottom':'20px'

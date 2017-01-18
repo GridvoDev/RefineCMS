@@ -7,29 +7,24 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Set locals
-	locals.section = 'arounds';
+	locals.section = 'dynamic';
 	locals.data = {
-		lianxis:{},
-		//joins:{},
+		dynamics:{},
 	};
 
 	view.on('init', function (next) {
 
 		async.parallel([
 			function (callback) {
-				keystone.list('Lianxi').model.findOne().exec(callback);
+				keystone.list('Dynamic').model.findOne().exec(callback);
 			},
-			//function (callback) {
-			//	keystone.list('Join').model.findOne().exec(callback);
-			//},
 		], function (err, results) {
-			locals.data.lianxis = results[0];
-			//locals.data.joins = results[1];
+			locals.data.dynamics = results[0];
 			next(err);
 		});
 
 	});
 
 	// Render the view
-	view.render('arounds');
+	view.render('dynamic');
 };

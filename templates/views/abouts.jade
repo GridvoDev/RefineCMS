@@ -29,11 +29,11 @@ block index-main
 				//Pro_chen:企业愿景、发展历程、公司动态、人才招聘
 				//li(role='presentation')
 					a#six-tab(href='#six', role='tab', data-toggle='tab', aria-controls='six', aria-expanded='true') 企业愿景
-				li(role='presentation')
+				//li(role='presentation')
 					a#seven-tab(href='#seven', role='tab', data-toggle='tab', aria-controls='seven', aria-expanded='true') 发展历程
-				li(role='presentation')
+				//li(role='presentation')
 					a#eight-tab(href='#eight', role='tab', data-toggle='tab', aria-controls='eight', aria-expanded='true') 宣传视频
-				li(role='presentation')
+				//li(role='presentation')
 					a#nine-tab(href='#nine', role='tab', data-toggle='tab', aria-controls='nine', aria-expanded='true') 媒体报道
 			#myTabContent.col-sm-9.tab-content
 				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
@@ -102,7 +102,7 @@ block index-main
 						li.active 企业愿景
 					h1= data.visions.title
 					!= data.visions.content
-				#seven.tab-pane.fade(role='tabpanel', aria-labelledby='seven-tab')
+				//-#seven.tab-pane.fade(role='tabpanel', aria-labelledby='seven-tab')
 					ol.breadcrumb
 						li
 							a(href='/') 首页
@@ -111,7 +111,7 @@ block index-main
 						li.active 发展历程
 					h1= data.courses.title
 					!= data.courses.content
-				#eight.tab-pane.fade(role='tabpanel', aria-labelledby='eight-tab')
+				//-#eight.tab-pane.fade(role='tabpanel', aria-labelledby='eight-tab')
 					ol.breadcrumb
 						li
 							a(href='/') 首页
@@ -120,7 +120,7 @@ block index-main
 						li.active 宣传视频
 					h1= data.dynamics.title
 					!= data.dynamics.content
-				#nine.tab-pane.fade(role='tabpanel', aria-labelledby='nine-tab')
+			//-	#nine.tab-pane.fade(role='tabpanel', aria-labelledby='nine-tab')
 					ol.breadcrumb
 						li
 							a(href='/') 首页
