@@ -451,7 +451,7 @@ img.feature-picture {
 }
 .lh1-poster-img .lh1-img > a > img{
 	width: 110%;
-	height: 110%;
+	max-width: 110%;
 }
 .lh1-img-subinfo{
 	position: absolute;
