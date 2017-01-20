@@ -44,7 +44,7 @@
 .index-main .carousel-inner > .item > img,
 .index-main .carousel-inner > .item > a > img {
 	min-width: 100%;
-	height: 20vh;
+	height: 30vh;
 }
 @media (min-width: 768px) {
 	.index-main .carousel-inner > .item > img,
@@ -411,7 +411,7 @@ img.feature-picture {
 }
 
 /*海报卡片*/
-#lh1-poster-list.lg-container{
+#lh1-poster-list.lg-container,.index-video{
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto 0 auto;
@@ -430,7 +430,7 @@ img.feature-picture {
 	margin-bottom: 1.5%;
 }
 #lh1-poster-list .row .row > .col-sm-12{
-	margin-bottom: 2.3%;
+	margin-bottom: 2.6%;
 }
 
 
@@ -557,8 +557,40 @@ img.feature-picture {
 
 .lh1-poster-img-1 img,.lh1-poster-img-2 img,.lh1-poster-img-3 img,.lh1-poster-img-4 img{
 	width: 100%;
+}
+
+
+/*视频卡片*/
+.index-video{
+	position: relative;
+	border-bottom: 0;
+	margin-bottom: 1.5%;
+}
+.index-video .index-video-box{
+	background-color: #006666;
+  	/*background-image:url('/public/images/page/case/合作共赢.jpg');*/
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+.index-video .index-video-box img{
+	width: 100%;
 	height: 100%;
 }
+.index-video .index-video-box .title{
+	position: absolute;
+	width: 100%;
+	top: 10%;
+}
+.index-video h2{
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 60px;
+	color: #000;
+}
+
 
 /*卡片蒙板×*/
 

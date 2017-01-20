@@ -138,16 +138,26 @@
   }
 }
 @media (min-width: 992px) {
-  .site-header .navbar-nav > li > a,.site-header .navmenu > ul > li > a {
+  .site-header .navbar-nav > li > a {
 	padding: 22px 15px;
 	font-size: 18px;
 	line-height: 20px;
   }
+  .site-header .navmenu > ul > li > a{
+	padding: 3px 15px;
+	font-size: 16px;
+	line-height: 20px;
+  }
 }
 @media (min-width: 1200px) {
-  .site-header .navbar-nav > li > a,.site-header .navmenu > ul > li > a {
+  .site-header .navbar-nav > li > a {
 	padding: 30px 20px;
 	font-size: 20px;
+	line-height: 20px;
+  }
+  .site-header .navmenu > ul > li > a{
+	padding: 10px 20px;
+	font-size: 18px;
 	line-height: 20px;
   }
 }
@@ -156,7 +166,7 @@
 .site-header .navbar-nav {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
 }
-.site-header .navbar {
+.site-header .navbar,.site-header .navbar ul ul {
   background-color: rgba(0,0,0,0.4);
   transition: all ease 0.25s;
 }
@@ -164,22 +174,32 @@
   color: #fff;
   transition: all ease 0.25s;
 }
+.site-header .navbar ul ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.25s;
+}
 .site-header .navbar-nav > li.active > a,
 .site-header .navbar-nav > li > a:hover,
-.site-header .navbar-nav > li > a:focus {
+.site-header .navbar-nav > li > a:focus,
+.site-header .navbar-nav .navmenu > ul > li > a:hover{
   background-color: rgba(0,0,0,0.6);
 }
 
-.site-header .navbar.floating {
+.site-header .navbar.floating,
+.site-header .navbar.floating ul ul {
   background-color: rgb(255,255,255);
   border-bottom: 1px solid #408741;
 }
-.site-header .navbar.floating .navbar-nav > li > a {
+
+.site-header .navbar.floating .navbar-nav > li > a,
+.site-header .navbar.floating .navbar-nav ul > li > a{
   color: #349141;
 }
 .site-header .navbar.floating .navbar-nav > li.active > a,
 .site-header .navbar.floating .navbar-nav > li > a:hover,
-.site-header .navbar.floating .navbar-nav > li > a:focus {
+.site-header .navbar.floating .navbar-nav > li > a:focus,
+.site-header .floating .navbar-nav .navmenu > ul > li > a:hover{
   background-color: #349141;
   color: #fff;
 }
@@ -283,10 +303,10 @@
 
 /*站内搜索*/
 .page-lander {
-  padding-top: 6.4%;
+  /*padding-top: 6.4%;
   padding-bottom: 6%;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 10%;*/
   /*max-height: 520px;*/
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
   color: #fff;
@@ -389,20 +409,21 @@
 }
 
 
-ul ul{
+.site-header ul ul{
   background-color: rgba(255,255,255,1);
   list-style-type: none;
   position: absolute;
   display: none;
 }
-ul ul li{
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
+.site-header ul ul li{
+  margin-bottom: 0.1em;
 }
-.site-header .navmenu > ul > li > a{
-  color: #b7deb8; 
+.site-header ul .navmenu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.site-header .navmenu > ul > li > a:hover{
-  color: #349141;
+.site-header ul .navmenu ul > li > a{
+  display: block;
+  text-align: center;
 }

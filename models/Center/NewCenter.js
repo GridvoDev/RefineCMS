@@ -7,7 +7,7 @@ var Types = keystone.Field.Types;
  */
 
 var NewCenter = new keystone.List('NewCenter', {
-	label: '新闻中心',
+	label: '新闻资讯',
 	map: { name: 'title' },
 	singular: 'New Center',
 	plural: 'New Centers',

@@ -49,3 +49,77 @@
 .nav-pills a:hover {
 	color: #43cd4f;
 }
+.container .about_lh h1{
+	font-size: 28px;
+	line-height: 48px;
+}
+.container .about_lh h2{
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+.container .about_lh p{
+	text-indent: 2em;
+	line-height: 28px;
+}
+
+/*第三块样式*/
+.it-img-rt-tx,.product_case_studies{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d7d7d7;
+}
+.it-img-rt-tx.container_it > .row:first-child,.product_case_studies.container_it > .row:first-child{
+	margin-top: 27px;
+}
+.it-img-rt-tx.container_it > .row,.product_case_studies.container_it > .row,.heise > .row{
+	margin-bottom: 36px;
+}
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.it-img-rt-tx .img-responsive,.it-img-rt-tx .img-responsive img{
+	width: 100%;
+}
+.img-responsive{
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+}
+.img-responsive,.carousel-inner > .item > img,.carousel-inner > .item > a > img{
+	display: block;
+	height: auto;
+}
+.it-img-rt-tx .row h3{
+	font-size: 16px;
+	font-weght:bold;
+}
+.it-img-rt-tx .row > .col-sm-7 > h3{
+	margin-bottom: 10px;
+}
+.it-img-rt-tx  .col-sm-7 h3,.product_case_studies .col-sm-7 h3{
+	margin-top: -6px;
+}
+
+.it-img-rt-tx.container_it > .row:first-child{
+	margin-top: 27px;
+}
+.it-img-rt-tx .container_it > .row{
+	margin-bottom: 36px;
+}
+.justcss{
+	margin-bottom: 36px;
+}
+.annual-bg{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #d7d7d7;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.about_lh{
+	padding-left: 10px;
+	padding-right: 10px;
+}

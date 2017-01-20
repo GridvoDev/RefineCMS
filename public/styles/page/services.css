@@ -31,7 +31,7 @@
 .breadcrumb > li > a {
 	color: #43cd4f;
 }
-.breadcrumb > li > a:focus,
+.breadcrumb > li > a:focus, 
 .breadcrumb > li > a:hover {
 	color: #22bb44;
 }
@@ -49,3 +49,127 @@
 .nav-pills a:hover {
 	color: #43cd4f;
 }
+
+/*后写样式*/
+.solar_product{
+	/*border-bottom: none !important;*/
+	padding-bottom: 0 !important;
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+.solar_soild{
+	border-bottom: 1px solid #d7d7d7;
+}
+.pro_container{
+	width: 100% !important;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.pro_container h3{
+	font-size: 28px;
+	line-height: 48px;
+	margin: 0 0 0.3em 0; 
+}
+.pull-right{
+	float: right !important;
+}
+.softcom.row > .col-sm-5{
+	margin-top: 1.5em;
+}
+.pro_box{
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+.pro_box img{
+	width: 100%;
+	height: auto;
+}
+
+.float-none{
+	float: none !important;
+}
+.pro_container p{
+	line-height: 200%;
+	margin-top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*客户价值*/
+.customer-product{
+	border-bottom: 1px solid #d7d7d7;
+}
+.pro_container{
+	width: 100% !important;
+	max-width: 1200px;
+}
+h2.title{
+	font-size: 28px;
+	text-align: center;
+}
+.pro_container > .row{
+	margin-bottom: 36px;
+}
+.pro_container .row .row h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 7px;
+}
+
+/*技术特点*/
+.softcom-right{
+	border-bottom: 1px solid #d7d7d7;
+}
+.softcom .col-sm-5 .pull-right{
+	margin-left: 0px !important;
+}
+.pull-right{
+	float: right !important;
+}
+.solar_product .img-responsive{
+	width: 100%;
+}
+.img-responsive{
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.softcom .col-sm-7{
+	padding-right: 50px;
+}
+.softcom ul{
+	padding-left: 0 !important;
+}
+
+/*服务支持*/
+.huise-bg{
+	padding-bottom: 24px;
+}
+.huise-bg .pro_container > h2{
+	margin-top: 36px;
+}
+.row-list > [class*="col-"]{
+	display: inline-block;
+	letter-spacing: normal;
+	vertical-align: top;
+	float: none;
+}
+.text-center{
+	font-size: 18px !important;
+	text-align: center;
+}
+.huise-bg p{
+	text-align: center;
+}
+.customer-product p{
+	line-height: 175%;
+}
+

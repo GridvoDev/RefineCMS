@@ -1,0 +1,237 @@
+extends ../layouts/default
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/services.css')
+block index-main
+	// 站内搜索start
+	.page-lander.text-center
+		img(src='/images/page/slug/Products.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		.container
+			//-ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
+				li.active(role='presentation')
+					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 屋面光伏电站
+			//-#myTabContent.col-sm-9.tab-content
+				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/sercices') 产品与服务
+				li.active 屋面光伏电站
+			.solar_product.solar_soild
+				.pro_container
+					h1(style={'font-size': '28px'}) 屋面分布式光伏电站解决方案
+					.row
+						//-.col-sm-5.pull-right
+							.pro_box
+								img(src='/images/page/case/水面4.jpg',alt='')
+						.col-sm-12.float-none
+							p 屋面分布式光伏是指利用厂房、公共建筑、住宅等屋顶资源开发的光伏电站。该类型电站规模受有效屋项面积限制，装机规模一般为几千瓦至十几兆瓦；电站发电鼓励就近消纳，直接馈入低压配电网或35kV及以下中高压电网。组件朝向、倾角、阴影遮挡情况多样化。该类型电站是当前分布式光伏电站的主要形式，主要集中在我国的中东部和南方地区。按照并网类型可分为“自发自用，余电上网”和“全额上网”两种形式，利用闲置的屋顶建设光伏项目,既可以减少能源的消耗,而且充分的利用了闲置的资源,起到了节能减排的作用,给业主带来了巨大的经济效益、环境效益。
+							.fast-link 快速定位：&nbsp;&nbsp
+								a(href='#customer',style={color: '#0267ff'}) 客户价值&nbsp;&nbsp
+								a(href='#function',style={color: '#0267ff'}) 技术特点&nbsp;&nbsp
+								a(href='#material',style={color: '#0267ff'}) 服务支持&nbsp;&nbsp
+			.customer-product
+				.pro_container
+					h2(class="title",id="customer") 客户价值
+					.row
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/高效.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color: '#000',
+											'text-decoration': 'none'
+										}) 经济效益
+									p 投资回报率达8－15%——为银行理财的2－4倍
+									p 度电成本约为0.5－0.7元——较工商业电价降低15%以上
+									p 提升屋面综合利用价值——你家的屋顶可以赚钱！
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/安全可靠.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color: '#000',
+											'text-decoration': 'none'
+										}) 社会效益
+									p 绿色低碳生活
+									p 节能环保减排
+									p 优化能源结构
+			.customer-product
+				.pro_container
+					h2(class="title",id="function") 解决方案
+					.row
+						//-.solar_product
+							.pro_container
+								.row.softcom
+									h3 工业建筑屋顶光伏
+									p 随着我国工业快速发展，建设以工业园等负荷中心的大规模屋顶光伏电站成为高效利用光伏发电的新型方式。该方案既能有效利用工业屋顶闲置面积，又能给工业发展提供电力保障，还可实现工业建筑一体化，一举多得，节能环保，是未来工业建筑发展趋势。
+									p
+										b 应用范围
+									p 工业厂房、工业区配套设施建筑
+									p
+										b 系统特点
+									p □ 屋顶面积大，开阔平整，适合安装。
+									p □ 自发自用，就地消纳，节省电费。
+									p □ 系统稳定可靠，后期维护简单省心。
+									p □ 坐享经济效益，环保时尚先锋。
+									img(alt='',src='/images/page/case/发电量优势.PNG',class="img-responsive")
+								.row.softcom
+									h3 商业建筑屋顶光伏
+									p 目前商业建筑的发展趋势生态、节能、生态，光伏系统是实现建筑节能的重要解决方案，通过光伏组件与商业建筑的结合，实现商业建筑与光伏一体化，既可以节省建筑成本，同时也能为商业建筑提供能源支持。
+									p
+										b 应用范围
+									p 商场、酒店、宾馆、度假村、会所、零售商店、商务办公楼
+									p
+										b 系统特点
+									p □ 多为水泥屋顶，更利于安装。
+									p □ 用户负荷一般白天较高，夜间较低；更好匹配光伏发电特性。
+									p □ 与建筑完美结合，美观大方，时尚环保。
+									p □ 坐享经济效益，环保时尚先锋。
+									img(alt='',src='/images/page/case/支架材料与成本优势.PNG',class="img-responsive")
+								.row.softcom
+									h3 家庭屋顶光伏
+									p 家庭屋顶光伏电站学名叫“家庭分布式光伏发电站”，工作原理是通过在屋顶上安装光伏发电板，吸收太阳能，再将光能转化成电能，电板越多，发电越多。
+									p 分布式光伏发电节能减排，近年来，国家发改委、国家能源局出台了一系列促进光伏产业健康发展的相关政策，同时在国家电网公司提供的绿色并网服务下，更是激起了社会的光伏投资热。
+									p
+										b 应用范围
+									p 城镇家庭、农村家庭
+									p
+										b 系统特点
+									p □ 自发自用，余电上网，享受国家补贴。
+									p □ 标准化模块设计，专为家庭打造。
+									p □ 室温调节，为屋顶再添一层防晒层。
+									p □ 与建筑完美结合，美观大方，时尚环保。
+									img(alt='',src='/images/page/case/支架结构优势.PNG',class="img-responsive")
+								.row.softcom
+									h3 市政建筑屋顶光伏
+									p 各省级、市级等政务办公建筑，以及各事业单位、学校、部队驻地，各类医疗机构的屋顶资源成为分布式光伏开发的重要资源，在这一类建筑开发分布式光伏电站，运行稳定、易于管理、更可实现建筑一体化。
+									p
+										b 应用范围
+									p 政府办公大楼、学校、部队、医院等
+									p
+										b 系统特点
+									p □ 管理规范统一，适合集中连片安装。
+									p □ 用户负荷一般白天较高，夜间较低；更好匹配光伏发电特性。
+									p □ 与建筑完美结合，美观大方，时尚环保。
+									p □ 坐享经济效益，环保时尚先锋。
+									img(alt='',src='/images/page/case/技术竞争优势.PNG',class="img-responsive")
+						
+							
+						.solar_product
+							.pro_container
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/wumian.jpg',class="img-responsive")
+									.col-sm-7
+										h3 工业建筑屋顶光伏
+										p 随着我国工业快速发展，建设以工业园等负荷中心的大规模屋顶光伏电站成为高效利用光伏发电的新型方式。该方案既能有效利用工业屋顶闲置面积，又能给工业发展提供电力保障，还可实现工业建筑一体化，一举多得，节能环保，是未来工业建筑发展趋势。
+										p
+											b 应用范围
+										p 工业厂房、工业区配套设施建筑
+										p
+											b 系统特点
+										p □ 屋顶面积大，开阔平整，适合安装。
+										p □ 自发自用，就地消纳，节省电费。
+										p □ 系统稳定可靠，后期维护简单省心。
+										p □ 坐享经济效益，环保时尚先锋。
+								.row.softcom.softcom-right
+									.col-sm-5
+										img(alt='',src='/images/page/case/屋面2.jpg',class="img-responsive")
+									.col-sm-7
+										h3 商业建筑屋顶光伏
+										p 目前商业建筑的发展趋势生态、节能、生态，光伏系统是实现建筑节能的重要解决方案，通过光伏组件与商业建筑的结合，实现商业建筑与光伏一体化，既可以节省建筑成本，同时也能为商业建筑提供能源支持。
+										p
+											b 应用范围
+										p 商场、酒店、宾馆、度假村、会所、零售商店、商务办公楼
+										p
+											b 系统特点
+										p □ 多为水泥屋顶，更利于安装。
+										p □ 用户负荷一般白天较高，夜间较低；更好匹配光伏发电特性。
+										p □ 与建筑完美结合，美观大方，时尚环保。
+										p □ 坐享经济效益，环保时尚先锋。
+										//-ul
+											li
+											li
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/wumian1.jpg',class="img-responsive")
+									.col-sm-7
+										h3 家庭屋顶光伏
+										p 家庭屋顶光伏电站学名叫“家庭分布式光伏发电站”，工作原理是通过在屋顶上安装光伏发电板，吸收太阳能，再将光能转化成电能，电板越多，发电越多。
+										p 分布式光伏发电节能减排，近年来，国家发改委、国家能源局出台了一系列促进光伏产业健康发展的相关政策，同时在国家电网公司提供的绿色并网服务下，更是激起了社会的光伏投资热。
+										p
+											b 应用范围
+										p 城镇家庭、农村家庭
+										p
+											b 系统特点
+										p □ 自发自用，余电上网，享受国家补贴。
+										p □ 标准化模块设计，专为家庭打造。
+										p □ 室温调节，为屋顶再添一层防晒层。
+										p □ 与建筑完美结合，美观大方，时尚环保。
+										//-ul
+											li
+											li
+								.row.softcom
+									.col-sm-5
+										img(alt='',src='/images/page/case/wumian3.jpg',class="img-responsive")
+									.col-sm-7
+										h3 市政建筑屋顶光伏
+										p 各省级、市级等政务办公建筑，以及各事业单位、学校、部队驻地，各类医疗机构的屋顶资源成为分布式光伏开发的重要资源，在这一类建筑开发分布式光伏电站，运行稳定、易于管理、更可实现建筑一体化。
+										p
+											b 应用范围
+										p 政府办公大楼、学校、部队、医院等
+										p
+											b 系统特点
+										p □ 管理规范统一，适合集中连片安装。
+										p □ 用户负荷一般白天较高，夜间较低；更好匹配光伏发电特性。
+										p □ 与建筑完美结合，美观大方，时尚环保。
+										p □ 坐享经济效益，环保时尚先锋。
+										//-ul
+											li
+											li
+							
+			//项目案例
+			//-.customer-product.case-bg
+				.pro_container
+					h2(class="title",id="project") 项目案例
+					.row.row-list.text-center
+						.col-sm-4
+							img(src='/images/page/case/产品图.png')
+						.col-sm-4
+							img(src='/images/page/case/产品图2.png')
+						.col-sm-4
+							img(src='/images/page/case/产品图3.png')
+			.customer-product.huise-bg
+				.pro_container
+					h2(class="title",id="material") 服务支持
+					.row.row-list.text-center
+						.col-sm-4
+							img(src='/images/page/icons/icon.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a(href='/arounds') 产品咨询
+							p
+						.col-sm-4
+							img(src='/images/page/icons/shop.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 企业商店
+							p
+						.col-sm-4
+							img(src='/images/page/icons/download.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 资料下载
+							p
+					
+	// 主体内容end
+block js
+	// 页面相关
+	script(type='text/javascript').

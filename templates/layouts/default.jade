@@ -55,32 +55,35 @@ html(lang='zh-CN')
 							//-li.navmenu
 								a(href='/cases') 优秀案例
 							li.navmenu
-								a(href='/abouts') 关于绿华
-								ul(style={
-									'padding':0,
-									})
+								a 认识绿华
+								ul
 									li
-										a(href='/abouts') 关于我们
+										a(href='/abouts') 公司介绍
 									li
 										a(href='/abouts/course') 发展历程
 									li
-										a(href='/abouts/dynamic') 宣传视频
-									li
+										a(href='/abouts/dynamic') 宣传报道
+									//-li
 										a(href='/abouts/recruitment') 媒体报道
 							li.navmenu
-								a(href='/services') 产品与服务
+								a 产品与服务
+								ul
+									li
+										a(href='/services/surface') 水面光伏
+									li
+										a(href='/services/agricultural') 农业光伏
+									li
+										a(href='/services/roof') 屋面光伏
 							li.navmenu
-								a(href='/centers') 新闻中心
+								a(href='/centers') 新闻资讯
 								//-ul.nav2-nav
 									li    关于我们
 									li    发展历程
 									li    宣传视频
 									li    媒体报道
 							li.navmenu
-								a(href='/arounds') 绿华在身边
-								ul(style={
-									'padding': 0,
-									})
+								a 正在你身边
+								ul
 									li
 										a(href='/arounds') 联系我们
 									li
@@ -99,20 +102,24 @@ html(lang='zh-CN')
 				.container
 					.row
 						.col-md-2.col-sm-4.col-xs-6
-							h4 关于绿华
+							h4 认识绿华
 							ul.footer-list
 								li.footer-list-item
-									a(href='/abouts') 公司简介
+									a(href='/abouts') 公司介绍
 								//Pro_chen:修改底部信息（公司动态与人才招聘）
 								li.footer-list-item
-									a(href='/abouts') 公司动态
+									a(href='/abouts/course') 发展历程
 								li.footer-list-item
-									a(href='/abouts') 人才招聘
+									a(href='/abouts/dynamic') 宣传报道
 						.col-md-2.col-sm-4.col-xs-6
-							h4 新闻中心
+							h4 产品与服务
 							ul.footer-list
 								li.footer-list-item
-									a(href='/centers') 二维码
+									a(href='/services/surface') 水面光伏
+								li.footer-list-item
+									a(href='/services/agricultural') 农业光伏
+								li.footer-list-item
+									a(href='/services/roof') 屋面光伏
 						//-.col-md-2.col-sm-4.col-xs-6
 							h4 新闻资讯
 							ul.footer-list
@@ -124,24 +131,22 @@ html(lang='zh-CN')
 								//	a(href='/news/57bfff8656fe87d81ef33f73') 公司动态
 						.clearfix.visible-xs-block
 						.col-md-2.col-sm-4.col-xs-6
-							h4 产品信息
+							h4 新闻资讯
 							ul.footer-list
 								li.footer-list-item
-									a(href='/products') 产品系列
-								li.footer-list-item
-									a(href='/cases') 案例展示
+									a(href='/products') 新闻资讯
 						.clearfix.visible-sm-block
 						.col-md-2.col-sm-4.col-xs-6
-							h4 快速链接
+							h4 正在你身边
 							ul.footer-list
 								//li.footer-list-item
 								//	a(href='/feedback') 在线反馈
 								li.footer-list-item
-									a(href='/abouts') 招贤纳士
+									a(href='/arounds') 联系我们
 								li.footer-list-item
-									a(href='/abouts') 合作伙伴
+									a(href='/arounds/join') 加入我们
 						#wechat-code-pictures.col-md-3.col-md-offset-1.col-sm-8.col-xs-12.wechat-code-pictures
-							h5 关注我们
+							//-h5 关注我们
 							//-ul#myWechatTabs.nav.nav-tabs.nav-justified(role='tablist')
 								li
 								a(href='/abouts')
@@ -160,12 +165,11 @@ html(lang='zh-CN')
 										a#gridvo-service-tab(href='#gridvo-service', role='tab', data-toggle='tab', aria-controls='gridvo-service', aria-expanded='false') 智能水电站
 							#myWechatTabContent.tab-content
 								//-#refine-official.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='refine-official-tab')
+								h4 官方微信平台
 								img(style={
-									width: '40%',
 									'text-align':'end',
 									'max-height': '130px'
-								},src='/images/page/绿华能源公众号.jpg', alt='绿华能源公众号')
-								h5 官方微信
+								},src='/images/page/weixin.png', alt='绿华能源公众号')
 								//-
 									#gridvo-subscription.tab-pane.fade(role='tabpanel', aria-labelledby='gridvo-subscription-tab')
 										img(src='/images/page/格物科技订阅号.jpg', alt='')

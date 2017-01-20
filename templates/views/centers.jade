@@ -6,137 +6,25 @@ block css
 block index-main
 	// 站内搜索start
 	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好 
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+		img(src='/images/page/slug/newscenter.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
 	// 站内搜索end
 	// 主体内容start
 	.main-content
 		.container
-			ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
-				li.active(role='presentation')
-					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 二维码
-				//-li(role='presentation')
-					a#two-tab(href='#two', role='tab', data-toggle='tab', aria-controls='two', aria-expanded='true') 联系我们
-					li(role='presentation')
-						a#three-tab(href='#three', role='tab', data-toggle='tab', aria-controls='three', aria-expanded='true') 合作伙伴
-					li(role='presentation')
-						a#four-tab(href='#four', role='tab', data-toggle='tab', aria-controls='four', aria-expanded='true') 法律声明
-					li(role='presentation')
-						a#five-tab(href='#five', role='tab', data-toggle='tab', aria-controls='five', aria-expanded='true') 隐私政策
-					//-Pro_chen:企业愿景、发展历程、公司动态、人才招聘
-					li(role='presentation')
-						a#six-tab(href='#six', role='tab', data-toggle='tab', aria-controls='six', aria-expanded='true') 企业愿景
-					li(role='presentation')
-						a#seven-tab(href='#seven', role='tab', data-toggle='tab', aria-controls='seven', aria-expanded='true') 发展历程
-					li(role='presentation')
-						a#eight-tab(href='#eight', role='tab', data-toggle='tab', aria-controls='eight', aria-expanded='true') 宣传视频
-					li(role='presentation')
-						a#nine-tab(href='#nine', role='tab', data-toggle='tab', aria-controls='nine', aria-expanded='true') 媒体报道
-			#myTabContent.col-sm-9.tab-content
-				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/centers') 新闻中心
-						li.active 二维码
-					h1= data.newCenters.title
-					img(style={
-						width: '50%',
-						'max-height': '500px'
-					},src=data.newCenters.overviewImage.path.substring(6) + data.newCenters.overviewImage.filename)
-					//!= data.centers.content.full
-				//-#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 联系我们
-					h1= data.contact.title
-					p 地址：#{data.contact.address}
-					p 邮政编码：#{data.contact.postcode}
-					p 联系电话：#{data.contact.tel}
-					p 邮箱：#{data.contact.email}
-					p 传真：#{data.contact.fax}
-					p 微信账号：#{data.contact.wechatAccount}
-				//-#three.tab-pane.fade(role='tabpanel', aria-labelledby='three-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 合作伙伴
-					h1 合作伙伴
-					.row
-						each partner in data.partners
-							.col-md-3.col-sm-4.col-xs-3
-								img(style={
-									width: '100%',
-									'max-height': '90px'
-								},src=partner.logoImage.path.substring(6) + partner.logoImage.filename)
-				//-#four.tab-pane.fade(role='tabpanel', aria-labelledby='four-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 法律声明
-					h1= data.lawStates.title
-					!= data.lawStates.content
-				//-#five.tab-pane.fade(role='tabpanel', aria-labelledby='five-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 隐私政策
-					h1= data.privacyPolicies.title
-					!= data.privacyPolicies.content
-				//添加企业愿景（Pro_chen）
-				//-#six.tab-pane.fade(role='tabpanel', aria-labelledby='six-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 企业愿景
-					h1= data.visions.title
-					!= data.visions.content
-				//-#seven.tab-pane.fade(role='tabpanel', aria-labelledby='seven-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 发展历程
-					h1= data.courses.title
-					!= data.courses.content
-				//-#eight.tab-pane.fade(role='tabpanel', aria-labelledby='eight-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 宣传视频
-					h1= data.dynamics.title
-					!= data.dynamics.content
-				//-#nine.tab-pane.fade(role='tabpanel', aria-labelledby='nine-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 媒体报道
-					h1= data.recruitments.title
-					//img(style={
-					//	width: '50%',
-					//	'max-height': '250px'
-					//},src=data.recruitments.overviewImage.path.substring(6) + data.recruitments.overviewImage.filename)
-					!= data.recruitments.content
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/centers') 新闻中心
+				li.active 新闻资讯
+			.info_img
+				img(style={
+					width:'100%',
+					height:'100%'
+				},src='/images/page/case/搬新家2.jpg')
 
 
 

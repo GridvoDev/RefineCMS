@@ -5,137 +5,123 @@ block css
 
 block index-main
 	// 站内搜索start
+		
+	//第一块start
 	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好 
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+		img(src='/images/page/slug/aboutcompany.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
 	// 站内搜索end
 	// 主体内容start
 	.main-content
 		.container
-			ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
-				li.active(role='presentation')
-					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 关于我们
-				//li(role='presentation')
-					a#two-tab(href='#two', role='tab', data-toggle='tab', aria-controls='two', aria-expanded='true') 联系我们
-				//li(role='presentation')
-					a#three-tab(href='#three', role='tab', data-toggle='tab', aria-controls='three', aria-expanded='true') 合作伙伴
-				//li(role='presentation')
-				//	a#four-tab(href='#four', role='tab', data-toggle='tab', aria-controls='four', aria-expanded='true') 法律声明
-				//li(role='presentation')
-				//	a#five-tab(href='#five', role='tab', data-toggle='tab', aria-controls='five', aria-expanded='true') 隐私政策
-				//Pro_chen:企业愿景、发展历程、公司动态、人才招聘
-				//li(role='presentation')
-					a#six-tab(href='#six', role='tab', data-toggle='tab', aria-controls='six', aria-expanded='true') 企业愿景
-				//li(role='presentation')
-					a#seven-tab(href='#seven', role='tab', data-toggle='tab', aria-controls='seven', aria-expanded='true') 发展历程
-				//li(role='presentation')
-					a#eight-tab(href='#eight', role='tab', data-toggle='tab', aria-controls='eight', aria-expanded='true') 宣传视频
-				//li(role='presentation')
-					a#nine-tab(href='#nine', role='tab', data-toggle='tab', aria-controls='nine', aria-expanded='true') 媒体报道
-			#myTabContent.col-sm-9.tab-content
-				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 关于我们
-					h1= data.introduction.title
-					!= data.introduction.content.full
-				//-#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 联系我们
-					h1= data.contact.title
-					p 地址：#{data.contact.address}
-					p 邮政编码：#{data.contact.postcode}
-					p 联系电话：#{data.contact.tel}
-					p 邮箱：#{data.contact.email}
-					p 传真：#{data.contact.fax}
-					p 微信账号：#{data.contact.wechatAccount}
-				//-#three.tab-pane.fade(role='tabpanel', aria-labelledby='three-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 合作伙伴
-					h1 合作伙伴
-					.row
-						each partner in data.partners
-							.col-md-3.col-sm-4.col-xs-3
-								img(style={
-									width: '100%',
-									'max-height': '90px'
-								},src=partner.logoImage.path.substring(6) + partner.logoImage.filename)
-				//-#four.tab-pane.fade(role='tabpanel', aria-labelledby='four-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 法律声明
-					h1= data.lawStates.title
-					!= data.lawStates.content
-				//-#five.tab-pane.fade(role='tabpanel', aria-labelledby='five-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 隐私政策
-					h1= data.privacyPolicies.title
-					!= data.privacyPolicies.content
-				//添加企业愿景（Pro_chen）
-				//-#six.tab-pane.fade(role='tabpanel', aria-labelledby='six-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 企业愿景
-					h1= data.visions.title
-					!= data.visions.content
-				//-#seven.tab-pane.fade(role='tabpanel', aria-labelledby='seven-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 发展历程
-					h1= data.courses.title
-					!= data.courses.content
-				//-#eight.tab-pane.fade(role='tabpanel', aria-labelledby='eight-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 宣传视频
-					h1= data.dynamics.title
-					!= data.dynamics.content
-			//-	#nine.tab-pane.fade(role='tabpanel', aria-labelledby='nine-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 媒体报道
-					h1= data.recruitments.title
-						//img(style={
-						//	width: '50%',
-						//	'max-height': '250px'
-						//},src=data.recruitments.overviewImage.path.substring(6) + data.recruitments.overviewImage.filename)
-					!= data.recruitments.content
-						
-					
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/abouts') 认识绿华
+				li.active 公司介绍
+			.about_lh
+				h1 绿华能源有限公司介绍
+				h2 我们是谁？
+				!= data.introduction.content.brief
+				h2= data.introduction.title
+				!= data.introduction.content.extended
+				//h2 我们的行动纲领
+				//p
+				//	b 价值主张 
+				//p 随着绿色能源产业快速发展，我们围绕客户需求和技术持续创新，通过先进技术整合解决方案及综合支持服务，与业界伙伴开放合作，持续为客户和全社会创造价值！
+				//p
+				//	b 技术创新
+				//p 我们以“精益绿色能源”为宗旨，在关键技术、产品开发和工程能力等方向持续投入，引领绿色能源产业的技术创新，致力于提供更优质的绿色能源解决方案为客户创造价值！
+				//p
+				//	b 公司治理
+				//p 我们以“格物致知、诚意正心”为企业精神，坚持以客户为中心，持续改善公司治理架构、组织、流程和考核，使公司长期保持有效增长。
+				//p
+				//	b 合作理念
+				//p 我们秉承“开放、合作、共赢”的理念，与绿色能源开发商、工程合作商、设备供应商等上下游合作伙伴共同构建良性产业生态系统，推动行业持续健康发展，分享技术创新所创造的价值。
+				//p
+				//	b 质量方针 
+				//p 积极倾听客户需求，精心构建产品质量，真诚提供满意服务，时刻铭记为客户服务是我们存在的唯一理由。
+				//p
+				//	b 发展历程 
+				//p 我们积极应对世界能源发展趋势，历时十多年完成从传统水电能源到绿色能源转型，以开放的姿态参与到绿色能源产业经济竞合中，逐步发展成为全球领先的绿色能源创新公司。
 
+				.annual-bg
+		
+			
+			
+		
+				.it-img-rt-tx.mobile-margin
+					.container_it
+						.row
+							.col-sm-6
+								h3.visible-xs
+								.row.justcss
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/价值主张.jpg',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 价值主张
+											a(href='/abouts',target="_blank")
+										.summary 随着光伏新能源产业的快速发展，绿华能源围绕客户需求和技术持续创新，通过先进技术整合解决方案及综合支持服务，与业界伙伴开放合作，持续为客户和全社会创造价值！
+							.col-sm-6
+								h3.visible-xs
+								.row
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/公司治理1.jpg',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 公司治理
+											a(href='/abouts',target="_blank") 
+										.summary 公司以“格物致知、诚意正心”为理念，坚持以客户为中心，持续改善公司治理架构、组织、流程和考核，使公司长期保持有效增长。 
+						.row
+							.col-sm-6
+								h3.visible-xs
+								.row.justcss
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/研究开发1.jpg',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 技术创新
+											a(href='/abouts',target="_blank")
+										.summary 公司以“精益绿色能源”为目标，在关键技术、产品开发和工程能力等方向持续投入，引领绿色能源产业的技术创新，致力于提供更优质、低廉的绿色能源解决方案为客户创造价值！
+							.col-sm-6
+								h3.visible-xs
+								.row
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/合作共赢1.png',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 合作理念
+											a(href='/abouts',target="_blank")
+										.summary 绿华能源秉承“开放、合作、共赢”的理念，与新能源开发商、工程合作商、设备供应商等上下游合作伙伴构建良性产业生态系统，分享产业价值。
+						.row
+							.col-sm-6
+								h3.visible-xs
+								.row.justcss
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/发展历程.jpg',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 发展历程
+											a(href='/abouts',target="_blank")
+										.summary 绿华能源应对世界能源发展趋势，历时十多年完成从传统水电能源到新能源转型，以开放的姿态参与到新能源产业的经济竞合中，逐步发展成为全球领先的绿色能源创新公司。
+							.col-sm-6
+								h3.visible-xs
+								.row
+									.col-sm-5
+										a(href='',target="_blank")
+											img(src='/images/page/case/质量方针.jpg',class="img-responsive",alt='',width="800",height="600")
+									.col-sm-7
+										h3(style={'font-weight':'bold'}) 质量方针
+											a(href='/abouts',target="_blank")
+										.summary 积极倾听客户需求，精心构建产品质量，真诚提供满意服务，时刻铭记为客户服务是我们存在的唯一理由。
+		
+
+		
+		
 	// 主体内容end
 
 block js

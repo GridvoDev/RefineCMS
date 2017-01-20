@@ -1,0 +1,183 @@
+extends ../layouts/default
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/services.css')
+block index-main
+	// 站内搜索start
+	.page-lander.text-center
+		img(src='/images/page/slug/Products.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		.container
+			//-ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
+				li.active(role='presentation')
+					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 农业光伏电站
+			//-#myTabContent.col-sm-9.tab-content
+				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/sercices') 产品与服务
+				li.active 农业光伏电站
+			.solar_product.solar_soild
+				.pro_container
+					h1(style={'font-size':'28px'}) 农业光伏解决方案
+					.row
+						//-.col-sm-5.pull-right
+							.pro_box
+								img(src='/images/page/case/水面4.jpg',alt='')
+						.col-sm-12.float-none
+							p 农业光伏就是将太阳能发电广泛应用于现代农业，简单说就是“一块土地，多种用途”。光伏应用于农业，不但能够节省大量的土地资源，还能够将生产的电力资源能够直接供给农业照明灯、灌溉设施、植保设施、渔业机械等应用。剩余的能源还能够供应附近的居民生产生活，顺带解决了部分边远地区供电困难的问题。农业作物和能源发电效益实现“双赢”，堪称跨界运营的典范。
+							.fast-link 快速定位：&nbsp;&nbsp
+								a(href='#customer',style={color:'#0267ff'}) 客户价值&nbsp;&nbsp
+								a(href='#function',style={color:'#0267ff'}) 技术特点&nbsp;&nbsp
+								a(href='#material',style={color:'#0267ff'}) 服务支持&nbsp;&nbsp
+			.customer-product
+				.pro_container
+					h2(class="title",id="customer") 客户价值
+					.row
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/高效.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color:'#000',
+											'text-decoration':'none'
+										}) 经济效益
+									p 农业用地立体综合开发
+									p 农业扶持资金和可再生能源补贴多重补贴
+									p 光伏发电量就地消纳减少输电线路损耗
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/安全可靠.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color:'#000',
+											'text-decoration':'none'
+										}) 社会效益
+									p 为失地农民提供就业机会增加收入
+									p 落实光伏扶贫政策增加贫困人口收入
+									p 帮助解决无电少电地区用电问题
+				.pro_container
+					h2(class="title",id="function") 解决方案
+					.row
+						.solar_product
+							.pro_container
+								//-.row.softcom
+									p 1） 钢桁架结构温室光伏大棚，由钢柱、桁架梁组成桁架结构做为主要受力构件，屋面铺檩条，檩条上再铺玻璃板或光伏组件，墙体采用压型钢板或玻璃板做为围护结构。
+									img(alt='',src='/images/page/case/发电量优势.PNG',class="img-responsive")
+									.row.softcom
+										p 2） 门式钢架结构形式大棚，主要由型钢柱和型钢梁组成主要受力构件，屋面梁上铺设檩条，檩条上铺设玻璃板或压型钢板，再铺光伏组件。
+										img(alt='',src='/images/page/case/支架材料与成本优势.PNG',class="img-responsive")
+									.row.softcom
+										p 3） 开放式门式钢架结构光伏大棚，上面铺光伏组件，下面种标植农作物，一般这种支架结构较高，方便农业机械的操作。
+										img(alt='',src='/images/page/case/支架结构优势.PNG',class="img-responsive")
+									.row.softcom
+										p 4） 开放式钢框架结构光伏大棚，采用光伏支架采用型钢柱、型钢梁组成，下面种植农作物，一般架空比较高。
+										img(alt='',src='/images/page/case/技术竞争优势.PNG',class="img-responsive")
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/农业3.jpg',class="img-responsive")
+									.col-sm-7
+										//h3 采煤沉陷区水面电站
+										p 钢桁架结构温室光伏大棚，由钢柱、桁架梁组成桁架结构做为主要受力构件，屋面铺檩条，檩条上再铺玻璃板或光伏组件，墙体采用压型钢板或玻璃板做为围护结构。
+										//p 绿华能源顺应国家政策走向和经济发展需求，推出双轴追光柔性水面光伏电站，利用采空沉陷区进行光伏电站建设，不仅解决非稳沉区水面电站锚定难题，同时降低了项目投资的度电成本。
+										//p
+										//	b 系统特点
+										//p 实现采煤沉陷区产业化综合治理
+										//p 促进地区能源结构改善和转型
+										//p 解决非稳沉区水面电站锚定难题
+										//p 解决离地农民生活问题与生态环境治理难题
+								.row.softcom.softcom-right
+									.col-sm-5
+										img(alt='',src='/images/page/case/农业2.jpg',class="img-responsive")
+									.col-sm-7
+										//h3 光伏扶贫村级水面电站
+										p 门式钢架结构形式大棚，主要由型钢柱和型钢梁组成主要受力构件，屋面梁上铺设檩条，檩条上铺设玻璃板或压型钢板，再铺光伏组件。
+										//p 绿华能源针对光伏扶贫村级水面电站推出百千瓦级浮动式水面电站，重点解决光伏扶贫落地难、收益低、运维成本高等问题。
+										//p
+										//	b 系统特点
+										//p 解决屋顶和土地指标难题
+										//p 双轴追光提高贫困人口收益
+										//p 维护简单、技术可靠
+										//p 标准模块化快速施工降低成本
+										//-ul
+											li
+											li
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/农业4.jpg',class="img-responsive")
+									.col-sm-7
+										//h3 “水光互补”水面电站
+										p 开放式门式钢架结构光伏大棚，上面铺光伏组件，下面种标植农作物，一般这种支架结构较高，方便农业机械的操作。
+										//p 绿华能源推出“水光互补”兆瓦级浮动式水面电站，单体装机容量可达1兆瓦，整体规模可超过100兆瓦；充分兼顾浮动平台的结构稳定性和环境适应性，不但有效降低投资成本50%以上，大幅度提高了投资回报水平，且解决大型水面电站收益低、运维成本高等问题。
+										//p
+										//	b 系统特点
+										//p 利用水电站闲置水面资源提升综合利用率
+										//p 解决现有方案对安装面条件要求苛刻的难题
+										//p 水、光互补发电优化电网调度
+										//p 共享水电站电力设施和运维团队降低运维成本
+										//-ul
+											li
+											li
+								.row.softcom
+									.col-sm-5
+										img(alt='',src='/images/page/case/农业5.jpg',class="img-responsive")
+									.col-sm-7
+										//h3 “渔光一体化”水面电站
+										p 开放式钢框架结构光伏大棚，采用光伏支架采用型钢柱、型钢梁组成，下面种植农作物，一般架空比较高。
+										//p 绿华能源适时推出“渔光一体化”百千瓦级浮动式水面电站，改善了鱼塘养殖条件，增加了经济附加值，提高了鱼塘的利用率和经济效益，真正达到了工业、农业相结合，对农业土地的综合利用起到了良好的示范作用。
+										//p
+										//	b 系统特点
+										//p 改善水质及水环境提高渔业产量
+										//p 优先向养殖户及周边用户售电
+										//p 提高水体综合利用率和收益
+										//p 不占用土地资源，减少水量蒸发，抑制藻类生长
+										//p 水体对光伏组件及电缆的冷却有效提高发电效率
+										//-ul
+											li
+											li
+			//项目案例
+			//-.customer-product.case-bg
+				.pro_container
+					h2(class="title",id="project") 项目案例
+					.row.row-list.text-center
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图.png',width='100%')
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图2.png',width='100%')
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图3.png',width='100%')
+
+			//服务支持
+			.customer-product.huise-bg
+				.pro_container
+					h2(class="title",id="material") 服务支持
+					.row.row-list.text-center
+						.col-sm-4
+							img(src='/images/page/icons/icon.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a(href='/arounds') 产品咨询
+							p
+						.col-sm-4
+							img(src='/images/page/icons/shop.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 企业商店
+							p
+						.col-sm-4
+							img(src='/images/page/icons/download.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 资料下载
+							p
+// 主体内容end
+block js
+	// 页面相关
+	script(type='text/javascript').

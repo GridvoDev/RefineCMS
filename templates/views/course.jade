@@ -4,28 +4,108 @@ block css
 block index-main
 	// 站内搜索start
 	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好 
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+		img(src='/images/page/slug/aboutcompany.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
 	// 站内搜索end
 	// 主体内容start
 	.main-content
 		.container
-			ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
+			//-ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
 				li.active(role='presentation')
 					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 发展历程
-			#myTabContent.col-sm-9.tab-content
+			//-#myTabContent.col-sm-9.tab-content
 				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于绿华
-						li.active 发展历程
-					h1= data.courses.title
-					!= data.courses.content
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/abouts') 认识绿华
+				li.active 发展历程
+			.course_rf
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2016.png',width='130px')
+					.each-mess
+						h4 2016年12月
+						p 绿华能源公司建设的双轴追光柔性支架水上光伏电站示范项目施工顺利完成，项目实现了双轴追光，属全球首创，比行业同类产品发电量提高20%以上;水上漂浮系统采用的柔性网架，完全自有设计，比行业同类产品成本降低30%以上。
+						h4 2016年6月
+						p 绿华能源有限公司受邀参加了SNEC 第十届上海国际太阳能光伏展
+						h4 2016年5月
+						p 绿华能源有限公司受邀参加新形势下水面光伏电站开发模式、系统设计与建设管理（北京）研讨会
+						h4 2016年3月
+						p 绿华能源有限公司受邀参加2016采煤沉陷区国家先进技术光伏示范基地“领跑者”计划交流会
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2015.png',width='130px')
+					.each-mess
+						h4 2015年9月
+						p 绿华能源有限公司在上海成立
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2014.png',width='130px')
+					.each-mess
+						h4 2014年12月
+						p 云南德宏市兴源水电有限公司成立
+						h4 2014年8月
+						p 绿华能源（福建）有限公司诞生，并陆续取得近十多项经营资质
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2013.png',width='130px')
+					.each-mess
+						h4 2013年
+						p 开始研究水上光伏电站，目前已经取得双轴追光柔性支架水上光伏电站相关发明专利和实用新型专利近20项
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2012.png',width='130px')
+					.each-mess
+						h4 2012年12月
+						p 绿华前身福建格物科技有限公司成立
+						h4 2012年11月
+						p 成功当选Red herring（红鲱鱼）全球100强创新公司
+						h4 2012年9月
+						p 入围Red herring（红鲱鱼）亚洲百强创新公司，成功当选红鲱鱼亚洲百强
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2011.png',width='130px')
+					.each-mess
+						h4 2011年11月
+						p 当选中国中小型光伏企业发展联盟联盟副主席单位
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2010.png',width='130px')
+					.each-mess
+						h4 2010年1月
+						p 福建省瑞兴投资有限公司成立
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2009.png',width='130px')
+					.each-mess
+						h4 2009年7月
+						p 陇川县三源水电有限公司成立
+						h4 2009年4月
+						p 陇川县龙源水电有限公司成立
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2008.png',width='130px')
+					.each-mess
+						h4 2008年5月
+						p 投资成立北京合能阳光新能源技术有限公司
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2004.png',width='130px')
+					.each-mess
+						h4 2004年4月
+						p 投资建设了福建省尤溪县洋中镇长岭水电二站
+				.year-group
+					h3.year-block
+						img(src='/images/page/years/2003.png',width='130px')
+					.each-mess
+						h4 2003年10月
+						p 投资建立了将乐县全常溪二三级水电站
+						h4 2003年3月
+						p 投资建设了尤溪县巫坪水电站
 	// 主体内容end
 block js
 	// 页面相关

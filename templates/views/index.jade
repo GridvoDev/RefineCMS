@@ -124,36 +124,36 @@ block index-main
 			.col-sm-6
 				.lh1-poster-img
 					.lh1-img
-						a(href='/abouts')
-							img(src='/uploads/下1111.jpg',alt="绿华图片")
+						a(href='/services/surface')
+							img(src='/images/page/index/surface.jpg',alt="绿华图片",'max-width'='765px','max-height'='769px')
 					.lh1-img-subinfo
 						a(href='./abouts')
 							.lh1-img-wrap
-								h3 这是第一张海报卡片
-								p 为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。为了做出这个，我时刻准备以百分两百的努力战胜它。
+								h3 浮动式水面光伏解决方案
+								p 绿华能源推出全新一代浮动式水面光伏电站，采用水面柔性支架与双轴追光技术，可部署于湖泊、水库、海洋等水体表面，单体装机容量可达1MW，整体规模可超过100MW。
 			.col-sm-6
 				.row
 					.col-sm-12
 						.lh1-poster-img.lh1-poster-img-1
 							.lh1-img
-								a(href='/abouts')
-									img(src='/uploads/下6.jpg',alt="绿华图片",width='700px',height='342px')
+								a(href='/services/roof')
+									img(src='/images/page/index/roof.jpg',alt="绿华图片",'max-width'='700px','max-height'='375px')
 							.lh1-img-subinfo
 								a(href='./abouts')
 									.lh1-img-wrap
-										h3 这是第二张海报卡片
-										p 为了做出这个，我时刻准备以百分两百的努力战胜它。
+										h3 屋面分布式光伏电站解决方案
+										p 屋面分布式光伏是指利用厂房、公共建筑、住宅等屋顶资源开发的光伏电站。该类型电站规模受有效屋项面积限制，装机规模一般为几千瓦至十几兆瓦；电站发电鼓励就近消纳，直接馈入低压配电网或35kV及以下中高压电网。
 					.col-sm-12(style={'margin-bottom':'0'})
 						.lh1-poster-img.lh1-poster-img-2
 							.lh1-img
-								a(href='/abouts')
-									img(src='/uploads/下2.jpg',alt="绿华图片",width='700px',height='342px')
+								a(href='/services/agricultural')
+									img(src='/images/page/index/agriculture.jpg',alt="绿华图片",'max-width'='700px','max-height'='375px')
 							.lh1-img-subinfo
 								a(href='./abouts')
 									.lh1-img-wrap
-										h3 这是第三张海报卡片
-										p 为了做出这个，我时刻准备以百分两百的努力战胜它。
-		.row
+										h3 农业光伏解决方案
+										p 农业光伏就是将太阳能发电广泛应用于现代农业，简单说就是“一块土地，多种用途”。光伏应用于农业，不但能够节省大量的土地资源，还能够将生产的电力资源能够直接供给农业照明灯、灌溉设施、植保设施、渔业机械等应用。
+		//-.row
 			.col-lg-6.lh1-poster-copy
 				.lh1-poster-img.lh1-poster-img-3
 					.lh1-img
@@ -174,21 +174,31 @@ block index-main
 							.lh1-img-wrap
 								h3 这是第五张海报卡片
 								p 为了做出这个，我时刻准备以百分两百的努力战胜它。
-	//海报型链接start
-				
+	//海报型链接end
+	//视频start
+	.index-video
+		.lg-container
+			.index-video-box(style={
+				'max-height':'540px'
+			})
+				a(href='/abouts/dynamic')
+					img(src='/images/page/index/video.png')
+					//-.title
+						h2 共建更美好的未来
+	//视频end
 
 block js
 	// 页面相关
 	script(type='text/javascript').
 		//滚动，导航栏变化
 		$('.site-header .navbar').removeClass('floating');
-		$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字.png');
+		$('.site-header .navbar-brand img').attr('src', '/images/page/logowhite.png');
 		$(window).on('scroll', function() {
 			if ($(window).scrollTop() > $(".site-header > .navbar:first-child").height()) {
 				$('.site-header .navbar').addClass('floating');
-				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字green.png');
+				$('.site-header .navbar-brand img').attr('src', '/images/page/logogreen.png');
 			} else {
 				$('.site-header .navbar').removeClass('floating');
-				$('.site-header .navbar-brand img').attr('src', '/images/page/logo附文字.png');
+				$('.site-header .navbar-brand img').attr('src', '/images/page/logowhite.png');
 			}
 		});

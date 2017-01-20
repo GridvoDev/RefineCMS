@@ -54,7 +54,12 @@ exports = module.exports = function (app) {
 	app.get('/abouts/course', routes.views.course);
 	app.get('/abouts/dynamic', routes.views.dynamic);
 	app.get('/abouts/recruitment', routes.views.recruitment);
-	app.get('/services',routes.views.services);
+	//app.get('/services',routes.views.services);
+	//未写后台管理的三个
+	app.get('/services/surface',routes.views.surface);
+	app.get('/services/agricultural',routes.views.agricultural);
+	app.get('/services/roof',routes.views.roof);
+	
 	app.get('/arounds', routes.views.arounds);
 	app.get('/arounds/join', routes.views.join);
 	app.get('/centers',routes.views.centers);

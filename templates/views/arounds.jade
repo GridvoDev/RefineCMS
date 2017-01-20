@@ -6,57 +6,67 @@ block css
 block index-main
 	// 站内搜索start
 	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好 
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+		img(src='/images/page/slug/bewithyou（1）.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
 	// 站内搜索end
 	// 主体内容start
 	.main-content
 		.container
-			ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
+			//-ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
 				li.active(role='presentation')
 					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 联系我们
 				//-li(role='presentation')
 					a#two-tab(href='#two', role='tab', data-toggle='tab', aria-controls='two', aria-expanded='true') 加入我们
-			#myTabContent.col-sm-9.tab-content
+			//-#myTabContent.col-sm-9.tab-content
 				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/abouts') 关于我们
-						li.active 联系我们
-					h1= data.lianxis.title
-					p 地址：#{data.lianxis.address}
-					p 邮政编码：#{data.lianxis.postcode}
-					p 联系电话：#{data.lianxis.tel}
-					//-p 邮箱：#{data.lianxis.email}
-					p 传真：#{data.lianxis.fax}
-					p 网址：#{data.lianxis.wechatAccount}
-					//#dituContent(style={
-					//	width: '697px',
-					//	height: '550px',
-					//	border: '#ccc solid 1px',
-					//})
-					//-.lh1-lianxi-left
-						span 电话号码
-							img(src='/uploads/利用最先进的技术.jpg',alt='绿华能源')
-						
-				//-#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
-					ol.breadcrumb
-						li
-							a(href='/') 首页
-						li
-							a(href='/arounds') 关于绿华
-						li.active 加入我们
-					h1= data.joins.title
-					img(style={
-						width: '100%',
-						'margin-bottom':'20px'
-					},src=data.joins.overviewImage.path.substring(6) + data.joins.overviewImage.filename)
-					!=data.joins.content
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/arounds') 正在你身边
+				li.active 联系我们
+			.around_lianxi
+				.row
+					.col-sm-6
+						img(src='/images/page/icons/contactUSnew_r2_c1.png')
+					.col-sm-6
+						img(src='/images/page/icons/contactUSnew_r2_c2.png')
+				.row
+					.col-sm-6
+						img(src='/images/page/icons/contactUSnew_r3_c1.png')
+					.col-sm-6
+						img(src='/images/page/icons/contactUSnew_r3_c2.png')
+			//-h1= data.lianxis.title
+				p 地址：#{data.lianxis.address}
+				p 邮政编码：#{data.lianxis.postcode}
+				p 联系电话：#{data.lianxis.tel}
+				p 邮箱：#{data.lianxis.email}
+				p 传真：#{data.lianxis.fax}
+				p 网址：#{data.lianxis.wechatAccount}
+			//#dituContent(style={
+			//	width: '697px',
+			//	height: '550px',
+			//	border: '#ccc solid 1px',
+			//})
+			//-.lh1-lianxi-left
+				span 电话号码
+					img(src='/uploads/利用最先进的技术.jpg',alt='绿华能源')
+				
+		//-#two.tab-pane.fade(role='tabpanel', aria-labelledby='two-tab')
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/arounds') 关于绿华
+				li.active 加入我们
+			h1= data.joins.title
+			img(style={
+				width: '100%',
+				'margin-bottom':'20px'
+			},src=data.joins.overviewImage.path.substring(6) + data.joins.overviewImage.filename)
+			!=data.joins.content
 
 
 	// 主体内容end

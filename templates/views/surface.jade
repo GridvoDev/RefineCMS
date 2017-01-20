@@ -1,0 +1,196 @@
+extends ../layouts/default
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/services.css')
+block index-main
+	// 站内搜索start
+	.page-lander.text-center
+		img(src='/images/page/slug/Products.jpg',style={
+			width:'100%',
+//			height:'300px'
+		})
+		//-h1
+			span(style='display: inline-block;') 用最先进的技术
+			| &nbsp;
+			span(style='display: inline-block;') 让生活更加美好 
+		//-p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		.container
+			//-ul#myTab.col-sm-3.nav.nav-pills.nav-stacked(role='tablist')
+				li.active(role='presentation')
+					a#one-tab(href='#one', role='tab', data-toggle='tab', aria-controls='one', aria-expanded='false') 水面光伏电站
+			//-#myTabContent.col-sm-9.tab-content
+				#one.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='one-tab')
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/sercices') 产品与服务
+				li.active 水面光伏电站
+			.solar_product.solar_soild
+				.pro_container
+					h1(style={'font-size': '28px'}) 浮动式水面光伏解决方案
+					.row
+						//-.col-sm-5.pull-right
+							.pro_box
+								img(src='/images/page/case/水面4.jpg',alt='')
+						.col-sm-12.float-none
+							p 绿华能源推出全新一代浮动式水面光伏电站，采用水面柔性支架与双轴追光技术，可部署于湖泊、水库、海洋等水体表面，单体装机容量可达1MW，整体规模可超过100MW。具有不占土地资源、环境友好、综合效益高等优点，将开创开发利用太阳能和水体综合开发利用的新模式。
+							.fast-link 快速定位：&nbsp;&nbsp
+								a(href='#customer',style={color: '#0267ff'}) 客户价值&nbsp;&nbsp
+								a(href='#function',style={color: '#0267ff'}) 技术特点&nbsp;&nbsp
+								//-a(href='#project',style={color: '#0267ff'}) 项目案例&nbsp;&nbsp
+								a(href='#material',style={color: '#0267ff'}) 服务支持&nbsp;&nbsp
+			.customer-product
+				.pro_container
+					h2(class="title",id="customer") 客户价值
+					.row
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/高效.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color: '#000',
+											'text-decoration': 'none'
+										}) 提升收益
+									p 柔性支架成本降低50%以上
+									p 双轴追光发电量增加15%以上
+									p 水体冷却和反射提高发电量5%以上
+									p 电站投资回报率增加20%以上
+									p 提高水体综合利用率和收益
+						.col-sm-6
+							.row
+								.col-xs-3.business-value-b
+									img(src='/images/page/case/安全可靠.png',class="center-block",alt='',width="100",height="100")
+								.col-sm-9
+									h3
+										a(style={
+											color: '#000',
+											'text-decoration': 'none'
+										}) 降低风险
+									p 解决屋顶和土地指标难题
+									p 改善水质及水环境
+									p 解决长期沉降影响水面电站的难题
+									p 标准模块化快速施工降低成本
+									p 零基础施工易于整体搬迁
+			.customer-product
+				.pro_container
+					h2(class="title",id="function") 解决方案
+					.row
+						//-.solar_product
+							.pro_container
+								.row.softcom
+									p 发电量优势
+									img(alt='',src='/images/page/case/发电量优势.PNG',class="img-responsive")
+								.row.softcom
+									p 支架材料与成本优势
+									img(alt='',src='/images/page/case/支架材料与成本优势.PNG',class="img-responsive")
+								.row.softcom
+									p 支架结构优势
+									img(alt='',src='/images/page/case/支架结构优势.PNG',class="img-responsive")
+								.row.softcom
+									p 技术竞争优势
+									img(alt='',src='/images/page/case/技术竞争优势.PNG',class="img-responsive")
+						.solar_product
+							.pro_container
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/水面3.jpg',class="img-responsive")
+										.p_title
+											h3 采煤沉陷区水面电站
+									.col-sm-7
+										h3 采煤沉陷区水面电站
+										p 2016年国家发改委提出“领跑者”光伏基地规划，拟利用难以复垦的塌陷地建设光伏电站，可以有效地利用废弃的土地资源，促进地区能源结构改善，对促进光伏产业技术升级具有示范作用。以两淮采煤沉陷区为例，拟规划水面光伏发电装机总量3.2GW，将包含淮北、亳州、宿州、阜阳、淮南五市共80200亩水面和33457亩陆地，要求非稳沉区水面全部使用先进的漂浮式技术建设水面光伏光电站。
+										p 绿华能源顺应国家政策走向和经济发展需求，推出双轴追光柔性水面光伏电站，利用采空沉陷区进行光伏电站建设，不仅解决非稳沉区水面电站锚定难题，同时降低了项目投资的度电成本。
+										p 
+											b 系统特点
+										p 实现采煤沉陷区产业化综合治理
+										p 促进地区能源结构改善和转型
+										p 解决非稳沉区水面电站锚定难题
+										p 解决离地农民生活问题与生态环境治理难题
+								.row.softcom.softcom-right
+									.col-sm-5
+										img(alt='',src='/images/page/case/水面4.jpg',class="img-responsive")
+									.col-sm-7
+										h3 光伏扶贫村级水面电站
+										p 国家发改委等五部委联合对外下发的《关于光伏发电扶贫工作意见》，全面推进光伏扶贫，“十三五”时期光伏扶贫工程总规模15GW。2020年之前，重点在前期开展试点的、光照条件好的16个省471个县的约3.5万个建档立卡贫困村，以整村推进的方式，确保每年每户增加收入3000元以上。光伏扶贫电站项目不仅充分利用了贫困地区太阳能资源丰富的优势，通过开发太阳能资源连续25年产生的稳定收益，且实现了扶贫开发和新能源利用、节能减排相结合。
+										p 绿华能源针对光伏扶贫村级水面电站推出百千瓦级浮动式水面电站，重点解决光伏扶贫落地难、收益低、运维成本高等问题。
+										p 
+											b 系统特点
+										p 解决屋顶和土地指标难题
+										p 双轴追光提高贫困人口收益
+										p 维护简单、技术可靠
+										p 标准模块化快速施工降低成本
+										//-ul
+											li
+											li
+								.row.softcom.softcom-right
+									.col-sm-5.pull-right
+										img(alt='',src='/images/page/case/水面1.jpg',class="img-responsive")
+									.col-sm-7
+										h3 “水光互补”水面电站
+										p 利用水电站的闲置水库水面，结合水库调节能力进行光伏电站建设，为电网提供优质电能，提高了电网运行稳定性，同时也提高了水电站对电网的调节能力和送出线路的利用率，对电网更为友好。“水光互补”是清洁能源之间的优势互补，且减少煤炭消费的同时，效率更高。
+										p 绿华能源推出“水光互补”兆瓦级浮动式水面电站，单体装机容量可达1兆瓦，整体规模可超过100兆瓦；充分兼顾浮动平台的结构稳定性和环境适应性，不但有效降低投资成本50%以上，大幅度提高了投资回报水平，且解决大型水面电站收益低、运维成本高等问题。
+										p 
+											b 系统特点
+										p 利用水电站闲置水面资源提升综合利用率
+										p 解决现有方案对安装面条件要求苛刻的难题
+										p 水、光互补发电优化电网调度
+										p 共享水电站电力设施和运维团队降低运维成本
+										//-ul
+											li
+											li
+								.row.softcom
+									.col-sm-5
+										img(alt='',src='/images/page/case/水面2.jpg',class="img-responsive")
+									.col-sm-7
+										h3 “渔光一体化”水面电站
+										p 利用水产养殖集中地区丰富的池塘水面资源，开发建设光伏发电项目，采用水上发电、水下养殖的模式，提升水面资源综合利用价值，实现了多产业互补发展，同时具有发展休闲旅游业的潜力。
+										p 绿华能源适时推出“渔光一体化”百千瓦级浮动式水面电站，改善了鱼塘养殖条件，增加了经济附加值，提高了鱼塘的利用率和经济效益，真正达到了工业、农业相结合，对农业土地的综合利用起到了良好的示范作用。
+										p 
+											b 系统特点
+										p 改善水质及水环境提高渔业产量
+										p 优先向养殖户及周边用户售电
+										p 提高水体综合利用率和收益
+										p 不占用土地资源，减少水量蒸发，抑制藻类生长
+										p 水体对光伏组件及电缆的冷却有效提高发电效率
+										//-ul
+											li
+											li
+			//项目案例
+			//-.customer-product.case-bg
+				.pro_container
+					h2(class="title",id="project") 项目案例
+					.row.row-list.text-center
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图.png',width='100%')
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图2.png',width='100%')
+						.col-sm-4(style={overfolw: 'hidden'})
+							img(src='/images/page/case/产品图3.png',width='100%')
+			.customer-product.huise-bg
+				.pro_container
+					h2(class="title",id="material") 服务支持
+					.row.row-list.text-center
+						.col-sm-4
+							img(src='/images/page/icons/icon.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a(href='/arounds') 产品咨询
+							p
+						.col-sm-4
+							img(src='/images/page/icons/shop.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 企业商店
+							p
+						.col-sm-4
+							img(src='/images/page/icons/download.png',class="center-block",alt='',width="74",height="74")
+							h3(class="text-center")
+								a 资料下载
+							p
+// 主体内容end
+block js
+	// 页面相关
+	script(type='text/javascript').

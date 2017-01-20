@@ -49,3 +49,38 @@
 .nav-pills a:hover {
 	color: #43cd4f;
 }
+
+
+/*时间轴*/
+.year-group{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 50px;
+}
+.year-block{
+	width: 140px;
+	float: left;
+	background: #fff;
+}
+.each-mess{
+	width: calc(100% - 200px);
+	float: right;
+	overflow: hidden;
+}
+.each-mess h4:first-child{
+	color: #999;
+	font-size: 14px;
+	margin-top: 18px;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+.each-mess h4{
+	color: #999;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+
+
