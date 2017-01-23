@@ -577,9 +577,13 @@ img.feature-picture {
 	/*background-color: #006666;*/
   	/*background-image:url('/public/images/page/case/合作共赢.jpg');*/
 	width: 100%;
-	position: relative;
-	z-index: 99;
-	overflow: hidden;
+	/*position: relative;*/
+	/*z-index: 99;*/
+	/*overflow: hidden;*/
+}
+.index-video .index-video-box video{
+	width: 100%;
+	max-height: 540px;
 }
 .index-video .index-video-box img{
 	width: 100%;
