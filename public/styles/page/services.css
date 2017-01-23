@@ -123,6 +123,9 @@ h2.title{
 	margin-top: 0;
 	margin-bottom: 7px;
 }
+.value_float{
+	float: left;
+}
 
 /*技术特点*/
 .softcom-right{

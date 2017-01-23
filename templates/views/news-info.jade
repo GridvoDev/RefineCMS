@@ -6,12 +6,11 @@ block css
 block index-main
 	// 站内搜索start
 	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form#searchForm(role='form' action='/news' method='get')
+		img(src='/images/page/slug/aboutcompany.jpg',style={
+			width: '100%',
+			//			height:'300px'
+		})
+		//-form#searchForm(role='form' action='/news' method='get')
 			input#searchContent(type='text', name='searchContent', value=filters.searchContent?''+filters.searchContent:'')
 			button(type='sumbit', style='margin-top: -2px;') 搜索
 	// 站内搜索end
@@ -23,7 +22,7 @@ block index-main
 					a(href='/') 首页
 				li.location-separator
 				li
-					a(href='/news') 新闻资讯
+					a(href='/news') 宣传报道
 				li.location-separator
 				li.active
 					a(href='javascript:;')= data.newsInfo.title

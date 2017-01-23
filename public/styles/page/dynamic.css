@@ -49,3 +49,70 @@
 .nav-pills a:hover {
 	color: #43cd4f;
 }
+
+
+/*后续样式*/
+.news_rf h1{
+	font-size: 28px;
+	line-height: 48px;
+}
+.news_rf p{
+	text-indent: 2em;
+	line-height: 28px;
+}
+.news-q-img,.news-l-img{
+	width: 100%;
+	max-height: 540px;
+	text-align: center;
+	margin-bottom: 2em; ;
+}
+.news-q-img > img,.news-l-img > img{
+	width: 50%;
+	height: auto;
+}
+.news_rf .news-q,.news_rf .news-l{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d7d7d7;
+}
+
+
+.index-video{
+	width: 100%;
+	max-width: 1440px;
+	margin: 2em auto 0 auto;
+	/*margin-top: 1em;*/
+	/*margin-bottom: 1em;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	border-bottom: 0;
+	margin-bottom: 1.5%;
+}
+.index-video .index-video-box{
+	/*background-color: #006666;*/
+	/*background-image:url('/public/images/page/case/合作共赢.jpg');*/
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+.index-video .index-video-box img{
+	width: 100%;
+	height: 100%;
+}
+.index-video .index-video-box .title{
+	position: absolute;
+	width: 100%;
+	top: 10%;
+}
+.index-video h2{
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 60px;
+	color: #000;
+}
+
+
+

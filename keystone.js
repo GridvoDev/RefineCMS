@@ -98,7 +98,7 @@ keystone.set('nav', {
 	'产品与服务':['products','serves'],
 	// '产品特色': 'products',
 	// '项目案例': 'cases',
-	// '新闻资讯': ['news-infos', 'news-info-categories'],
+	'新闻资讯': ['news-infos', 'news-info-categories'],
 	'用户管理': 'users',
 	'系统设置': ['carousel-pictures', 'feedback-consultations', 'site-maps'],
 	'新闻中心': 'new-centers',

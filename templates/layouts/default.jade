@@ -54,7 +54,17 @@ html(lang='zh-CN')
 								a(href='/') 首页
 							//-li.navmenu
 								a(href='/cases') 优秀案例
-							li.navmenu
+							li.dropdown
+								a.dropdown-toggle(href="#",data-toggle="dropdown") 认识绿华
+									span.caret
+								ul.dropdown-menu(role="menu")
+									li
+										a(href='/abouts') 公司介绍
+									li
+										a(href='/abouts/course') 发展历程
+									li
+										a(href='/abouts/dynamic') 宣传报道
+							//-li.navmenu
 								a 认识绿华
 								ul
 									li
@@ -65,7 +75,17 @@ html(lang='zh-CN')
 										a(href='/abouts/dynamic') 宣传报道
 									//-li
 										a(href='/abouts/recruitment') 媒体报道
-							li.navmenu
+							li.dropdown
+								a.dropdown-toggle(href="#",data-toggle="dropdown") 产品与服务
+									span.caret
+								ul.dropdown-menu(role="menu")
+									li
+										a(href='/services/surface') 水面光伏
+									li
+										a(href='/services/agricultural') 农业光伏
+									li
+										a(href='/services/roof') 屋面光伏
+							//-li.navmenu
 								a 产品与服务
 								ul
 									li
@@ -81,7 +101,15 @@ html(lang='zh-CN')
 									li    发展历程
 									li    宣传视频
 									li    媒体报道
-							li.navmenu
+							li.dropdown
+								a.dropdown-toggle(href="#",data-toggle="dropdown") 正在你身边
+									span.caret
+								ul.dropdown-menu(role="menu")
+									li
+										a(href='/arounds') 联系我们
+									li
+										a(href='/arounds/join') 加入我们
+							//-li.navmenu
 								a 正在你身边
 								ul
 									li
@@ -134,7 +162,7 @@ html(lang='zh-CN')
 							h4 新闻资讯
 							ul.footer-list
 								li.footer-list-item
-									a(href='/products') 新闻资讯
+									a(href='/centers') 新闻资讯
 						.clearfix.visible-sm-block
 						.col-md-2.col-sm-4.col-xs-6
 							h4 正在你身边
@@ -165,7 +193,7 @@ html(lang='zh-CN')
 										a#gridvo-service-tab(href='#gridvo-service', role='tab', data-toggle='tab', aria-controls='gridvo-service', aria-expanded='false') 智能水电站
 							#myWechatTabContent.tab-content
 								//-#refine-official.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='refine-official-tab')
-								h4 官方微信平台
+								h4(style={color:'#ccc'}) 官方微信平台
 								img(style={
 									'text-align':'end',
 									'max-height': '130px'
@@ -206,11 +234,11 @@ html(lang='zh-CN')
 		script(type='text/javascript').
 			
 			$(function () {
-				$(".navmenu").mouseover(function () {
+				$(".dropdown").mouseover(function () {
 					$(this).children("ul").show();
 				})
 
-				$(".navmenu").mouseout(function () {
+				$(".dropdown").mouseout(function () {
 					$(this).children("ul").hide();
 				})
 				
