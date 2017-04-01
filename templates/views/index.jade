@@ -181,12 +181,40 @@ block index-main
 			.index-video-box(style={
 				'max-height':'540px'
 			})
+<<<<<<< HEAD
+				//-video(src='images/page/video/20170205.mp4',controls='controls',poster='images/page/index/video.png')
+				img(src='/images/page/index/video.png')
+				.img-videoIcon
+					img(id='video-open', src='/images/page/icons/video_btn.png')
+					//-.title
+						h2 共建更美好的未来
+	//视频end
+	#video-mask
+	#video-play
+		#video-close
+			img(src='/images/page/icons/video_close.jpg')
+		#video-div
+			video(id="video-show",src='images/page/video/20170205.mp4',controls='controls',poster='/images/page/index/video.png')
+			//视频start
+			//.index-video
+			//	.lg-container
+			//		.index-video-box(style={
+			//			'max-height': '540px'
+			//		})
+			//			video(src='images/page/video/20170205.mp4',controls='controls',poster='images/page/index/video.png')
+						//-a(href='https://v.qq.com/x/page/a0368whgg6q.html')
+							img(src='/images/page/index/video.png')
+							//-.title
+								h2 共建更美好的未来
+			//视频end
+=======
 				video(src='',controls='controls',poster='')
 				//-a(href='https://v.qq.com/x/page/a0368whgg6q.html')
 					img(src='/images/page/index/video.png')
 					//-.title
 						h2 共建更美好的未来
 	//视频end
+>>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0
 
 block js
 	// 页面相关
@@ -203,3 +231,28 @@ block js
 				$('.site-header .navbar-brand img').attr('src', '/images/page/logowhite.png');
 			}
 		});
+<<<<<<< HEAD
+		//视频弹窗与关闭
+		$('#video-open').click(function () {
+			$('#video-mask').show();
+			$('#video-play').show();
+			$('#video-close').show();
+		})
+		$('#video-close').click(function () {
+			$('#video-mask').hide();
+			$('#video-play').hide();
+			document.getElementById('video-show').pause();
+			//$('#video-show').pause();
+		})
+		
+		//居中
+		$(window).resize(function () {
+			$('#video-play').css({
+				left: ($(window).width() - $('#video-play').outerWidth()) / 2,
+				top: ($(window).height() - $('#video-play').outerHeight()) / 2-50,
+			})
+		})
+		$(window).resize();
+		
+=======
+>>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0

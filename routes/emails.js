@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * This file defines the email tests for your project.
  *
@@ -37,3 +38,44 @@ module.exports = {
 	},
 
 };
+=======
+/**
+ * This file defines the email tests for your project.
+ *
+ * Each email test should provide the locals used to render the
+ * email template for preview.
+ *
+ * Values can either be an object (for simple tests), or a
+ * function that calls a callback(err, locals).
+ *
+ * Sample generated emails, based on the keys and methods below,
+ * can be previewed at /keystone/test-email/{key}
+ */
+
+var keystone = require('keystone');
+
+module.exports = {
+
+	/** New FeedbackConsultation Notifications */
+	'enquiry-notification': function (req, res, callback) {
+		// To test enquiry notifications we create a dummy enquiry that
+		// is not saved to the database, but passed to the template.
+
+		var FeedbackConsultation = keystone.list('FeedbackConsultation');
+
+		var newFeedbackConsultation = new FeedbackConsultation.model({
+			title: 'Test Title',
+			email: 'contact@keystone-test.com',//
+			enquiryType: 'message',
+			message: { md: 'Nice enquiry notification.' },
+		});
+
+		callback(null, {
+			admin: 'Admin User',
+			enquiry: newFeedbackConsultation,
+			enquiry_url: '/keystone/enquiries/',
+		});
+	},
+
+};
+>>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0

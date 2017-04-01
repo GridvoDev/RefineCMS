@@ -1,0 +1,33 @@
+extends ../layouts/default
+block css
+	link(rel='stylesheet', type='text/css', href='/styles/page/abouts.css')
+block index-main
+	// 站内搜索start
+	.pa.page-lander.text-center
+		img(src='/images/page/slug/aboutcompany.jpg',style={
+			width: '100%',
+			//			height:'300px'
+		})
+	// 站内搜索end
+	// 主体内容start
+	.main-content
+		.container
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li 法律声明
+			.legal-main
+				h1=data.legals.title
+				!= data.legals.content
+			//		a(href='javascript:;')= data.case.title
+			//article.article
+			//	h1.article-header= data.case.title
+			//	p.article-note
+			//		span= data.case._.finishedDate.format('YYYY-MM-DD')
+			//	.article-body
+			//		img(src=data.case.overviewImage.path.substring(6) + data.case.overviewImage.filename)
+					!= data.case.content.full
+	// 主体内容end
+block js
+	// 页面相关
+	script(type='text/javascript').
