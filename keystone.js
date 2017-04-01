@@ -93,12 +93,8 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-<<<<<<< HEAD
 	//'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies','visions','courses','dynamics','recruitments'],
 	'公司设置': ['introductions','partners','legals','visions','courses'],
-=======
-	'公司设置': ['introductions', 'contacts', 'partners', 'law-states', 'privacy-policies','visions','courses','dynamics','recruitments'],
->>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0
 	'联系设置':['lianxis','joins'],
 	'产品与服务':['products','serves'],
 	// '产品特色': 'products',

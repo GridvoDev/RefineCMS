@@ -50,7 +50,6 @@ var routes = {
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
-<<<<<<< HEAD
 	app.get('/about_Introduce', routes.views.abouts);
 	app.get('/development_History', routes.views.course);
 	// app.get('/abouts/dynamic', routes.views.dynamic);
@@ -63,17 +62,6 @@ exports = module.exports = function (app) {
 	app.get('/surface_Photovoltaic',routes.views.surface);
 	app.get('/agricultural_Photovoltaicl',routes.views.agricultural);
 	app.get('/roof_Photovoltaic',routes.views.roof);
-=======
-	app.get('/abouts', routes.views.abouts);
-	app.get('/abouts/course', routes.views.course);
-	app.get('/abouts/dynamic', routes.views.dynamic);
-	app.get('/abouts/recruitment', routes.views.recruitment);
-	//app.get('/services',routes.views.services);
-	//未写后台管理的三个
-	app.get('/services/surface',routes.views.surface);
-	app.get('/services/agricultural',routes.views.agricultural);
-	app.get('/services/roof',routes.views.roof);
->>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0
 	
 	app.get('/arounds', routes.views.arounds);
 	app.get('/arounds/join', routes.views.join);
@@ -83,13 +71,8 @@ exports = module.exports = function (app) {
 	// app.get('/products/:product', routes.views.productInfo);
 	// app.get('/cases', routes.views.cases);
 	// app.get('/cases/:case', routes.views.case);
-<<<<<<< HEAD
 	app.get('/news/:category?', routes.views.news);
 	app.get('/news/information/:newsInfo', routes.views.newsInfo);
-=======
-	// app.get('/news/:category?', routes.views.news);
-	// app.get('/news/information/:newsInfo', routes.views.newsInfo);
->>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0
 	// app.all('/feedback', routes.views.feedbackAndConsultation);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

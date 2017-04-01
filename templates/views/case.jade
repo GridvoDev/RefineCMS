@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 extends ../layouts/default
 
 block css
@@ -40,46 +39,3 @@ block index-main
 block js
 	// 页面相关
 	script(type='text/javascript').
-=======
-extends ../layouts/default
-
-block css
-	link(rel='stylesheet', type='text/css', href='/styles/page/page.css')
-
-block index-main
-	// 站内搜索start
-	.page-lander.text-center
-		h1
-			span(style='display: inline-block;') 用最先进的技术
-			| &nbsp;
-			span(style='display: inline-block;') 让生活更加美好
-		p 凭借水面光伏领域专业技术研发，高效利用太阳能，推动光伏电站平价上网
-		form#searchForm(role='form' action='/cases' method='get')
-			input#searchContent(type='text', name='searchContent', value=filters.searchContent?''+filters.searchContent:'')
-			button(type='sumbit', style='margin-top: -2px;') 搜索
-	// 站内搜索end
-	
-	// 主体内容start
-	.main-content
-		.container
-			ul.location.list-unstyled.list-inline
-				li
-					a(href='/') 首页
-				li.location-separator
-				li
-					a(href='/cases') 案例介绍
-				li.location-separator
-				li.active
-					a(href='javascript:;')= data.case.title
-			article.article
-				h1.article-header= data.case.title
-				p.article-note
-					span= data.case._.finishedDate.format('YYYY-MM-DD')
-				.article-body
-					img(src=data.case.overviewImage.path.substring(6)+data.case.overviewImage.filename)
-					!= data.case.content.full
-	// 主体内容end
-block js
-	// 页面相关
-	script(type='text/javascript').
->>>>>>> b0eb7369478abac56cd444606cf895bb4ced42e0
