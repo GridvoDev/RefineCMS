@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: RefineCMS
+  name: RefineCMS
+  namespace: gridvo
+spec:
+  selector:
+    name: RefineCMS
+  ports:
+     - port: 80
+targetPort: 3001
