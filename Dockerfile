@@ -29,4 +29,4 @@ COPY ./Procfile Procfile
 
 VOLUME ["/home/refinecms"]
 ENTRYPOINT ["node"]
-CMD ["keystone.js",">>","run.log"]
+CMD ["node","keystone.js",">>","run.log"]
