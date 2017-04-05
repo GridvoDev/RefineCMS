@@ -21,4 +21,3 @@ spec:
         env:
         - name: MONGODB_SERVICE_HOST
           value: "mongodb"
-value: "true"
