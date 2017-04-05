@@ -1,37 +1,37 @@
 #!/bin/bash
-kubectl -n gridvo get svc | grep -q data-collect
+kubectl -n gridvo get svc | grep -q refinecms
 if [ "$?" == "1" ];then
-	kubectl create -f data_collect-service.yaml --record
-	kubectl -n gridvo get svc | grep -q data-collect
+	kubectl create -f refinecms-service.yaml --record
+	kubectl -n gridvo get svc | grep -q refinecms
 	if [ "$?" == "0" ];then
-		echo "data_collect-service install success!"
+		echo "refinecms-service install success!"
 	else
-		echo "data_collect-service install fail!"
+		echo "refinecms-service install fail!"
 	fi
 else
-	echo "data_collect-service is exist!"
+	echo "refinecms-service is exist!"
 fi
-kubectl -n gridvo get pods | grep -q data-collect
+kubectl -n gridvo get pods | grep -q refinecms
 if [ "$?" == "1" ];then
-	kubectl create -f data_collect-deployment.yaml --record
-	kubectl -n gridvo get pods | grep -q data-collect
+	kubectl create -f refinecms-deployment.yaml --record
+	kubectl -n gridvo get pods | grep -q refinecms
 	if [ "$?" == "0" ];then
-		echo "data_collect-deployment install success!"
+		echo "refinecms-deployment install success!"
 	else
-		echo "data_collect-deployment install fail!"
+		echo "refinecms-deployment install fail!"
 	fi
 else
-	kubectl delete -f data_collect-deployment.yaml
-	kubectl -n gridvo get pods | grep -q data-collect
+	kubectl delete -f refinecms-deployment.yaml
+	kubectl -n gridvo get pods | grep -q refinecms
 	while [ "$?" == "0" ]
 	do
-	kubectl -n gridvo get pods | grep -q data-collect
+	kubectl -n gridvo get pods | grep -q refinecms
 	done
-	kubectl create -f data_collect-deployment.yaml --record
-	kubectl -n gridvo get pods | grep -q data-collect
+	kubectl create -f refinecms-deployment.yaml --record
+	kubectl -n gridvo get pods | grep -q refinecms
 	if [ "$?" == "0" ];then
-		echo "data_collect-deployment update success!"
+		echo "refinecms-deployment update success!"
 	else
-		echo "data_collect-deployment update fail!"
+		echo "refinecms-deployment update fail!"
 	fi
 fi

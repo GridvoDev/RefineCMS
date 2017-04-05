@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: RefineCMS
-  name: RefineCMS
+    name: refinecms
+  name: refinecms
   namespace: gridvo
 spec:
   selector:
-    name: RefineCMS
+    name: refinecms
   ports:
      - port: 80
 targetPort: 3001

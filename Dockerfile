@@ -1,7 +1,7 @@
 FROM node:latest
 MAINTAINER JeMoGeS <510015341@qq.com>
-COPY ./package.json /home/RefineCMS/
-WORKDIR /home/RefineCMS
+COPY ./package.json /home/refinecms/
+WORKDIR /home/refinecms
 RUN ["npm","config","set","registry","http://registry.npm.taobao.org"]
 RUN ["npm","install","--save",keystone]
 RUN ["npm","install","--save",async]
@@ -27,6 +27,6 @@ COPY ./.eslintignore .eslintignore
 COPY ./.eslintrc .eslintrc
 COPY ./Procfile Procfile
 
-VOLUME ["/home/RefineCMS"]
+VOLUME ["/home/refinecms"]
 ENTRYPOINT ["node"]
 CMD ["keystone.js >> run.log"]

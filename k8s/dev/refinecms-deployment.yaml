@@ -2,19 +2,19 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    name: RefineCMS
-  name: RefineCMS
+    name: refinecms
+  name: refinecms
   namespace: gridvo
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: RefineCMS
+        name: refinecms
     spec:
       containers:
-      - name: RefineCMS
-        image: 10.0.3.31:5000/gridvo/RefineCMS:dev
+      - name: refinecms
+        image: 10.0.3.31:5000/gridvo/refinecms:dev
         imagePullPolicy: Always
         ports:
         - containerPort: 3001
