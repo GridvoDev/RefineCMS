@@ -12,4 +12,4 @@ spec:
   ports:
      - port: 80
        targetPort: 3001
-       nodePort:31016
+       nodePort: 31016
