@@ -14,7 +14,6 @@ RUN ["npm","install","--save","eslint-plugin-react@5.1.1"]
 RUN ["npm","install","--save","gulp@3.7.0"]
 RUN ["npm","install","--save","gulp-shell@0.5.0"]
 RUN ["npm","install","--save","gulp-watch@4.3.5"]
-COPY ./index.js node_modules/mongoose/node_modules/bson/ext/
 COPY ./keystone.js keystone.js
 COPY ./gulpfile.js gulpfile.js
 COPY ./models models
