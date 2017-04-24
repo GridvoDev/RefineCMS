@@ -26,6 +26,7 @@ COPY ./.env .env
 COPY ./.eslintignore .eslintignore
 COPY ./.eslintrc .eslintrc
 COPY ./Procfile Procfile
+COPY ./index.js ./node_modules/bson/ext/
 
 VOLUME ["/home/refinecms"]
 ENTRYPOINT ["node"]
