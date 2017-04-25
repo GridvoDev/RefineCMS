@@ -10,6 +10,7 @@ block index-main
 		ol.carousel-indicators
 			- for (var index = 0; index < data.carouselPictures.length; index++)
 				li(class={active: index === 0}, data-target='#carousel-example', data-slide-to='' + index)
+			- console.log("渲染层跑起来了")	
 		// Indicators end
 		// Wrapper for slides
 		.carousel-inner
