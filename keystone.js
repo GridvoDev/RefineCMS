@@ -56,6 +56,7 @@ keystone.init({
 
 // Load your project's Models 加载您的项目模型
 keystone.import('models');
+console.log("服务跑起来了");
 
 // Setup common locals for your templates（模板）. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
