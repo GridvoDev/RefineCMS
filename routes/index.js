@@ -48,6 +48,7 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
+	console.log("路由也跑起来了");
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/about_Introduce', routes.views.abouts);
