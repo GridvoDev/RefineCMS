@@ -23,7 +23,5 @@ spec:
           value: "10.0.3.23"
         - name: MONGODB_SERVICE_PORT
           value: "27017"
-        - name: ZK_TRACER_HTTP
-          value: "true"
         - name: IS_DEBUG
           value: "true"
