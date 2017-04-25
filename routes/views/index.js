@@ -3,6 +3,7 @@ var async = require('async');
 
 exports = module.exports = function (req, res) {
 
+	console.log("首页路由跑起来了")
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
 
