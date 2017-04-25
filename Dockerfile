@@ -22,7 +22,6 @@ COPY ./routes routes
 COPY ./templates templates
 COPY ./updates updates
 COPY ./.editorconfig .editorconfig
-COPY ./.env .env
 COPY ./.eslintignore .eslintignore
 COPY ./.eslintrc .eslintrc
 COPY ./Procfile Procfile
